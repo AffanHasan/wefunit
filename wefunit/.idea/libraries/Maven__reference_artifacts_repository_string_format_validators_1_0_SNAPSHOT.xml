@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: reference-artifacts-repository:string-format-validators:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/reference-artifacts-repository/string-format-validators/1.0-SNAPSHOT/string-format-validators-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/reference-artifacts-repository/string-format-validators/1.0-SNAPSHOT/string-format-validators-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/reference-artifacts-repository/string-format-validators/1.0-SNAPSHOT/string-format-validators-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

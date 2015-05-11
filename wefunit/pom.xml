@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--Parent Project-->
+ <parent>
+    <groupId>wef-test-harness</groupId>
+    <artifactId>wef-test-harness</artifactId>
+    <version>1.0-SNAPSHOT</version>
+ </parent>
+
+  <groupId>wef-test-harness</groupId>
+  <artifactId>wefunit</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>wefunit</name>
+
+  <!--<url>http://maven.apache.org</url>-->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+    <build>
+        <plugins>
+            <!--Configuring maven to use testng.xml file-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <!--A custom plugin to prepare the fixture classes-->
+            <plugin>
+                <groupId>reference-artifacts-repository</groupId>
+                <artifactId>wefunit-fixture-maker</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>compileClasses</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--Maven surefire plugin configuration for providing additional class path lookup during test execution-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>samplewefproject/WebContent/WEB-INF/work/classes</additionalClasspathElement>
+                        <!--<additionalClasspathElement>path/to/additional/jar</additionalClasspathElement>-->
+                    </additionalClasspathElements>
+                </configuration>
+            </plugin>
+            <!--Maven compiler plugin Java version settings-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <!--<includes>-->
+                        <!--<include>src/main/java/**/*.java</include>-->
+                        <!--<include>samplewefproject/WebContent/WEB-INF/work/source/**</include>-->
+                    <!--</includes>-->
+                </configuration>
+            </plugin>
+
+            <!--Adding additional classes to source directories classpath-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.9.1</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>samplewefproject/WebContent/WEB-INF/work/source/</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>2.6</version>-->
+                <!--<configuration>-->
+                    <!--<excludes>-->
+                        <!--<exclude>samplewefproject/WebContent/WEB-INF/work/classes/test/**</exclude>-->
+                    <!--</excludes>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+
+  <dependencies>
+      <!--Google gson-->
+      <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.3.1</version>
+      </dependency>
+      <!--Java EE 7 API-->
+      <dependency>
+          <groupId>javax</groupId>
+          <artifactId>javaee-api</artifactId>
+          <version>7.0</version>
+      </dependency>
+      <dependency>
+          <!--This is the web experience factory factory.jar file-->
+        <!--https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html-->
+          <groupId>web-experience-factory-libs</groupId>
+          <artifactId>wef-factory-jar</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>reference-artifacts-repository</groupId>
+          <artifactId>string-format-validators</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <!-- JMockit -->
+      <dependency>
+          <groupId>org.jmockit</groupId>
+          <artifactId>jmockit</artifactId>
+          <version>1.14</version>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+</project>

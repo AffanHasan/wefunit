@@ -1,0 +1,694 @@
+<html>
+<head>
+<title>TestNG:  Nopackage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Nopackage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>123/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 11 19:04:28 PKT 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1125 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rc.wefunit.annotations.BeforeClassTest.BeforeClass_annotation()'><b>BeforeClass_annotation</b><br>Test class: com.rc.wefunit.annotations.BeforeClassTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.BeforeClassTest@1e397ed7</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.BeforeClassTest.BeforeClass_annotation_RetentionPolicy_RUNTIME()'><b>BeforeClass_annotation_RetentionPolicy_RUNTIME</b><br>Test class: com.rc.wefunit.annotations.BeforeClassTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.BeforeClassTest@1e397ed7</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.BeforeClassTest.BeforeClass_annotation_Target_METHOD()'><b>BeforeClass_annotation_Target_METHOD</b><br>Test class: com.rc.wefunit.annotations.BeforeClassTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.BeforeClassTest@1e397ed7</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.BeforeClassTest.BeforeClass_annotation_enabled_method_default_value_true()'><b>BeforeClass_annotation_enabled_method_default_value_true</b><br>Test class: com.rc.wefunit.annotations.BeforeClassTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.BeforeClassTest@1e397ed7</td></tr>
+<tr>
+<td title='com.rc.wefunit.enums.GenericSOInjectablesTest.DATA_SERVICE_NAME()'><b>DATA_SERVICE_NAME</b><br>Test class: com.rc.wefunit.enums.GenericSOInjectablesTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.enums.GenericSOInjectablesTest@3f49dace</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.Runner_instance_must_be_singleton()'><b>Runner_instance_must_be_singleton</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.enums.GenericSOInjectablesTest.SERVICE_OPERATION_NAME()'><b>SERVICE_OPERATION_NAME</b><br>Test class: com.rc.wefunit.enums.GenericSOInjectablesTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.enums.GenericSOInjectablesTest@3f49dace</td></tr>
+<tr>
+<td title='com.rc.wefunit.enums.GenericSOInjectablesTest.SERVICE_OPERATION_NAME_INDEX_0()'><b>SERVICE_OPERATION_NAME_INDEX_0</b><br>Test class: com.rc.wefunit.enums.GenericSOInjectablesTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.enums.GenericSOInjectablesTest@3f49dace</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.abstract_method_parameter_count_test()'><b>abstract_method_parameter_count_test</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.class_Assert_existence()'><b>class_Assert_existence</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.class_existence()'><b>class_existence</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.compareTo_test_1()'><b>compareTo_test_1</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.constructorTest()'><b>constructorTest</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.constructor_must_have_Class_as_the_first_parameter_data_type()'><b>constructor_must_have_Class_as_the_first_parameter_data_type</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type()'><b>constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.dependencySignature_field()'><b>dependencySignature_field</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.dependencySignature_field_is_private()'><b>dependencySignature_field_is_private</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.dependencySignature_field_is_private_final()'><b>dependencySignature_field_is_private_final</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.dependencySignature_field_is_private_is_of_type_DependencySignature()'><b>dependencySignature_field_is_private_is_of_type_DependencySignature</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.existence_of_class()'><b>existence_of_class</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field__qualifiers_is_final()'><b>field__qualifiers_is_final</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field__qualifiers_is_private()'><b>field__qualifiers_is_private</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_qualifiers()'><b>field_qualifiers</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_qualifiers_is_an_Array_of_Type_Annotation()'><b>field_qualifiers_is_an_Array_of_Type_Annotation</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_returnedObjectType()'><b>field_returnedObjectType</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_returnedObjectType_field_type_is_java_lang_Class()'><b>field_returnedObjectType_field_type_is_java_lang_Class</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_returnedObjectType_is_final()'><b>field_returnedObjectType_is_final</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.field_returnedObjectType_is_private()'><b>field_returnedObjectType_is_private</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.filterQualifierAnnotations()'><b>filterQualifierAnnotations</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.filterQualifierAnnotations_functional_test()'><b>filterQualifierAnnotations_functional_test</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.getSignature()'><b>getSignature</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.getSignature_method_is_public()'><b>getSignature_method_is_public</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.getSignature_method_return_type_is_DependencySignature()'><b>getSignature_method_return_type_is_DependencySignature</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_dataServiceName()'><b>getter_for_dataServiceName</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_serviceOperationName()'><b>getter_for_serviceOperationName</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.getter_for_webAppAccess()'><b>getter_for_webAppAccess</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.implements_java_lang_Comparator()'><b>implements_java_lang_Comparator</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.implements_java_lang_comparable()'><b>implements_java_lang_comparable</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1()'><b>inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2()'><b>inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1()'><b>inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2()'><b>inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencyScannerTest.interface_DependencyScanner_existence()'><b>interface_DependencyScanner_existence</b><br>Test class: com.rc.wefunit.DependencyScannerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencyScannerTest@13805618</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.GenericSODependencyTest.is_a_Qualifier()'><b>is_a_Qualifier</b><br>Test class: com.rc.wefunit.annotations.GenericSODependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.GenericSODependencyTest@56ef9176</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.GenericSODependencyTest.is_annotation_GenericSODependency()'><b>is_annotation_GenericSODependency</b><br>Test class: com.rc.wefunit.annotations.GenericSODependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.GenericSODependencyTest@56ef9176</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation()'><b>is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present()'><b>is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_string_field_contains_Inject_annotation()'><b>is_dataServiceName_string_field_contains_Inject_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_dataServiceName_string_field_is_present()'><b>is_dataServiceName_string_field_is_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.is_exist_Interface_TestEngine()'><b>is_exist_Interface_TestEngine</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_contains_Inject_annotation()'><b>is_serviceOperationName_string_field_contains_Inject_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_is_protected()'><b>is_serviceOperationName_string_field_is_protected</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_serviceOperationName_string_field_present()'><b>is_serviceOperationName_string_field_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_service_operation_exists_Method_exists()'><b>is_service_operation_exists_Method_exists</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_service_operation_exists_method_should_have_Test_annotation()'><b>is_service_operation_exists_method_should_have_Test_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_service_operation_name_is_in_correct_format_Method_exists()'><b>is_service_operation_name_is_in_correct_format_Method_exists</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.GenericSODependencyTest.is_value_method_present()'><b>is_value_method_present</b><br>Test class: com.rc.wefunit.annotations.GenericSODependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.GenericSODependencyTest@56ef9176</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_GenericSODependency_annotation_present()'><b>is_webAppAccess_field_with_GenericSODependency_annotation_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present()'><b>is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_Inject_annotation_present()'><b>is_webAppAccess_field_with_Inject_annotation_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()'><b>is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null()'><b>method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertNotNull_throw_AssertionError_when_object_is_null()'><b>method_assertNotNull_throw_AssertionError_when_object_is_null</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertNotNull_with_one_argument_Object()'><b>method_assertNotNull_with_one_argument_Object</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertTrue_is_public_static_with_only_one_argument_Object()'><b>method_assertTrue_is_public_static_with_only_one_argument_Object</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertTrue_no_Throwable_when_argument_is_true()'><b>method_assertTrue_no_Throwable_when_argument_is_true</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false()'><b>method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency()'><b>method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_parameters_Queue()'><b>method_executeTests_parameters_Queue</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()'><b>method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()'><b>method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()'><b>method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_test_for_explicitly_failed_tests()'><b>method_executeTests_total_test_for_explicitly_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_fail_with_no_params()'><b>method_fail_with_no_params</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.probes.AssertTest.method_fail_with_string_argument()'><b>method_fail_with_string_argument</b><br>Test class: com.rc.wefunit.probes.AssertTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.probes.AssertTest@4566e5bd</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.method_getCallableServiceOperationName_functional_test()'><b>method_getCallableServiceOperationName_functional_test</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.method_getDependency()'><b>method_getDependency</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model()'><b>method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.method_getDependencyMethodName_return_type_is_Object()'><b>method_getDependencyMethodName_return_type_is_Object</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencyScannerTest.method_getDependency_DependencySignature_Object_as_return_type()'><b>method_getDependency_DependencySignature_Object_as_return_type</b><br>Test class: com.rc.wefunit.DependencyScannerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencyScannerTest@13805618</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencyScannerTest.method_getDependency_DependencySignature_as_first_parameter()'><b>method_getDependency_DependencySignature_as_first_parameter</b><br>Test class: com.rc.wefunit.DependencyScannerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencyScannerTest@13805618</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencyScannerTest.method_getDependency_exists()'><b>method_getDependency_exists</b><br>Test class: com.rc.wefunit.DependencyScannerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencyScannerTest@13805618</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.method_getDependency_method_is_public()'><b>method_getDependency_method_is_public</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencyScannerTest.method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model()'><b>method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model</b><br>Test class: com.rc.wefunit.DependencyScannerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencyScannerTest@13805618</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getExecutableTestObjectsQueue()'><b>method_getExecutableTestObjectsQueue</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.method_getReturnedObjectType()'><b>method_getReturnedObjectType</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.producers.FactoryProducersTest.method_getSCBuildersFixturesModel()'><b>method_getSCBuildersFixturesModel</b><br>Test class: com.rc.wefunit.producers.FactoryProducersTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.producers.FactoryProducersTest@6e1567f1</td></tr>
+<tr>
+<td title='com.rc.wefunit.producers.FactoryProducersTest.method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found()'><b>method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found</b><br>Test class: com.rc.wefunit.producers.FactoryProducersTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.producers.FactoryProducersTest@6e1567f1</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.method_getSuperClassesHierarchy()'><b>method_getSuperClassesHierarchy</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getTestClassesExecutionPriorityQueue()'><b>method_getTestClassesExecutionPriorityQueue</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getTestClassesSet()'><b>method_getTestClassesSet</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.method_getTestMethodsArray()'><b>method_getTestMethodsArray</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.method_getTestMethodsArray_test_for_GeneServiceOperationTest()'><b>method_getTestMethodsArray_test_for_GeneServiceOperationTest</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.TestClassStatsTest.method_getTotalExecutableTestsCount()'><b>method_getTotalExecutableTestsCount</b><br>Test class: com.rc.wefunit.TestClassStatsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.TestClassStatsTest@5cb9f472</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getWebAppAccess_existence()'><b>method_getWebAppAccess_existence</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method()'><b>method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory()'><b>method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.TestClassInstantiationUtilityTest.method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model()'><b>method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model</b><br>Test class: com.rc.wefunit.TestClassInstantiationUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.TestClassInstantiationUtilityTest@59494225</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model()'><b>method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.method_is_service_operation_exists_functional_tests()'><b>method_is_service_operation_exists_functional_tests</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.method_is_service_operation_name_is_in_correct_format_contains_Test_annotation()'><b>method_is_service_operation_name_is_in_correct_format_contains_Test_annotation</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests()'><b>method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_run()'><b>method_run</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_run_with_parameters_WebAppAccess_And_ClassLoader_existence()'><b>method_run_with_parameters_WebAppAccess_And_ClassLoader_existence</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_scanTestClasses_scan_for_test_classes()'><b>method_scanTestClasses_scan_for_test_classes</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.RunnerTest.method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project()'><b>method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project</b><br>Test class: com.rc.wefunit.RunnerTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.RunnerTest@3fee9989</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyInjectorUtilityTest.must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method()'><b>must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method</b><br>Test class: com.rc.wefunit.FixtureDependencyInjectorUtilityTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyInjectorUtilityTest@31a5c39e</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.presence_of_equals_and_hashcode_methods()'><b>presence_of_equals_and_hashcode_methods</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.producerMethod_field()'><b>producerMethod_field</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.producerMethod_field_is_private()'><b>producerMethod_field_is_private</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.producerMethod_field_is_private_final()'><b>producerMethod_field_is_private_final</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.FixtureDependencyTest.producerMethod_field_is_private_is_of_type_Method()'><b>producerMethod_field_is_private_is_of_type_Method</b><br>Test class: com.rc.wefunit.FixtureDependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.FixtureDependencyTest@72d818d1</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.serviceOperationName_field_is_GenericSODependency_annotation_present()'><b>serviceOperationName_field_is_GenericSODependency_annotation_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.GenericServiceOperationTestTest.serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present()'><b>serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present</b><br>Test class: com.rc.wefunit.GenericServiceOperationTestTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.GenericServiceOperationTestTest@56ac3a89</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.singleton_test()'><b>singleton_test</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@cb644e</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.GenericSODependencyTest.target()'><b>target</b><br>Test class: com.rc.wefunit.annotations.GenericSODependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.GenericSODependencyTest@56ef9176</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.GenericSODependencyTest.target_METHOD_AND_FIELD()'><b>target_METHOD_AND_FIELD</b><br>Test class: com.rc.wefunit.annotations.GenericSODependencyTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.GenericSODependencyTest@56ef9176</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.Annotations.test()'><b>test</b><br>Test class: com.rc.wefunit.annotations.Annotations</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.Annotations@27c20538</td></tr>
+<tr>
+<td title='com.rc.wefunit.CommonUtilsTest.test_CommonUtils_is_singleton_when_get_from_factory()'><b>test_CommonUtils_is_singleton_when_get_from_factory</b><br>Test class: com.rc.wefunit.CommonUtilsTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.CommonUtilsTest@6e06451e</td></tr>
+<tr>
+<td title='com.rc.wefunit.annotations.Annotations.test_enabled_method()'><b>test_enabled_method</b><br>Test class: com.rc.wefunit.annotations.Annotations</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.annotations.Annotations@27c20538</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.the_only_constructor_is_public()'><b>the_only_constructor_is_public</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.there_is_only_one_constructor()'><b>there_is_only_one_constructor</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+<tr>
+<td title='com.rc.wefunit.DependencySignatureTest.throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier()'><b>throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier</b><br>Test class: com.rc.wefunit.DependencySignatureTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.DependencySignatureTest@490ab905</td></tr>
+</table><p>
+</body>
+</html>

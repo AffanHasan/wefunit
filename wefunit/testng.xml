@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Nopackage" >
+        <packages>
+            <package name=".*"></package>
+        </packages>
+    </test>
+
+    <!--<test name="T1">-->
+        <!--<classes>-->
+            <!--<class name="com.rc.wefunit.FixtureDependencyTest"/>-->
+            <!--&lt;!&ndash;<class name="com.rc.wefunit.DependencySignatureTest"/>&ndash;&gt;-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>

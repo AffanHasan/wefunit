@@ -1,0 +1,17 @@
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/DependencySignatureTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/probes/AssertTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/annotations/Annotations.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/annotations/BeforeClassTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/annotations/ProducesTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/enums/GenericSOInjectablesTest.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/annotations/GenericSODependencyTest.java
