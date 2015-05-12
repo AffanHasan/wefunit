@@ -16,7 +16,6 @@ import org.omg.PortableServer.SERVANT_RETENTION_POLICY_ID;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import test.models.test.services.Service1Test.GetUserInfoSOTest;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;

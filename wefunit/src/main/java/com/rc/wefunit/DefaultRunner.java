@@ -17,7 +17,7 @@ import java.util.*;
  */
 class DefaultRunner implements Runner {
 
-    private WebAppAccess _webAppAccess;
+    private com.bowstreet.webapp.WebAppAccess _webAppAccess;
     private ClassLoader _classLoader;
     private final TestClassInstantiationUtility _testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
     private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();

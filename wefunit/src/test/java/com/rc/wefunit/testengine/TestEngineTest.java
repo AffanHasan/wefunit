@@ -90,52 +90,56 @@ public class TestEngineTest {
         }
     }
 
-    @Test
-    public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(){
-        this.expectations();
-        this.setTestClassStats();
-        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
-        this._testEngine.executeTests(queue);//Execute the tests
-        int totalExecutableTests = this._testClassStats.getTotalExecutableTestsCount();
-        Map<String, Object> testScores = this._testEngine.getTestScores();
-        int actualExecutedTestsCount = (Integer) ((Map<String, Object>)testScores.get("score")).get("totalExecutedTests");
-        Assert.assertEquals(actualExecutedTestsCount, totalExecutableTests);
-    }
+//TODO : Test Shift
+//    @Test
+//    public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(){
+//        this.expectations();
+//        this.setTestClassStats();
+//        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+//        this._testEngine.executeTests(queue);//Execute the tests
+//        int totalExecutableTests = this._testClassStats.getTotalExecutableTestsCount();
+//        Map<String, Object> testScores = this._testEngine.getTestScores();
+//        int actualExecutedTestsCount = (Integer) ((Map<String, Object>)testScores.get("score")).get("totalExecutedTests");
+//        Assert.assertEquals(actualExecutedTestsCount, totalExecutableTests);
+//    }
 
-    @Test
-    public void method_executeTests_total_test_for_explicitly_failed_tests(){
-        this.expectations();
-        this.setTestClassStats();
-        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
-        this._testEngine.executeTests(queue);//Execute the tests
-        Map<String, Object> testScores = this._testEngine.getTestScores();
-        int totalFailedTestPresent = 14;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
-        int actualTestFailuresCount = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
-        Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
-    }
+//TODO : Test Shift
+//    @Test
+//    public void method_executeTests_total_test_for_explicitly_failed_tests(){
+//        this.expectations();
+//        this.setTestClassStats();
+//        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+//        this._testEngine.executeTests(queue);//Execute the tests
+//        Map<String, Object> testScores = this._testEngine.getTestScores();
+//        int totalFailedTestPresent = 14;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
+//        int actualTestFailuresCount = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+//        Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
+//    }
 
-    @Test
-    public void method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests(){
-        this.expectations();
-        this.setTestClassStats();
-        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
-        this._testEngine.executeTests(queue);//Execute the tests
-        Map<String, Object> testScores = this._testEngine.getTestScores();
-        int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
-        List<Map<String, Object>> reportedFailedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("failed");
-        Assert.assertEquals(reportedFailedTests.size(), totalFailedTests);
-    }
+//TODO : Test Shift
+//    @Test
+//    public void method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests(){
+//        this.expectations();
+//        this.setTestClassStats();
+//        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+//        this._testEngine.executeTests(queue);//Execute the tests
+//        Map<String, Object> testScores = this._testEngine.getTestScores();
+//        int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+//        List<Map<String, Object>> reportedFailedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("failed");
+//        Assert.assertEquals(reportedFailedTests.size(), totalFailedTests);
+//    }
 
-    @Test
-    public void method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests(){
-        this.expectations();
-        this.setTestClassStats();
-        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
-        this._testEngine.executeTests(queue);//Execute the tests
-        Map<String, Object> testScores = this._testEngine.getTestScores();
-        final int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
-        final int totalExecutedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalExecutedTests");
-        List<Map<String, Object>> reportedPassedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("passed");
-        Assert.assertEquals(reportedPassedTests.size(), totalExecutedTests - totalFailedTests);//Total passed tests = total_executed_tests - total_failed_tests
-    }
+//TODO : Test Shift
+//    @Test
+//    public void method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests(){
+//        this.expectations();
+//        this.setTestClassStats();
+//        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+//        this._testEngine.executeTests(queue);//Execute the tests
+//        Map<String, Object> testScores = this._testEngine.getTestScores();
+//        final int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+//        final int totalExecutedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalExecutedTests");
+//        List<Map<String, Object>> reportedPassedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("passed");
+//        Assert.assertEquals(reportedPassedTests.size(), totalExecutedTests - totalFailedTests);//Total passed tests = total_executed_tests - total_failed_tests
+//    }
 }

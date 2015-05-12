@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>${project.groupId}</groupId>
+    <artifactId>wef-test-harness</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>wef-test-harness</groupId>
+  <artifactId>wefunit-test</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>wefunit-test</name>
+
+  <!--<url>http://maven.apache.org</url>-->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+    <dependencies>
+        <!--Adding wefunit as a dependency-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>wefunit</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- JMockit -->
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <version>1.14</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--A custom plugin to prepare the fixture classes-->
+            <plugin>
+                <groupId>reference-artifacts-repository</groupId>
+                <artifactId>wefunit-fixture-maker</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>compileClasses</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--Adding additional classes to source directories classpath-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.9.1</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>samplewefproject/WebContent/WEB-INF/work/source/</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--Maven surefire plugin configuration for providing additional class path lookup during test execution-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>samplewefproject/WebContent/WEB-INF/work/classes</additionalClasspathElement>
+                        <!--<additionalClasspathElement>path/to/additional/jar</additionalClasspathElement>-->
+                    </additionalClasspathElements>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -69,77 +69,80 @@ public class FixtureDependencyInjectorUtilityTest {
         }
     }
 
-    @Test
-    public void inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2(){
-        try {
-            final Class getAccountsDetailSOTest =
-                    Class.forName("test.models.test.services.Service1Test.GetAccountsDetailSOTest");//SubCLass Of GenericServiceOperationTest
-            GenericServiceOperationTest instance = (GenericServiceOperationTest) getAccountsDetailSOTest.newInstance();
-            Field soName = getAccountsDetailSOTest.getSuperclass().getDeclaredField("serviceOperationName");
-            _fdiu.inject(soName, instance);
-            Assert.assertEquals(instance.getServiceOperationName(), "getAccountsDetailSO");//Verifying the value
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-            Assert.fail();
-        }
-    }
+//TODO : Test Shift
+//    @Test
+//    public void inject_method_with_2_parameters_Field_and_Object2_GenericServiceOperationTest_serviceOperationName_field_2(){
+//        try {
+//            final Class getAccountsDetailSOTest =
+//                    Class.forName("test.models.test.services.Service1Test.GetAccountsDetailSOTest");//SubCLass Of GenericServiceOperationTest
+//            GenericServiceOperationTest instance = (GenericServiceOperationTest) getAccountsDetailSOTest.newInstance();
+//            Field soName = getAccountsDetailSOTest.getSuperclass().getDeclaredField("serviceOperationName");
+//            _fdiu.inject(soName, instance);
+//            Assert.assertEquals(instance.getServiceOperationName(), "getAccountsDetailSO");//Verifying the value
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (InstantiationException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        }
+//    }
 
-    @Test
-    public void inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1(){
-        try {
-            final Class getAccountsDetailSOTest =
-                    Class.forName("test.models.test.services.Service1Test.GetAccountsDetailSOTest");//SubCLass Of GenericServiceOperationTest
-            GenericServiceOperationTest instance = (GenericServiceOperationTest) getAccountsDetailSOTest.newInstance();
-            Field dataServiceName = getAccountsDetailSOTest.getSuperclass().getDeclaredField("dataServiceName");
-            _fdiu.inject(dataServiceName, instance);
-            Assert.assertEquals(instance.getDataServiceName(), "Service1SC");//Verifying the value
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-            Assert.fail();
-        }
-    }
+//TODO : Test Shift
+//    @Test
+//    public void inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_1(){
+//        try {
+//            final Class getAccountsDetailSOTest =
+//                    Class.forName("test.models.test.services.Service1Test.GetAccountsDetailSOTest");//SubCLass Of GenericServiceOperationTest
+//            GenericServiceOperationTest instance = (GenericServiceOperationTest) getAccountsDetailSOTest.newInstance();
+//            Field dataServiceName = getAccountsDetailSOTest.getSuperclass().getDeclaredField("dataServiceName");
+//            _fdiu.inject(dataServiceName, instance);
+//            Assert.assertEquals(instance.getDataServiceName(), "Service1SC");//Verifying the value
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (InstantiationException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        }
+//    }
 
-    @Test
-    public void inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2(){
-        try {
-            final Class service2FirstSOTest =
-                    Class.forName("test.models.test.services.Service2Test.Service2FirstSOTest");//SubCLass Of GenericServiceOperationTest
-            GenericServiceOperationTest instance = (GenericServiceOperationTest) service2FirstSOTest.newInstance();
-            Field dataServiceName = service2FirstSOTest.getSuperclass().getDeclaredField("dataServiceName");
-            _fdiu.inject(dataServiceName, instance);
-            Assert.assertEquals(instance.getDataServiceName(), "Service2SC");//Verifying the value
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-            Assert.fail();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-            Assert.fail();
-        }
-    }
+//TODO : Test Shift
+//    @Test
+//    public void inject_method_with_2_parameters_Field_and_Object__GenericServiceOperationTest_dataServiceName_field_injection_Test_2(){
+//        try {
+//            final Class service2FirstSOTest =
+//                    Class.forName("test.models.test.services.Service2Test.Service2FirstSOTest");//SubCLass Of GenericServiceOperationTest
+//            GenericServiceOperationTest instance = (GenericServiceOperationTest) service2FirstSOTest.newInstance();
+//            Field dataServiceName = service2FirstSOTest.getSuperclass().getDeclaredField("dataServiceName");
+//            _fdiu.inject(dataServiceName, instance);
+//            Assert.assertEquals(instance.getDataServiceName(), "Service2SC");//Verifying the value
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//            Assert.fail("Class \"com.rc.wefunit.FixtureDependencyInjectorUtility\" do not exists");
+//        } catch (NoSuchFieldException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (InstantiationException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//            Assert.fail();
+//        }
+//    }
 
     @Test
     public void method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(@Mocked final Factories.RunnerFactory runnerFactory, @Injectable final WebAppAccess webAppAccess, @Injectable final Runner runner){

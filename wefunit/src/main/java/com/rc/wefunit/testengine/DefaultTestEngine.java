@@ -9,6 +9,7 @@ import com.rc.wefunit.Factories;
 import com.rc.wefunit.GenericServiceOperationTest;
 
 import javax.json.Json;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.*;
@@ -74,6 +75,14 @@ public class DefaultTestEngine implements TestEngine {
     }
 
     private void _incrementTotalTestFailures(Throwable e){
+
+//        System.out.println("--- --- --- : " + e.getCause());
+//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[0].getClassName());
+//        System.out.println("--- --- --- : " + e.getCause().getLocalizedMessage());
+//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[1].getClassName());
+//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[1].getMethodName());
+//        System.out.println(" *** *** *** *** *** ***  ");
+
 //        Setting score
         Map<String, Object>  score = (Map<String, Object> ) this._testScores.get("score");
         int totalTestFailures = (Integer) score.get("totalTestFailures");
@@ -81,9 +90,9 @@ public class DefaultTestEngine implements TestEngine {
 //        Reporting : Incrementing Total Test Failures
         List<Map<String, Object>> failedArr = (List<Map<String, Object>>) ( ( (Map<String, Object>) this._testScores.get("report") ).get("failed") );
         Map<String, Object> testItem = new LinkedHashMap<String, Object>();
-        testItem.put("class_name", e.getStackTrace()[0].getClassName());
-        testItem.put("test_name", e.getStackTrace()[0].getMethodName());
-        List<StackTraceElement> stackTrace = Arrays.asList(e.getStackTrace());
+        testItem.put("class_name", e.getCause().getStackTrace()[1].getClassName());//Test Class Name
+        testItem.put("test_name", e.getCause().getStackTrace()[1].getMethodName());//Test Method Name
+        List<StackTraceElement> stackTrace = Arrays.asList(e.getCause().getStackTrace());
         testItem.put("stack_trace", stackTrace);
         failedArr.add(testItem);
     }

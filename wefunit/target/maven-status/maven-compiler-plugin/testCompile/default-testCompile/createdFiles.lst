@@ -3,13 +3,11 @@ com/rc/wefunit/DependencySignatureTest$NonQualifierAnnotation.class
 com/rc/wefunit/GenericServiceOperationTestTest$1AbcSOTest.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1.class
 com/rc/wefunit/testengine/TestEngineTest.class
-com/rc/wefunit/TestClassInstantiationUtilityTest$1.class
 com/rc/wefunit/CommonUtilsTest.class
 com/rc/wefunit/CommonUtilsTest$1AbcSOTest.class
 com/rc/wefunit/RunnerTest$1.class
 com/rc/wefunit/TestClassStatsTest.class
 com/rc/wefunit/FixtureDependencyTest$1ABCSOTest.class
-com/rc/wefunit/RunnerTest$5.class
 com/rc/wefunit/DependencySignatureTest$1ABC.class
 com/rc/wefunit/DependencyScannerTest$1.class
 com/rc/wefunit/FixtureDependencyTest$1AbcSO.class
@@ -20,7 +18,6 @@ com/rc/wefunit/RunnerTest.class
 com/rc/wefunit/annotations/ProducesTest.class
 com/rc/wefunit/CommonUtilsTest$2AbcTest.class
 com/rc/wefunit/annotations/BeforeClassTest.class
-com/rc/wefunit/RunnerTest$4.class
 com/rc/wefunit/GenericServiceOperationTestTest.class
 com/rc/wefunit/annotations/Annotations.class
 com/rc/wefunit/enums/GenericSOInjectablesTest.class
@@ -37,11 +34,9 @@ com/rc/wefunit/FixtureDependencyInjectorUtilityTest$1ATest.class
 com/rc/wefunit/CommonUtilsTest$1AbcSO.class
 com/rc/wefunit/FixtureDependencyTest$1.class
 com/rc/wefunit/DependencyScannerTest$1ABbcSO.class
-com/rc/wefunit/RunnerTest$6.class
 com/rc/wefunit/FixtureDependencyTest.class
 com/rc/wefunit/GenericServiceOperationTestTest$2AbcSOTest.class
 com/rc/wefunit/FixtureDependencyInjectorUtilityTest.class
 com/rc/wefunit/GenericServiceOperationTestTest$3.class
 com/rc/wefunit/DependencyScannerTest.class
-com/rc/wefunit/RunnerTest$3.class
 com/rc/wefunit/producers/FactoryProducersTest.class
