@@ -16,10 +16,11 @@ public class Assert{
             throw new AssertionError("Expected object not to be null");
     }
 
+
+
     public static void fail(){
         throw new AssertionError();
     }
-
     public static void fail(String message){
         throw new AssertionError(message);
     }

@@ -58,7 +58,7 @@ public class DefaultTestEngine implements TestEngine {
         score.put("totalTestFailures", 0);
 //        Reporting
         Map<String, Object> report = new LinkedHashMap<String, Object>();
-        report.put("report", new LinkedHashMap<String, Object>());
+//        report.put("report", new LinkedHashMap<String, Object>());
         List<Map<String, Object>> failedList = new ArrayList<Map<String, Object>>();
         List<Map<String, Object>> passedList = new ArrayList<Map<String, Object>>();
         report.put("failed", failedList);
@@ -76,13 +76,6 @@ public class DefaultTestEngine implements TestEngine {
 
     private void _incrementTotalTestFailures(Throwable e){
 
-//        System.out.println("--- --- --- : " + e.getCause());
-//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[0].getClassName());
-//        System.out.println("--- --- --- : " + e.getCause().getLocalizedMessage());
-//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[1].getClassName());
-//        System.out.println("--- --- --- : " + e.getCause().getStackTrace()[1].getMethodName());
-//        System.out.println(" *** *** *** *** *** ***  ");
-
 //        Setting score
         Map<String, Object>  score = (Map<String, Object> ) this._testScores.get("score");
         int totalTestFailures = (Integer) score.get("totalTestFailures");
@@ -92,8 +85,7 @@ public class DefaultTestEngine implements TestEngine {
         Map<String, Object> testItem = new LinkedHashMap<String, Object>();
         testItem.put("class_name", e.getCause().getStackTrace()[1].getClassName());//Test Class Name
         testItem.put("test_name", e.getCause().getStackTrace()[1].getMethodName());//Test Method Name
-        List<StackTraceElement> stackTrace = Arrays.asList(e.getCause().getStackTrace());
-        testItem.put("stack_trace", stackTrace);
+        testItem.put("stack_trace", new String(e.getCause().toString() + "\n\t at " + e.getCause().getStackTrace()[1].toString()));
         failedArr.add(testItem);
     }
 

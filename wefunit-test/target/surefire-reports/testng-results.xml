@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="573" started-at="2015-05-12T16:55:12Z" finished-at="2015-05-12T16:55:13Z">
+  <suite name="Surefire suite" duration-ms="453" started-at="2015-05-13T17:02:24Z" finished-at="2015-05-13T17:02:25Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="573" started-at="2015-05-12T16:55:12Z" finished-at="2015-05-12T16:55:13Z">
+    <test name="Surefire test" duration-ms="453" started-at="2015-05-13T17:02:24Z" finished-at="2015-05-13T17:02:25Z">
       <class name="wefunittest.FirstTest">
-        <test-method status="PASS" signature="test1(com.bowstreet.webapp.WebAppAccess, com.bowstreet.util.SystemProperties)[pri:0, instance:wefunittest.FirstTest@69d9c55]" name="test1" duration-ms="469" started-at="2015-05-12T21:55:12Z" finished-at="2015-05-12T21:55:13Z">
+        <test-method status="PASS" signature="test1(com.bowstreet.webapp.WebAppAccess, com.bowstreet.util.SystemProperties)[pri:0, instance:wefunittest.FirstTest@6a024a67]" name="test1" duration-ms="279" started-at="2015-05-13T22:02:24Z" finished-at="2015-05-13T22:02:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- wefunittest.FirstTest -->
+      <class name="com.rc.wefunit.testengine.TestEngineTest">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@69d9c55]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="6" started-at="2015-05-13T22:02:25Z" finished-at="2015-05-13T22:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@69d9c55]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="1" started-at="2015-05-13T22:02:25Z" finished-at="2015-05-13T22:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
+        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(com.bowstreet.webapp.WebAppAccess, com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@69d9c55]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="105" started-at="2015-05-13T22:02:25Z" finished-at="2015-05-13T22:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
+      </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
