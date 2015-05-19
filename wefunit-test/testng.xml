@@ -5,6 +5,7 @@
     <!--WEB-INF path-->
     <parameter name="WEB-INF-path-fixture" value="samplewefproject/WebContent/WEB-INF"/>
     <!--Project Name-->
+    <parameter name="wef-project-name" value="samplewefproject"/>
     <parameter name="document-root-linux" value="/home/user/samplewefproject.ear/samplewefproject.war"/>
     <parameter name="document-root-win" value="c:\projects\samplewefproject.ear\samplewefproject.war"/>
     <!--Configuration file name-->

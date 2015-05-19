@@ -71,7 +71,6 @@ public class HTMLReporterTest {
         }
     }
 
-//  TODO
     @Test
     public void if_reporting_directories_are_not_present_then_create_them(){
         CommonTestFixtures.cmnExpectations(this._WEBINFPath);
@@ -89,9 +88,11 @@ public class HTMLReporterTest {
     @Test(enabled = false)
     public void create_a_new_html_report_if_a_report_file_is_not_there(){
         CommonTestFixtures.cmnExpectations(this._WEBINFPath);
-        final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
         this.initTest();
-        Assert.fail();
+        final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
+        final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
+        String[] path = new String[]{"wefunitlogs", "testreports"};
+        File directory = new File(configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
 
     }
 

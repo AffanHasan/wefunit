@@ -1,3 +1,4 @@
+com/rc/wefunit/ConfigReaderTest$1.class
 com/rc/wefunit/TestRunnerBaseClass.class
 com/rc/wefunit/CommonTestFixtures.class
 com/rc/wefunit/testreporting/HTMLReporterTest$DirCleaner.class
@@ -6,5 +7,6 @@ com/rc/wefunit/CommonTestFixtures$1.class
 com/rc/wefunit/testengine/TestEngineTest.class
 com/rc/wefunit/testreporting/HTMLReporterTest$1.class
 com/rc/wefunit/CommonUtilsTest.class
+com/rc/wefunit/ConfigReaderTest$2.class
 com/rc/wefunit/testreporting/HTMLReporterTest.class
 com/rc/wefunit/ConfigReaderTest.class

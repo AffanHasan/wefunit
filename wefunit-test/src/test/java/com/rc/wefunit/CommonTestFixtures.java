@@ -13,6 +13,7 @@ public class CommonTestFixtures {
     public static final String DOCUMENT_ROOT_LINUX = "document-root-linux";
     public static final String DOCUMENT_ROOT_WINOWS = "document-root-win";
     public static final String CONFIG_FILE_NAME = "config-file-name";
+    public static final String PROJECT_NAME = "wef-project-name";
 
     public static void cmnExpectations(final String webInfPath){
         new Expectations(){{

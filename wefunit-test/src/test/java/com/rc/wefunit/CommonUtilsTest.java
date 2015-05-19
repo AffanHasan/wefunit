@@ -18,6 +18,7 @@ public class CommonUtilsTest {
     private final String _webINFPATH;
     private final String _CONFIG_FILE_NAME;
 
+
     @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE, CommonTestFixtures.CONFIG_FILE_NAME})
     public CommonUtilsTest(String webINFPath, String configFileName){
         this._webINFPATH = webINFPath;
