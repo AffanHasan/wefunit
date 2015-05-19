@@ -1,5 +1,6 @@
 package com.rc.wefunit;
 
+import com.bowstreet.util.SystemProperties;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -8,6 +9,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Affan Hasan on 5/18/15.
@@ -17,6 +20,7 @@ public class DefaultConfigReader implements ConfigReader {
     private final Runner _runner = Factories.RunnerFactory.getInstance();
     private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
     private Document _document;
+    private final Pattern _projectNamePattern = Pattern.compile("(.*[\\Q\\\\E/].*)([\\Q\\\\E/])(.+)(\\Q.\\Ewar)");
 
     public DefaultConfigReader(){
 //      Creating config file object
@@ -51,5 +55,12 @@ public class DefaultConfigReader implements ConfigReader {
                 return System.getProperty("user.home");
         }
         return null;
+    }
+
+    @Override
+    public String getProjectName() {
+        final Matcher matcher = this._projectNamePattern.matcher(SystemProperties.getDocumentRoot());
+        matcher.find();
+        return matcher.group(3);
     }
 }

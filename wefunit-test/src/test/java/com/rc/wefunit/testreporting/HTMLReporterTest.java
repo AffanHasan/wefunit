@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,23 +25,32 @@ import java.util.List;
  */
 public class HTMLReporterTest {
 
-//    private final HTMLReporter _htmlReporter = Factories.HTMLReporterFactory.getInstance();
     private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
-//    private final ConfigReader _configReader = Factories.ConfigReaderFactory.getInstance();
     private final String _WEBINFPath;
     private final String _DOC_ROOT_LINUX;
     private final String _DOC_ROOT_WIN;
+    private final String _WEF_PROJECT_NAME;
+    private final String _LOGGING_BASE_DIR_NAME;
+    private final String _LOGGING_TEST_REPORTING_DIR_NAME;
+    private final String _htmlReportingDirName = "htmlreport";
+    private final String _htmlReportFileName = "TestReporting.html";
     @Mocked SystemProperties systemProperties;
 
-    @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE, CommonTestFixtures.DOCUMENT_ROOT_LINUX, CommonTestFixtures.DOCUMENT_ROOT_WINOWS})
-    public HTMLReporterTest(String WEBINFPath, String docRootLinux, String docRootWin){
+    @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE, CommonTestFixtures.DOCUMENT_ROOT_LINUX
+            , CommonTestFixtures.DOCUMENT_ROOT_WINOWS, CommonTestFixtures.PROJECT_NAME
+            ,CommonTestFixtures.LOGGING_BASE_DIR_NAME, CommonTestFixtures.LOGGING_TEST_REPORTING_DIR_NAME})
+    public HTMLReporterTest(String WEBINFPath, String docRootLinux, String docRootWin, String wefProjectName,
+                            String logBaseDirName, String logReportingDirName){
         this._WEBINFPath = WEBINFPath;
         this._DOC_ROOT_LINUX=  docRootLinux;
         this._DOC_ROOT_WIN = docRootWin;
+        this._WEF_PROJECT_NAME = wefProjectName;
+        this._LOGGING_BASE_DIR_NAME = logBaseDirName;
+        this._LOGGING_TEST_REPORTING_DIR_NAME = logReportingDirName;
     }
 
     public void initTest(){
-        String wefunitDir = this._commonUtils.createPath(new String[]{"wefunitlogs"});
+        String wefunitDir = this._commonUtils.createPath(new String[]{this._LOGGING_BASE_DIR_NAME});
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
         File file = new File(configReader.getBaseDirPathForLogging() + wefunitDir );
 //        Deleting out the logging directory
@@ -55,7 +65,7 @@ public class HTMLReporterTest {
 
     @Test
     public void method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(@Mocked final File file){
-//        CommonTestFixtures.cmnExpectations(this._WEBINFPath);
+//        CommonTestFixtures.cmnExpectations(this._WEBINFPath, this._DOC_ROOT_LINUX);
         this.initTest();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
@@ -72,36 +82,37 @@ public class HTMLReporterTest {
     }
 
     @Test
-    public void if_reporting_directories_are_not_present_then_create_them(){
-        CommonTestFixtures.cmnExpectations(this._WEBINFPath);
+    public void method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them(){
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
         this.initTest();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
-        String[] path = new String[]{"wefunitlogs", "testreports"};
+        String[] path = new String[]{this._LOGGING_BASE_DIR_NAME,
+                                    this._WEF_PROJECT_NAME,
+                                    this._LOGGING_TEST_REPORTING_DIR_NAME,
+                                    this._htmlReportingDirName};
         File directory = new File(configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
         Assert.assertTrue(!directory.isDirectory());// Assert that no directory is present
         htmlReporter.generateHTMLTestReporting();
         Assert.assertTrue(directory.isDirectory());// Assert that directory is present now
     }
 
-//  TODO
-    @Test(enabled = false)
-    public void create_a_new_html_report_if_a_report_file_is_not_there(){
-        CommonTestFixtures.cmnExpectations(this._WEBINFPath);
+    @Test
+    public void method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there(){
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
+        CommonTestFixtures.webInfPathExpectations(this._WEBINFPath);
         this.initTest();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
-        String[] path = new String[]{"wefunitlogs", "testreports"};
-        File directory = new File(configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
-
-    }
-
-//  TODO
-    @Test(enabled = false)
-    public void delete_html_report_if_one_is_previously_present_there_and_then_create_a_new_html_report(){
-        this.initTest();
-        Assert.fail();
-
+        String[] path = new String[]{this._LOGGING_BASE_DIR_NAME,
+                                     this._WEF_PROJECT_NAME,
+                                     this._LOGGING_TEST_REPORTING_DIR_NAME,
+                                     this._htmlReportingDirName,
+                                     this._htmlReportFileName};
+        File file = new File(configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
+        Assert.assertTrue(!file.isFile());// Assert that no file exist
+        htmlReporter.generateHTMLTestReporting();
+        Assert.assertTrue(file.isFile());// Assert that file is created now
     }
 
     private static class DirCleaner extends SimpleFileVisitor<Path> {

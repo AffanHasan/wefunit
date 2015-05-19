@@ -5,6 +5,8 @@ import com.rc.wefunit.ConfigReader;
 import com.rc.wefunit.Factories;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Created by Affan Hasan on 5/14/15.
@@ -21,16 +23,35 @@ public class DefaultHTMLReporter implements HTMLReporter {
         if(!baseDir.canWrite())
             throw new IllegalStateException(this._configReader.getBaseDirPathForLogging() + " is not writable");
 
-        String[] path = new String[2];
+        String[] path = new String[5];
         path[0] = "wefunitlogs";
-        path[1] = "testreports";
-//        HTML reporting directory path
-        File reportingDirPath = new File( this._configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path) );
+        path[1] = this._configReader.getProjectName();
+        path[2] = "testreports";
+        path[3] = "htmlreport";
+        path[4] = "TestReporting.html";//Reporting file
 
-//        Check that if "wefunitlogs/testreports" directory do not exists
+//        HTML reporting directory path
+        File reportingDirPath = new File( this._configReader.getBaseDirPathForLogging() +
+                this._commonUtils.createPath(Arrays.copyOfRange(path, 0, 4)) );
+//        HTML test reporting file
+        File htmlFile = new File( this._configReader.getBaseDirPathForLogging() +
+                this._commonUtils.createPath(Arrays.copyOfRange(path, 0, 5)) );
+
+//        Check that if directory do not exists
         if(!reportingDirPath.isDirectory()){
 //            Create it
             reportingDirPath.mkdirs();
+        }
+//                Delete "TestReporting.html" file (if present)
+        if(htmlFile.isFile()){//If present
+//            Delete it
+            htmlFile.delete();
+        }else {//If not present
+            try {
+                htmlFile.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
