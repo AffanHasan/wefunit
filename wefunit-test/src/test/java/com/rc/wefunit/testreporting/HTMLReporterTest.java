@@ -65,7 +65,7 @@ public class HTMLReporterTest {
 
     @Test
     public void method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(@Mocked final File file){
-//        CommonTestFixtures.cmnExpectations(this._WEBINFPath, this._DOC_ROOT_LINUX);
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
         this.initTest();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
@@ -113,6 +113,24 @@ public class HTMLReporterTest {
         Assert.assertTrue(!file.isFile());// Assert that no file exist
         htmlReporter.generateHTMLTestReporting();
         Assert.assertTrue(file.isFile());// Assert that file is created now
+    }
+
+    @Test
+    public void method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file(){
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
+        this.initTest();
+        final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
+        final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
+        String[] path = new String[]{this._LOGGING_BASE_DIR_NAME,
+                                     this._WEF_PROJECT_NAME,
+                                     this._LOGGING_TEST_REPORTING_DIR_NAME,
+                                     this._htmlReportingDirName,
+                                     this._htmlReportFileName};
+        File file = new File(configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
+        htmlReporter.generateHTMLTestReporting();
+        Assert.assertTrue(file.isFile());// Assert that file exists
+        htmlReporter.generateHTMLTestReporting();
+        Assert.assertTrue(file.isFile());// Assert that file still exists
     }
 
     private static class DirCleaner extends SimpleFileVisitor<Path> {
