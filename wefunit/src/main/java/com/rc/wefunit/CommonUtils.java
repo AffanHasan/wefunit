@@ -4,6 +4,7 @@ import com.rc.wefunit.annotations.Qualifier;
 import com.rc.wefunit.annotations.Test;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -49,5 +50,53 @@ public class CommonUtils {
             }
         Method[] arr = new Method[methods.size()];
         return methods.toArray(arr);
+    }
+
+    /**
+     *
+     * @return Returns <b>1</b> If platform is linux. Returns <b>2</b> if platform is Windows.
+     */
+    public final int getOSPlatform(){
+        if( System.getProperty("os.name").contains("Windows") )
+            return 2;//Windows
+        else
+            return 1;//Linux
+    }
+
+
+    public final String getAsUnixPath(String[] subPath){
+        String path = null;
+        Iterator<String> it = Arrays.asList(subPath).iterator();
+        path = new String("/");
+        while (it.hasNext()){
+            path = path + it.next() + (it.hasNext() ? "/" : "");
+        }
+        return path;
+    }
+
+    public final String getAsWindowsPath(String[] subPath){
+        String path = null;
+        Iterator<String> it = Arrays.asList(subPath).iterator();
+        path = new String("\\");
+        while (it.hasNext()){
+            path = path + it.next() + (it.hasNext() ? "\\" : "");
+        }
+        return path;
+    }
+
+    /**
+     * This method creates path suitable for the current platform
+     * @param subPath : Array containing path elements
+     * @return Platform specific path
+     */
+    public final String createPath(String[] subPath){
+        switch (this.getOSPlatform()){
+            case 1://Linux
+                return this.getAsUnixPath(subPath);
+            case 2://Windows
+                return this.getAsWindowsPath(subPath);
+            default:
+                throw new IllegalStateException();
+        }
     }
 }

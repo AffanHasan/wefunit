@@ -1,3 +1,4 @@
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/annotations/ServiceConsumerFixtures.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/annotations/GenericSODependency.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/producers/FactoryProducers.java
@@ -12,11 +13,14 @@
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/annotations/Qualifier.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testengine/DefaultTestEngine.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultDependencyScanner.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testreporting/HTMLReporter.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/ConfigReader.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testengine/TestEngine.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/TestClassStats.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/enums/GenericSOInjectables.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/FixtureDependency.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/FixtureDependencyInjectorUtility.java
+/home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLReporter.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/Runner.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/annotations/Inject.java
 /home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/annotations/BeforeClass.java

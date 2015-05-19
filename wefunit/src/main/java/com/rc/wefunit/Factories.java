@@ -2,6 +2,8 @@ package com.rc.wefunit;
 
 import com.rc.wefunit.testengine.DefaultTestEngine;
 import com.rc.wefunit.testengine.TestEngine;
+import com.rc.wefunit.testreporting.DefaultHTMLReporter;
+import com.rc.wefunit.testreporting.HTMLReporter;
 
 import java.util.Set;
 
@@ -59,6 +61,22 @@ public class Factories {
 
         public static TestClassStats getInstance(Set<Class> set){
             return new TestClassStats(set);
+        }
+    }
+
+    public static class HTMLReporterFactory {
+
+        public static HTMLReporter getInstance(){
+            return new DefaultHTMLReporter();
+        }
+    }
+
+    public static class ConfigReaderFactory{
+
+        private final static ConfigReader _configReader = new DefaultConfigReader();
+
+        public static ConfigReader getInstance(){
+            return _configReader;
         }
     }
 }

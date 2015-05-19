@@ -1,16 +1,12 @@
 package com.rc.wefunit.testengine;
 
-import com.bowstreet.util.SystemProperties;
-import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.CommonTestFixtures;
 import com.rc.wefunit.Factories;
-import com.rc.wefunit.Runner;
+import com.rc.wefunit.TestRunnerBaseClass;
 import com.rc.wefunit.probes.Assert;
-import mockit.Expectations;
-import mockit.Injectable;
-import mockit.Mocked;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -19,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * Created by Affan Hasan on 5/13/15.
  */
-public class TestEngineTest {
+public class TestEngineTest extends TestRunnerBaseClass {
 
     private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();
     private final Map<String, Object> _scoresMap = this._testEngine.getTestScores();
@@ -57,15 +53,10 @@ public class TestEngineTest {
     }
 
     @Test
-    public void method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(@Injectable WebAppAccess webAppAccess, @Mocked SystemProperties systemProperties){
+    @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE})
+    public void method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(String _WEBINFPath){
 
-        new Expectations(){{
-            SystemProperties.getWebInfDir(); result = "samplewefproject/WebContent/WEB-INF";
-        }};
-
-//        Running the tests
-        final Runner runner = Factories.RunnerFactory.getInstance();
-        runner.run(webAppAccess, this.getClass().getClassLoader());
+        super.runTests(_WEBINFPath);
 
         final Map<String, Object> reportMap = (Map<String, Object>) _scoresMap.get("report");
         final List<Map<String, Object>> failedArr = (List<Map<String, Object>>) reportMap.get("failed");
@@ -80,7 +71,7 @@ public class TestEngineTest {
             Assert.assertTrue(obj.get("class_name") instanceof String);
             Assert.assertTrue(obj.get("test_name") instanceof String);
             matcher = stackTracePattern.matcher((String)obj.get("stack_trace"));
-            Assert.assertTrue(matcher.matches());
+            Assert.assertTrue(matcher.matches());//Matching string representation for StackTrace
         }
     }
 }

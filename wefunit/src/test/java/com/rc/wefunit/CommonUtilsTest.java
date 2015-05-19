@@ -1,7 +1,10 @@
 package com.rc.wefunit;
 
+import com.bowstreet.util.SystemProperties;
 import com.rc.wefunit.annotations.GenericSODependency;
 import com.rc.wefunit.annotations.Qualifier;
+import mockit.Expectations;
+import mockit.Mocked;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -144,4 +147,54 @@ public class CommonUtilsTest {
             Assert.assertTrue(m.isAnnotationPresent(com.rc.wefunit.annotations.Test.class));
         }
     }
+
+    @Test
+    public void method_getOSPlatform_returns_1_for_Linux(@Mocked System system){
+
+        new Expectations(){{
+            System.getProperty("os.name"); result = "Linux";
+        }};
+        Assert.assertEquals(_commonUtils.getOSPlatform(), 1);
+    }
+
+    @Test
+    public void method_getOSPlatform_returns_2_for_Windows(@Mocked System system){
+        new Expectations(){{
+            System.getProperty("os.name"); result = "Windows";
+        }};
+        Assert.assertEquals(_commonUtils.getOSPlatform(), 2);
+    }
+
+    @Test
+    public void method_getAsWindowsPath(){
+        String path[] = new String[]{ "User", "home", "Desktop" };
+        Assert.assertEquals(this._commonUtils.getAsWindowsPath(path), "\\User\\home\\Desktop");
+    }
+
+    @Test
+    public void method_getAsUnixPath(){
+        String path[] = new String[]{ "home", "affan", "Desktop" };
+        Assert.assertEquals(this._commonUtils.getAsUnixPath(path), "/home/affan/Desktop");
+    }
+
+    @Test
+    public void method_createPath(@Mocked final System system){
+        final String path[] = new String[]{ "home", "affan", "Desktop" };
+//                For Linux
+        new Expectations(){
+            {
+                System.getProperty("os.name"); result = "Linux";
+            }
+        };
+        Assert.assertEquals(this._commonUtils.createPath(path), "/home/affan/Desktop");
+
+//           For Windows
+        new Expectations(){
+            {
+                System.getProperty("os.name"); result = "Windows";
+            }
+        };
+        Assert.assertEquals(this._commonUtils.createPath(path), "\\home\\affan\\Desktop");
+    }
+
 }

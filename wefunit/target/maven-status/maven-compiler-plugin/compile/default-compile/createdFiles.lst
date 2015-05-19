@@ -1,8 +1,11 @@
+com/rc/wefunit/Factories$HTMLReporterFactory.class
 com/rc/wefunit/Factories$RunnerFactory.class
 com/rc/wefunit/testengine/DefaultTestEngine.class
 com/rc/wefunit/FixtureDependency.class
+com/rc/wefunit/testreporting/HTMLReporter.class
 com/rc/wefunit/DefaultRunner$1.class
 com/rc/wefunit/annotations/GenericSODependency.class
+com/rc/wefunit/ConfigReader.class
 com/rc/wefunit/GenericServiceOperationTest.class
 com/rc/wefunit/DefaultTestClassInstantiationUtility.class
 com/rc/wefunit/testengine/TestEngine.class
@@ -24,6 +27,7 @@ com/rc/wefunit/enums/GenericSOInjectables.class
 com/rc/wefunit/CommonUtils.class
 com/rc/wefunit/DefaultRunner$1TestClassesComparator.class
 com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class
+com/rc/wefunit/DefaultConfigReader.class
 com/rc/wefunit/TestClassStats.class
 com/rc/wefunit/producers/FactoryProducers.class
 com/rc/wefunit/Factories$TestClassStatsFactory.class
@@ -37,4 +41,6 @@ com/rc/wefunit/annotations/ServiceConsumerFixtures.class
 com/rc/wefunit/Factories$FixtureDependencyInjectorUtilityFactory.class
 com/rc/wefunit/Factories$DependencyScannerFactory.class
 com/rc/wefunit/Factories$TestEngineFactory.class
+com/rc/wefunit/Factories$ConfigReaderFactory.class
 com/rc/wefunit/annotations/Produces.class
+com/rc/wefunit/testreporting/DefaultHTMLReporter.class

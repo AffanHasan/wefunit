@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wef-test-harness.iml" filepath="$PROJECT_DIR$/wef-test-harness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wefunit/wefunit.iml" filepath="$PROJECT_DIR$/wefunit/wefunit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wefunit-test/wefunit-test.iml" filepath="$PROJECT_DIR$/wefunit-test/wefunit-test.iml" />
+    </modules>
+  </component>
+</project>

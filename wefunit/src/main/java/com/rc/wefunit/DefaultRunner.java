@@ -21,9 +21,17 @@ class DefaultRunner implements Runner {
     private ClassLoader _classLoader;
     private final TestClassInstantiationUtility _testClassInstantiationUtility = Factories.TestClassInstantiationUtilityFactory.getInstance();
     private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();
+    private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     private boolean isWindows(){
-        return System.getProperty("os.name").contains("Windows");
+//        return System.getProperty("os.name").contains("Windows");
+        switch (this._commonUtils.getOSPlatform()){
+            case 1://Linux
+                return false;
+            case 2://Windows
+                return true;
+        }
+        throw new IllegalStateException("Some problem occurred while retrieving platform info");
     }
 
     @Override

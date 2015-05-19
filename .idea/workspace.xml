@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf260fb7-6381-4685-96e5-e472fa0abe39" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/CommonTestFixtures.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLReporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/HTMLReporter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/src/test/java/wefunittest/FirstTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/Surefire suite/Surefire test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/Surefire suite/Surefire test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/TEST-wefunittest.FirstTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/junitreports/TEST-wefunittest.FirstTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/Surefire test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/Surefire suite/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/wefunittest.FirstTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/test-classes/com/rc/wefunit/testengine/TestEngineTest$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/test-classes/wefunittest/FirstTest$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/test-classes/wefunittest/FirstTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit-test/target/wefunit-test-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/lib/gson-2.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/lib/string-format-validators-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/lib/wef-factory-jar-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/CommonUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultDependencyScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility$1InjectableFieldsFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultFixtureDependencyInjectorUtility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$1TestClassesComparator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultRunner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultTestClassInstantiationUtility$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultTestClassInstantiationUtility$1InjectableFieldsFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DefaultTestClassInstantiationUtility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DependencyScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/DependencySignature.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$CommonUtilsFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$DependencyScannerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$FixtureDependencyInjectorUtilityFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$RunnerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$TestClassInstantiationUtilityFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$TestClassStatsFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories$TestEngineFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Factories.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/FixtureDependency.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/FixtureDependencyInjectorUtility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/GenericServiceOperationTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/TestClassInstantiationUtility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/TestClassStats.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/BeforeClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/GenericSODependency.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/Inject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/Produces.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/Qualifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/ServiceConsumerFixtures.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/annotations/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/enums/GenericSOInjectables.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/probes/Assert.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/producers/FactoryProducers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/testengine/DefaultTestEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/com/rc/wefunit/testengine/TestEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/executabletests/ExecutablesTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service1Test/GetAccountsDetailSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service1Test/GetTransactionReportsSO_Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service1Test/GetUserInfoSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service1Test/SOThree.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service2Test/Service2FirstSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service3Test/FifthSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service3Test/FirstSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service3Test/FourthSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service3Test/SecondSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/models/test/services/Service3Test/ThirdSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic1Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic2Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic3Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic4Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic5Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic6Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogic7Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/classes/test/package1/MyLogicTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/executabletests/ExecutablesTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/GetAccountsDetailSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/GetTransactionReportsSO_Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/GetUserInfoSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/SOThree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service2Test/Service2FirstSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service3Test/FifthSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service3Test/FirstSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service3Test/FourthSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service3Test/SecondSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service3Test/ThirdSOTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic1Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic2Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic3Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic4Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic5Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic6Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogic7Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/samplewefproject/WebContent/WEB-INF/work/source/test/package1/MyLogicTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/executabletests/ExecutablesTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service1Test/GetAccountsDetailSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service1Test/GetTransactionReportsSO_Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service1Test/GetUserInfoSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service1Test/SOThree.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service2Test/Service2FirstSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service3Test/FifthSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service3Test/FirstSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service3Test/FourthSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service3Test/SecondSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/models/test/services/Service3Test/ThirdSOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic1Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic2Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic3Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic4Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic5Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic6Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogic7Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/classes/test/package1/MyLogicTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.TestClassInstantiationUtilityTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/RunnerTest$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/TestClassInstantiationUtilityTest$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wefunit/target/wefunit-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/work/classes/wefunittest/App.class" afterPath="$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/work/classes/wefunittest/App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/classes/wefunittest/App.class" afterPath="$PROJECT_DIR$/wefunit-test/target/classes/wefunittest/App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/CommonUtils.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/CommonUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcSO.class" afterPath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcSO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcSOTest.class" afterPath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcSOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcTest.class" afterPath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$1AbcTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$2AbcTest.class" afterPath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest$2AbcTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest.class" afterPath="$PROJECT_DIR$/wefunit/target/test-classes/com/rc/wefunit/CommonUtilsTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$1TestClassesComparator.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$1TestClassesComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$FileTreeWalker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner$TestClassFileVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/DefaultRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$CommonUtilsFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$CommonUtilsFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$DependencyScannerFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$DependencyScannerFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$FixtureDependencyInjectorUtilityFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$FixtureDependencyInjectorUtilityFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$RunnerFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$RunnerFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestClassInstantiationUtilityFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestClassInstantiationUtilityFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestClassStatsFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestClassStatsFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestEngineFactory.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories$TestEngineFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories.class" afterPath="$PROJECT_DIR$/wefunit/target/classes/com/rc/wefunit/Factories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/test-classes/com/rc/wefunit/testengine/TestEngineTest.class" afterPath="$PROJECT_DIR$/wefunit-test/target/test-classes/com/rc/wefunit/testengine/TestEngineTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/src/main/java/wefunittest/App.java" afterPath="$PROJECT_DIR$/wefunit-test/src/main/java/wefunittest/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" afterPath="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/Factories.java" afterPath="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/Suite1/Nopackage.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/Suite1/Nopackage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/Suite1/Nopackage.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/Suite1/Nopackage.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/TEST-TestSuite.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/TEST-TestSuite.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.CommonUtilsTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencyScannerTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencySignatureTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.DependencySignatureTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyInjectorUtilityTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyInjectorUtilityTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.FixtureDependencyTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.GenericServiceOperationTestTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.GenericServiceOperationTestTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.RunnerTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.TestClassStatsTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.TestClassStatsTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.Annotations.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.Annotations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.BeforeClassTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.BeforeClassTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.GenericSODependencyTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.annotations.GenericSODependencyTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.enums.GenericSOInjectablesTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.probes.AssertTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.producers.FactoryProducersTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/junitreports/TEST-com.rc.wefunit.testengine.TestEngineTest.xml" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/junitreports/TEST-com.rc.wefunit.testengine.TestEngineTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.testengine.TestEngineTest.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/junitreports/TEST-com.rc.wefunit.testengine.TestEngineTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java" afterPath="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/TestSuite.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/classes.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/wefunit-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/wefunit-test/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/wefunit/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/methods.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/pom.xml" afterPath="$PROJECT_DIR$/wefunit-test/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/wefunit-test/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/testng.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/toc.html" afterPath="$PROJECT_DIR$/wefunit/target/surefire-reports/old/Suite1/toc.html" />
+    </list>
+    <ignored path="wef-test-harness.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/wefunit/target/" />
+    <ignored path="$PROJECT_DIR$/wefunit-test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="wef-test-harness" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/annotations/Test.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/wefunit/pom.xml" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/samplewefproject/WebContent/WEB-INF/work/source/test/com/p1/FirstTest.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/samplewefproject/WebContent/WEB-INF/work/source/test/com/p1/FirstInsideTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/probes/Assert.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testengine/DefaultTestEngine.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/wefunittest/FirstTest.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testengine/TestRunnerMockery.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/TestRunnerMockery.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/pom.xml" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/TestRunnerBaseClass.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/HTMLReporter.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLTestReporter.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/wefunit.xml" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/main/java/wefunittest/App.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/testng.xml" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/Factories.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/ConfigReader.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/CommonUtilsTest.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLReporter.java" />
+        <option value="$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/CommonTestFixtures.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testreporting/HTMLReporterTest.java" />
+        <option value="$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/ConfigReaderTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wefunit" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wefunit" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1535" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Production" />
+        <subPane subId="Project Files" />
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wef-test-harness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reference-artifacts-repository" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="DefaultRunner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Default&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java&#10;Defa&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLReporter.java&#10;ConfigReader&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/ConfigReader.java&#10;Defaultconfig&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java&#10;C&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/ConfigReader.java&#10;Conf&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/src/test/java/com/rc/wefunit/ConfigReaderTest.java&#10;DefaultConfi&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java&#10;Comm&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/src/test/java/com/rc/wefunit/CommonUtilsTest.java&#10;App&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/src/main/java/wefunittest/App.java&#10;test&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/testng.xml&#10;testng&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/testng.xml&#10;A&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit-test/src/main/java/wefunittest/App.java&#10;DefaultRunn&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Defaultrun&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java&#10;Assert&#9;PSI&#9;JAVA://com.rc.wefunit.probes.Assert&#10;TestE&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/testengine/DefaultTestEngine.java&#10;TestClass&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/main/java/com/rc/wefunit/TestClassStats.java&#10;Runner&#9;FILE&#9;file:///home/affan/Development/NetBeansProjects/wef-test-harness/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wefunit-test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rc.wefunit" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf260fb7-6381-4685-96e5-e472fa0abe39" name="Default" comment="" />
+      <created>1431351614477</created>
+      <option name="number" value="Default" />
+      <updated>1431351614477</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1535" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="65" y="80" width="1535" height="848" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24983256" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983256" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="795">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2295">
+          <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="795">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2295">
+          <caret line="84" column="47" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/annotations/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26603" vertical-offset="0" max-vertical-offset="733">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/TestClassInstantiationUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="758">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassInstantiationUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8993289" vertical-offset="215" max-vertical-offset="975">
+          <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/TestClassStatsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2176781" vertical-offset="0" max-vertical-offset="758">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/GenericServiceOperationTestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="6780">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2955">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/DependencyScannerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/DependencySignatureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="4485">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/probes/AssertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3364116" vertical-offset="45" max-vertical-offset="1770">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/producers/FactoryProducersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/FixtureDependencyInjectorUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/FixtureDependencyInjectorUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2490">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/TestClassStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61744964" vertical-offset="65" max-vertical-offset="810">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/work/source/test/models/test/services/Service1Test/GetAccountsDetailSOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/work/source/test/executabletests/ExecutablesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5145119" vertical-offset="0" max-vertical-offset="758">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33245382" vertical-offset="10683" max-vertical-offset="15525">
+          <caret line="779" column="34" selection-start-line="779" selection-start-column="34" selection-end-line="779" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/probes/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testengine/DefaultTestEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#DefaultTestEngine#0" expanded="false" />
+            <element signature="method#executeTests#0;class#DefaultTestEngine#0" expanded="false" />
+            <element signature="e#1822#1861#0" expanded="false" />
+            <element signature="method#_resetTestScoring#0;class#DefaultTestEngine#0" expanded="false" />
+            <element signature="method#_incrementTotalExecutedTests#0;class#DefaultTestEngine#0" expanded="false" />
+            <element signature="method#_incrementTotalTestFailures#0;class#DefaultTestEngine#0" expanded="false" />
+            <element signature="method#_incrementPassedTests#0;class#DefaultTestEngine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24802111" vertical-offset="187" max-vertical-offset="2295">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36675462" vertical-offset="457" max-vertical-offset="1560">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/RunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4362416" vertical-offset="80" max-vertical-offset="825">
+          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testengine/TestEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13852243" vertical-offset="0" max-vertical-offset="758">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/HTMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09894459" vertical-offset="0" max-vertical-offset="758">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/test/java/com/rc/wefunit/CommonUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="180" column="62" selection-start-line="180" selection-start-column="62" selection-end-line="180" selection-end-column="62" />
+          <folding>
+            <element signature="docComment;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#getClassObject#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#filterQualifierAnnotations#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#filterQualifierAnnotations_functional_test#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#1624:1772" expanded="false" />
+            <element signature="method#parameter_count_test#0;class#1624:1772" expanded="false" />
+            <element signature="method#test_CommonUtils_is_singleton_when_get_from_factory#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#method_getSuperClassesHierarchy#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#2727:2871" expanded="false" />
+            <element signature="method#parameter_count_test#0;class#2727:2871" expanded="false" />
+            <element signature="method#method_getTestMethodsArray#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#3347:3653" expanded="false" />
+            <element signature="method#test1#0;class#3347:3653" expanded="false" />
+            <element signature="method#test2#0;class#3347:3653" expanded="false" />
+            <element signature="method#test3#0;class#3347:3653" expanded="false" />
+            <element signature="method#method_getTestMethodsArray_test_for_GeneServiceOperationTest#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#4049:4477" expanded="false" />
+            <element signature="method#parameter_count_test#0;class#4049:4477" expanded="false" />
+            <element signature="method#test1#0;class#4049:4477" expanded="false" />
+            <element signature="method#test2#0;class#4049:4477" expanded="false" />
+            <element signature="method#test3#0;class#4049:4477" expanded="false" />
+            <element signature="method#method_getOSPlatform_returns_1_for_Linux#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#4879:4967" expanded="false" />
+            <element signature="initializer##0;class#4879:4967" expanded="false" />
+            <element signature="method#method_getOSPlatform_returns_2_for_Windows#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#5143:5233" expanded="false" />
+            <element signature="initializer##0;class#5143:5233" expanded="false" />
+            <element signature="method#method_getAsWindowsPath#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#method_getAsUnixPath#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="method#method_createPath#0;class#CommonUtilsTest#0" expanded="false" />
+            <element signature="class#5931:6049" expanded="false" />
+            <element signature="initializer##0;class#5931:6049" expanded="false" />
+            <element signature="class#6177:6297" expanded="false" />
+            <element signature="initializer##0;class#6177:6297" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/TestRunnerBaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testengine/TestEngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="56" column="138" selection-start-line="56" selection-start-column="138" selection-end-line="56" selection-end-column="138" />
+          <folding>
+            <element signature="docComment;class#TestEngineTest#0" expanded="false" />
+            <element signature="method#method_getTestScores_returned_map_must_contain_score_document#0;class#TestEngineTest#0" expanded="false" />
+            <element signature="method#method_getTestScores_returned_map_must_contain_report_document#0;class#TestEngineTest#0" expanded="false" />
+            <element signature="e#2103#2108#0" expanded="false" />
+            <element signature="method#method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array#0;class#TestEngineTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/samplewefproject/WebContent/WEB-INF/wefunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019788919" vertical-offset="0" max-vertical-offset="758">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3328859" vertical-offset="877" max-vertical-offset="45810">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/main/java/wefunittest/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3364116" vertical-offset="0" max-vertical-offset="758">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="758">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/CommonUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49472296" vertical-offset="0" max-vertical-offset="758">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/ConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29683378" vertical-offset="30" max-vertical-offset="840">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+          <folding>
+            <element signature="docComment;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#isWindows#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="method#isValidWefWebInfDirectory#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#scanTestClasses#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="class#TestClassFileVisitor#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#parseClassQualifiedNameFromPath#0;class#TestClassFileVisitor#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#visitFile#0;class#TestClassFileVisitor#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="class#DirectoryFilter#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#walkFileTree#0;class#FileTreeWalker#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#getTestClassesSet#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#run#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#getWebAppAccess#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="method#getTestClassesExecutionPriorityQueue#0;class#DefaultRunner#0" expanded="false" />
+            <element signature="class#5451:6387" expanded="false" />
+            <element signature="method#compare#0;class#5451:6387" expanded="false" />
+            <element signature="method#getExecutableTestObjectsQueue#0;class#DefaultRunner#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#CommonUtils#0" expanded="false" />
+            <element signature="method#filterQualifierAnnotations#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#getSuperClassesHierarchy#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#getTestMethodsArrayFromTestClass#0;class#CommonUtils#0" expanded="false" />
+            <element signature="docComment;method#getOSPlatform#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#getOSPlatform#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#getAsUnixPath#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#getAsWindowsPath#0;class#CommonUtils#0" expanded="false" />
+            <element signature="docComment;method#createPath#0;class#CommonUtils#0" expanded="false" />
+            <element signature="method#createPath#0;class#CommonUtils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/Factories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="75" column="84" selection-start-line="75" selection-start-column="84" selection-end-line="75" selection-end-column="84" />
+          <folding>
+            <element signature="docComment;class#Factories#0" expanded="false" />
+            <element signature="class#RunnerFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#TestClassInstantiationUtilityFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
+            <element signature="method#getInstance#0;class#FixtureDependencyInjectorUtilityFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#DependencyScannerFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#CommonUtilsFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#TestEngineFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#TestClassStatsFactory#0;class#Factories#0" expanded="false" />
+            <element signature="class#HTMLReporterFactory#0;class#Factories#0" expanded="false" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2109#2110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/testreporting/DefaultHTMLReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit/src/main/java/com/rc/wefunit/DefaultConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/CommonTestFixtures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#CommonTestFixtures#0" expanded="false" />
+            <element signature="method#cmnExpectations#0;class#CommonTestFixtures#0" expanded="false" />
+            <element signature="class#562:655" expanded="false" />
+            <element signature="initializer##0;class#562:655" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/testreporting/HTMLReporterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="56" column="143" selection-start-line="56" selection-start-column="143" selection-end-line="56" selection-end-column="143" />
+          <folding>
+            <element signature="docComment;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#HTMLReporterTest#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#initTest#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="class#2511:2583" expanded="false" />
+            <element signature="initializer##0;class#2511:2583" expanded="false" />
+            <element signature="method#if_reporting_directories_are_not_present_then_create_them#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#create_a_new_html_report_if_a_report_file_is_not_there#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#delete_html_report_if_one_is_previously_present_there_and_then_create_a_new_html_report#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="class#DirCleaner#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#preVisitDirectory#0;class#DirCleaner#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#visitFile#0;class#DirCleaner#0;class#HTMLReporterTest#0" expanded="false" />
+            <element signature="method#postVisitDirectory#0;class#DirCleaner#0;class#HTMLReporterTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wefunit-test/src/test/java/com/rc/wefunit/ConfigReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42281878" vertical-offset="0" max-vertical-offset="745">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#ConfigReaderTest#0" expanded="false" />
+            <element signature="method#ConfigReaderTest#0;class#ConfigReaderTest#0" expanded="false" />
+            <element signature="method#method_getBaseDirPathForLogging_must_return_user_home_when_no_wefunit_xml_file_is_present#0;class#ConfigReaderTest#0" expanded="false" />
+            <element signature="method#method_getBaseDirPathForLogging_must_return_user_home_when_a_config_file_is_present_but_no_logging_dir_element_is_there#0;class#ConfigReaderTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
