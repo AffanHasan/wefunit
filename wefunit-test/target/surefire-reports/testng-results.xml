@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="MainSuite" duration-ms="543" started-at="2015-05-19T15:10:46Z" finished-at="2015-05-19T15:10:46Z">
+  <suite name="MainSuite" duration-ms="694" started-at="2015-05-20T10:36:14Z" finished-at="2015-05-20T10:36:14Z">
     <groups>
     </groups>
-    <test name="ExecuteAll" duration-ms="543" started-at="2015-05-19T15:10:46Z" finished-at="2015-05-19T15:10:46Z">
+    <test name="ExecuteAll" duration-ms="694" started-at="2015-05-20T10:36:14Z" finished-at="2015-05-20T10:36:14Z">
       <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@59f99ea]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="47" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@6eebc39e]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="77" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@59f99ea]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="2" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@6eebc39e]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="5" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@59f99ea]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="1" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@6eebc39e]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="5" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@59f99ea]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="99" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@6eebc39e]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="115" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible -->
       </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
       <class name="com.rc.wefunit.ConfigReaderTest">
-        <test-method status="PASS" signature="method_getBaseDirPathForLogging_must_return_user_home_when_a_config_file_is_present_but_no_logging_dir_element_is_there()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@27efef64]" name="method_getBaseDirPathForLogging_must_return_user_home_when_a_config_file_is_present_but_no_logging_dir_element_is_there" duration-ms="13" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_getBaseDirPathForLogging_if_config_file_is_present_and_a_logging_dir_element_is_there_then_return_this_directory_path()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@4dfa3a9d]" name="method_getBaseDirPathForLogging_if_config_file_is_present_and_a_logging_dir_element_is_there_then_return_this_directory_path" duration-ms="21" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_getBaseDirPathForLogging_must_return_user_home_when_a_config_file_is_present_but_no_logging_dir_element_is_there -->
-        <test-method status="PASS" signature="method_getBaseDirPathForLogging_must_return_user_home_when_no_wefunit_xml_file_is_present()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@27efef64]" name="method_getBaseDirPathForLogging_must_return_user_home_when_no_wefunit_xml_file_is_present" duration-ms="3" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        </test-method> <!-- method_getBaseDirPathForLogging_if_config_file_is_present_and_a_logging_dir_element_is_there_then_return_this_directory_path -->
+        <test-method status="PASS" signature="method_getProjectName_test_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@4dfa3a9d]" name="method_getProjectName_test_for_linux" duration-ms="2" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_getBaseDirPathForLogging_must_return_user_home_when_no_wefunit_xml_file_is_present -->
-        <test-method status="PASS" signature="method_getProjectName_tes_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@27efef64]" name="method_getProjectName_tes_for_linux" duration-ms="1" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        </test-method> <!-- method_getProjectName_test_for_linux -->
+        <test-method status="PASS" signature="method_getProjectName_test_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@4dfa3a9d]" name="method_getProjectName_test_for_windows" duration-ms="4" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_getProjectName_tes_for_linux -->
-        <test-method status="PASS" signature="method_getProjectName_tes_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@27efef64]" name="method_getProjectName_tes_for_windows" duration-ms="5" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getProjectName_tes_for_windows -->
+        </test-method> <!-- method_getProjectName_test_for_windows -->
       </class> <!-- com.rc.wefunit.ConfigReaderTest -->
       <class name="com.rc.wefunit.testengine.TestEngineTest">
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@ae45eb6]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="113" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@146ba0ac]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="124" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@ae45eb6]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="1" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@146ba0ac]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="1" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@ae45eb6]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="186" started-at="2015-05-19T20:10:46Z" finished-at="2015-05-19T20:10:46Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@146ba0ac]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="246" started-at="2015-05-20T15:36:14Z" finished-at="2015-05-20T15:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->

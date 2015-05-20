@@ -15,6 +15,15 @@ public class DefaultHTMLReporter implements HTMLReporter {
 
     private final ConfigReader _configReader = Factories.ConfigReaderFactory.getInstance();
     private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
+    private final String[] _path = new String[5];
+
+    public DefaultHTMLReporter(){
+        _path[0] = "wefunitlogs";
+        _path[1] = this._configReader.getProjectName();
+        _path[2] = "testreports";
+        _path[3] = "htmlreport";
+        _path[4] = "TestReporting.html";//Reporting file
+    }
 
     @Override
     public void generateHTMLTestReporting() {
@@ -23,19 +32,10 @@ public class DefaultHTMLReporter implements HTMLReporter {
         if(!baseDir.canWrite())
             throw new IllegalStateException(this._configReader.getBaseDirPathForLogging() + " is not writable");
 
-        String[] path = new String[5];
-        path[0] = "wefunitlogs";
-        path[1] = this._configReader.getProjectName();
-        path[2] = "testreports";
-        path[3] = "htmlreport";
-        path[4] = "TestReporting.html";//Reporting file
-
-//        HTML reporting directory path
-        File reportingDirPath = new File( this._configReader.getBaseDirPathForLogging() +
-                this._commonUtils.createPath(Arrays.copyOfRange(path, 0, 4)) );
+//        HTML reporting directory _path
+        File reportingDirPath = this.getHtmlReportingDir();
 //        HTML test reporting file
-        File htmlFile = new File( this._configReader.getBaseDirPathForLogging() +
-                this._commonUtils.createPath(Arrays.copyOfRange(path, 0, 5)) );
+        File htmlFile = this.getReportingFile();
 
 //        Check that if directory do not exists
         if(!reportingDirPath.isDirectory()){
@@ -46,12 +46,26 @@ public class DefaultHTMLReporter implements HTMLReporter {
         if(htmlFile.isFile()){//If present
 //            Delete it
             htmlFile.delete();
+//            Then create a new one
+            this.createNewReportingFile();
         }else {//If not present
-            try {
-                htmlFile.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            this.createNewReportingFile();
         }
+    }
+
+    private void createNewReportingFile(){
+        try {
+            this.getReportingFile().createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private File getReportingFile(){
+        return new File( this._configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(Arrays.copyOfRange(_path, 0, 5)) );
+    }
+
+    private File getHtmlReportingDir(){
+        return new File( this._configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(Arrays.copyOfRange(_path, 0, 4)) );
     }
 }

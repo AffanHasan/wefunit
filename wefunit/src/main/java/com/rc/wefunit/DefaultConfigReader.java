@@ -47,12 +47,14 @@ public class DefaultConfigReader implements ConfigReader {
 
     @Override
     public String getBaseDirPathForLogging() {
-
         if(this._document == null){//If no file is present, then return user home
             return System.getProperty("user.home");
-        }else if(this._document != null){//If file is present but no loggind-dir element is there; then return user home
-            if(this._document.getElementsByTagName("logging-dir").getLength() == 0)//No "<logging-dir/>" element
+        }else if(this._document != null){//If file is present
+            if(this._document.getElementsByTagName("logging-dir").getLength() == 0)//But no "<logging-dir/>" element then return user.home
                 return System.getProperty("user.home");
+            else{
+                return ( this._document.getElementsByTagName("logging-dir").item(0) ).getTextContent();
+            }
         }
         return null;
     }
