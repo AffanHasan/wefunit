@@ -2,12 +2,14 @@ package com.rc.wefunit.testreporting;
 
 import com.bowstreet.util.SystemProperties;
 import com.bowstreet.webapp.WebAppAccess;
-import com.rc.wefunit.CommonTestFixtures;
-import com.rc.wefunit.CommonUtils;
-import com.rc.wefunit.ConfigReader;
-import com.rc.wefunit.Factories;
+import com.rc.wefunit.*;
+import com.rc.wefunit.testengine.TestEngine;
 import mockit.Expectations;
 import mockit.Mocked;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -19,11 +21,12 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Affan Hasan on 5/14/15.
  */
-public class HTMLReporterTest {
+public class HTMLReporterTest extends TestRunnerBaseClass {
 
     private final CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
     private final String _WEBINFPath;
@@ -34,7 +37,34 @@ public class HTMLReporterTest {
     private final String _LOGGING_TEST_REPORTING_DIR_NAME;
     private final String _htmlReportingDirName = "htmlreport";
     private final String _htmlReportFileName = "TestReporting.html";
-    @Mocked SystemProperties systemProperties;
+
+    private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();
+    private final Map<String, Object> _scoresMap = this._testEngine.getTestScores();
+
+    private static class DirCleaner extends SimpleFileVisitor<Path> {
+
+        String dirName;
+
+        final List<String> fileList = new ArrayList<String>();
+
+        @Override
+        public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+            this.dirName = dir.toAbsolutePath().toString();
+            return FileVisitResult.CONTINUE;
+        }
+
+        @Override
+        public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+            (new File(file.toAbsolutePath().toString())).delete();
+            return FileVisitResult.CONTINUE;
+        }
+
+        @Override
+        public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+            (new File(dir.toAbsolutePath().toString())).delete();
+            return FileVisitResult.CONTINUE;
+        }
+    }
 
     @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE, CommonTestFixtures.DOCUMENT_ROOT_LINUX
             , CommonTestFixtures.DOCUMENT_ROOT_WINOWS, CommonTestFixtures.PROJECT_NAME
@@ -84,6 +114,7 @@ public class HTMLReporterTest {
     @Test
     public void method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them(){
         CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
+//        CommonTestFixtures.webInfPathExpectations(this._WEBINFPath);
         this.initTest();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
@@ -100,7 +131,6 @@ public class HTMLReporterTest {
     @Test
     public void method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there(){
         CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
-        CommonTestFixtures.webInfPathExpectations(this._WEBINFPath);
         this.initTest();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
         final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
@@ -133,28 +163,68 @@ public class HTMLReporterTest {
         Assert.assertTrue(file.isFile());// Assert that file still exists
     }
 
-    private static class DirCleaner extends SimpleFileVisitor<Path> {
-
-        String dirName;
-
-        final List<String> fileList = new ArrayList<String>();
-
-        @Override
-        public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-            this.dirName = dir.toAbsolutePath().toString();
-            return FileVisitResult.CONTINUE;
+    @Test
+    public void method_generateHTMLTestReporting_TestReporting_html_file_basic_structure(){
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
+        this.initTest();
+        final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
+        final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
+        String[] path = new String[]{this._LOGGING_BASE_DIR_NAME,
+                                     this._WEF_PROJECT_NAME,
+                                     this._LOGGING_TEST_REPORTING_DIR_NAME,
+                                     this._htmlReportingDirName,
+                                     this._htmlReportFileName};
+        String base = null;
+        switch (this._commonUtils.getOSPlatform()){
+            case 1:
+                base = "file://";
+                break;
+            case 2:
+                base = "";
+                break;
         }
-
-        @Override
-        public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-            (new File(file.toAbsolutePath().toString())).delete();
-            return FileVisitResult.CONTINUE;
-        }
-
-        @Override
-        public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-            (new File(dir.toAbsolutePath().toString())).delete();
-            return FileVisitResult.CONTINUE;
-        }
+        htmlReporter.generateHTMLTestReporting();
+        File file = new File(base + configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
+        WebDriver webDriver = new FirefoxDriver();
+        webDriver.get(file.toString());
+        Assert.assertEquals(webDriver.getTitle(), "WefUnit Test Report");//Verify title
+        webDriver.quit();
     }
+
+    @Test
+    public void method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(){
+        CommonTestFixtures.docRootPathExpectations(this._DOC_ROOT_LINUX);
+
+        super.runTests(this._WEBINFPath);//Running the tests
+
+        final int totalExecutedTests = (Integer) this._scoresMap.get("totalExecutedTests");
+        final int totalTestFailures = (Integer) this._scoresMap.get("totalTestFailures");
+
+        this.initTest();
+        final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
+        final ConfigReader configReader = Factories.ConfigReaderFactory.getInstance();
+        String[] path = new String[]{this._LOGGING_BASE_DIR_NAME,
+                                     this._WEF_PROJECT_NAME,
+                                     this._LOGGING_TEST_REPORTING_DIR_NAME,
+                                     this._htmlReportingDirName,
+                                     this._htmlReportFileName};
+        String base = null;
+        switch (this._commonUtils.getOSPlatform()){
+            case 1:
+                base = "file://";
+                break;
+            case 2:
+                base = "";
+                break;
+        }
+        htmlReporter.generateHTMLTestReporting();//Generating html test reports
+        File file = new File(base + configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
+        WebDriver webDriver = new FirefoxDriver();
+        webDriver.get(file.toString());
+
+        Assert.assertEquals(webDriver.findElements(By.tagName("fieldset")).size(), totalExecutedTests);//Field Set Count
+
+        webDriver.quit();
+    }
+
 }

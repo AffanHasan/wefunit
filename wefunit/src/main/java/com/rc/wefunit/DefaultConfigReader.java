@@ -28,6 +28,8 @@ public class DefaultConfigReader implements ConfigReader {
         fileName[0] = "wefunit.xml";
         File wefUnitXML = new File(this._runner.getWebInfDirPath() + this._commonUtils.createPath(fileName));
 
+        System.out.println("Desired : " + this._runner.getWebInfDirPath() + this._commonUtils.createPath(fileName));
+
         if(!wefUnitXML.isFile()){//If no file is present
             this._document = null;
         }else{//If file is present
@@ -49,10 +51,13 @@ public class DefaultConfigReader implements ConfigReader {
     public String getBaseDirPathForLogging() {
         if(this._document == null){//If no file is present, then return user home
             return System.getProperty("user.home");
-        }else if(this._document != null){//If file is present
-            if(this._document.getElementsByTagName("logging-dir").getLength() == 0)//But no "<logging-dir/>" element then return user.home
+        }else if(this._document != null) {//If file is present
+            if (this._document.getElementsByTagName("logging-dir").getLength() == 0){//But no "<logging-dir/>" element then return user.home
+                System.out.println("--- --- --- line 54");
                 return System.getProperty("user.home");
+            }
             else{
+                System.out.println("--- --- --- line 58");
                 return ( this._document.getElementsByTagName("logging-dir").item(0) ).getTextContent();
             }
         }

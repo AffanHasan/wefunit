@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.203 sec - in TestSuite
+Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 8.961 sec <<< FAILURE! - in TestSuite
+t1(com.rc.wefunit.testengine.TestEngineTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.rc.wefunit.testengine.TestEngineTest.t1(TestEngineTest.java:80)
+
+method_generateHTMLTestReporting_TestReporting_html_file_basic_structure(com.rc.wefunit.testreporting.HTMLReporterTest)  Time elapsed: 3.856 sec  <<< FAILURE!
+java.lang.AssertionError: expected [WefUnit Test Report] but found []
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_basic_structure(HTMLReporterTest.java:184)
+
+t1(com.rc.wefunit.testreporting.HTMLReporterTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.rc.wefunit.testreporting.HTMLReporterTest.t1(HTMLReporterTest.java:218)
+
+t2(com.rc.wefunit.testreporting.HTMLReporterTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.rc.wefunit.testreporting.HTMLReporterTest.t2(HTMLReporterTest.java:223)
+

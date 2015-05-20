@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [MainSuite]">
+  <parameter name="WEB-INF-path-fixture" value="samplewefproject/WebContent/WEB-INF"/>
+  <parameter name="document-root-linux" value="/home/user/samplewefproject.ear/samplewefproject.war"/>
+  <parameter name="document-root-win" value="c:\projects\samplewefproject.ear\samplewefproject.war"/>
+  <parameter name="logging-reporting-dir-name" value="testreports"/>
+  <parameter name="wef-project-name" value="samplewefproject"/>
+  <parameter name="logging-base-dir-name" value="wefunitlogs"/>
+  <parameter name="config-file-name" value="wefunit.xml"/>
+  <test name="ExecuteAll(failed)">
+    <classes>
+      <class name="com.rc.wefunit.testengine.TestEngineTest">
+        <methods>
+          <include name="t1"/>
+        </methods>
+      </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
+      <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
+        <methods>
+          <include name="t1"/>
+          <include name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure"/>
+          <include name="t2"/>
+        </methods>
+      </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
+    </classes>
+  </test> <!-- ExecuteAll(failed) -->
+</suite> <!-- Failed suite [MainSuite] -->

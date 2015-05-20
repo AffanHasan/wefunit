@@ -56,7 +56,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
     @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE})
     public void method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(String _WEBINFPath){
 
-        super.runTests(_WEBINFPath);
+        super.runTests(_WEBINFPath);//Running tests
 
         final Map<String, Object> reportMap = (Map<String, Object>) _scoresMap.get("report");
         final List<Map<String, Object>> failedArr = (List<Map<String, Object>>) reportMap.get("failed");
