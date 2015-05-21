@@ -8,6 +8,7 @@ import mockit.Expectations;
 import mockit.Mocked;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -197,8 +198,10 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
 
         super.runTests(this._WEBINFPath);//Running the tests
 
-        final int totalExecutedTests = (Integer) this._scoresMap.get("totalExecutedTests");
-        final int totalTestFailures = (Integer) this._scoresMap.get("totalTestFailures");
+        System.out.println("--- ---- --- Map : " + this._scoresMap);
+
+        final int totalExecutedTests = (Integer) ((Map<String, Object>)this._scoresMap.get("score")).get("totalExecutedTests");
+        final int totalTestFailures = (Integer) ((Map<String, Object>)this._scoresMap.get("score")).get("totalTestFailures");
 
         this.initTest();
         final HTMLReporter htmlReporter = Factories.HTMLReporterFactory.getInstance();
@@ -222,7 +225,20 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         WebDriver webDriver = new FirefoxDriver();
         webDriver.get(file.toString());
 
+        List<WebElement> failedTestsList = webDriver.findElements(By.className("failed_test_item"));
+        List<WebElement> passedTestsList = webDriver.findElements(By.className("passed_test_item"));
+
         Assert.assertEquals(webDriver.findElements(By.tagName("fieldset")).size(), totalExecutedTests);//Field Set Count
+        Assert.assertEquals(failedTestsList.size(), totalTestFailures);//Failed Tests Count
+        Assert.assertEquals(passedTestsList.size(), totalExecutedTests - totalTestFailures);//Passed Tests Count
+
+        for ( WebElement elem : failedTestsList){
+        }
+
+        List<Map<String, Object>> failedTestArr = ( (List<Map<String, Object>>) ((Map<String, Object>)this._testEngine.getTestScores().get("report")).get("failed") );
+        for( Map<String, Object> failedItem : failedTestArr){
+
+        }
 
         webDriver.quit();
     }

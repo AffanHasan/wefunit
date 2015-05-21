@@ -7,6 +7,7 @@ com/rc/wefunit/DefaultRunner$1.class
 com/rc/wefunit/annotations/GenericSODependency.class
 com/rc/wefunit/ConfigReader.class
 com/rc/wefunit/GenericServiceOperationTest.class
+com/rc/wefunit/testreporting/DefaultHTMLReporter$TestReportingGenerator.class
 com/rc/wefunit/DefaultTestClassInstantiationUtility.class
 com/rc/wefunit/testengine/TestEngine.class
 com/rc/wefunit/DefaultRunner.class
@@ -29,6 +30,7 @@ com/rc/wefunit/DefaultRunner$1TestClassesComparator.class
 com/rc/wefunit/DefaultRunner$FileTreeWalker$DirectoryFilter.class
 com/rc/wefunit/DefaultConfigReader.class
 com/rc/wefunit/TestClassStats.class
+com/rc/wefunit/testreporting/DefaultHTMLReporter$1.class
 com/rc/wefunit/producers/FactoryProducers.class
 com/rc/wefunit/Factories$TestClassStatsFactory.class
 com/rc/wefunit/annotations/Qualifier.class
