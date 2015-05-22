@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>T1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 22 16:40:56 PKT 2015</td>
+<td>Started on:</td><td>Fri May 22 18:59:14 PKT 2015</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (711 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,32 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()'><b>method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td><div><pre>java.lang.AssertionError: expected [9] but found [22]
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1414147750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1414147750'><pre>java.lang.AssertionError: expected [9] but found [22]
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@523884b2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>

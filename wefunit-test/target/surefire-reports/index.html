@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MainSuite">
-              <span class="suite-name border-passed">MainSuite</span>
+              <span class="suite-name border-failed">MainSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MainSuite" class="hide-methods failed suite-MainSuite"> (hide)</a> <!-- hide-methods failed suite-MainSuite -->
+                      <a href="#" panel-name="suite-MainSuite" class="show-methods failed suite-MainSuite"> (show)</a> <!-- show-methods failed suite-MainSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MainSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testengine.TestEngineTest" hash-for-method="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MainSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -146,6 +160,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MainSuite" class="panel MainSuite">
+          <div class="suite-MainSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rc.wefunit.testengine.TestEngineTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map">
+                  </a> <!-- method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map -->
+                  <span class="method-name">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [9] but found [22]
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MainSuite-class-failed -->
           <div class="suite-MainSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -262,40 +295,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests')
 data.setCell(0, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(0, 3, 437);
+data.setCell(0, 3, 317);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present')
+data.setCell(1, 1, 'method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map')
 data.setCell(1, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(1, 3, 80);
+data.setCell(1, 3, 83);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'method_executeTests_total_test_for_explicitly_failed_tests')
+data.setCell(2, 1, 'method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present')
 data.setCell(2, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(2, 3, 62);
+data.setCell(2, 3, 56);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests')
+data.setCell(3, 1, 'method_executeTests_total_test_for_explicitly_failed_tests')
 data.setCell(3, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(3, 3, 46);
+data.setCell(3, 3, 48);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array')
+data.setCell(4, 1, 'method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests')
 data.setCell(4, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(4, 3, 4);
+data.setCell(4, 3, 44);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'method_getTestScores_returned_map_must_contain_report_document')
+data.setCell(5, 1, 'method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array')
 data.setCell(5, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(5, 3, 2);
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'method_getTestScores_returned_map_must_contain_score_document')
+data.setCell(6, 1, 'method_getTestScores_returned_map_must_contain_report_document')
 data.setCell(6, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(6, 3, 1);
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'method_getTestScores_returned_map_must_contain_score_document')
+data.setCell(7, 2, 'com.rc.wefunit.testengine.TestEngineTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['MainSuite']= { tableData: data, tableDiv: 'times-div-MainSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 632 ms</span>
+              <span class="suite-total-time">Total running time: 549 ms</span>
               <div id="times-div-MainSuite">
               </div> <!-- times-div-MainSuite -->
             </div> <!-- times-div -->
@@ -328,27 +365,33 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present</span>
-                <span class="method-start">450 ms</span>
+                <span class="method-start">319 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests</span>
-                <span class="method-start">535 ms</span>
+                <span class="method-start">377 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_test_for_explicitly_failed_tests</span>
-                <span class="method-start">599 ms</span>
+                <span class="method-start">430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_returned_map_must_contain_report_document</span>
-                <span class="method-start">662 ms</span>
+                <span class="method-start">479 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_returned_map_must_contain_score_document</span>
-                <span class="method-start">665 ms</span>
+                <span class="method-start">482 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</span>
-                <span class="method-start">666 ms</span>
+                <span class="method-start">483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</span>
+                <span class="method-start">486 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

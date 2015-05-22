@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.497 sec - in TestSuite
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.962 sec <<< FAILURE! - in TestSuite
+method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(com.rc.wefunit.testengine.TestEngineTest)  Time elapsed: 0.102 sec  <<< FAILURE!
+java.lang.AssertionError: expected [9] but found [22]
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+

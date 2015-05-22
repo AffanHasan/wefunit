@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.853" tests="116" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.723" tests="116" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,119 +58,119 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="interface_DependencyScanner_existence" classname="com.rc.wefunit.DependencyScannerTest" time="0.04"/>
-  <testcase name="method_getDependency_DependencySignature_Object_as_return_type" classname="com.rc.wefunit.DependencyScannerTest" time="0"/>
-  <testcase name="method_getDependency_DependencySignature_as_first_parameter" classname="com.rc.wefunit.DependencyScannerTest" time="0.001"/>
+  <testcase name="method_getDependency_DependencySignature_Object_as_return_type" classname="com.rc.wefunit.DependencyScannerTest" time="0.001"/>
+  <testcase name="method_getDependency_DependencySignature_as_first_parameter" classname="com.rc.wefunit.DependencyScannerTest" time="0"/>
   <testcase name="method_getDependency_exists" classname="com.rc.wefunit.DependencyScannerTest" time="0"/>
-  <testcase name="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.DependencyScannerTest" time="0.148"/>
-  <testcase name="BeforeClass_annotation" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0"/>
-  <testcase name="BeforeClass_annotation_RetentionPolicy_RUNTIME" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0"/>
-  <testcase name="BeforeClass_annotation_Target_METHOD" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0"/>
-  <testcase name="BeforeClass_annotation_enabled_method_default_value_true" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0.001"/>
-  <testcase name="is_exist_Interface_TestEngine" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.048"/>
+  <testcase name="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.DependencyScannerTest" time="0.116"/>
+  <testcase name="BeforeClass_annotation" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0.002"/>
+  <testcase name="BeforeClass_annotation_RetentionPolicy_RUNTIME" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0.003"/>
+  <testcase name="BeforeClass_annotation_Target_METHOD" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0.001"/>
+  <testcase name="BeforeClass_annotation_enabled_method_default_value_true" classname="com.rc.wefunit.annotations.BeforeClassTest" time="0.003"/>
+  <testcase name="is_exist_Interface_TestEngine" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.036"/>
   <testcase name="method_executeTests_parameters_Queue" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.001"/>
   <testcase name="singleton_test" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
-  <testcase name="constructorTest" classname="com.rc.wefunit.FixtureDependencyTest" time="0.027"/>
+  <testcase name="constructorTest" classname="com.rc.wefunit.FixtureDependencyTest" time="0.014"/>
   <testcase name="dependencySignature_field" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
   <testcase name="dependencySignature_field_is_private" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="dependencySignature_field_is_private_final" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
-  <testcase name="dependencySignature_field_is_private_is_of_type_DependencySignature" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
-  <testcase name="existence_of_class" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
+  <testcase name="dependencySignature_field_is_private_is_of_type_DependencySignature" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
+  <testcase name="existence_of_class" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="getSignature" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
-  <testcase name="getSignature_method_is_public" classname="com.rc.wefunit.FixtureDependencyTest" time="0.004"/>
-  <testcase name="getSignature_method_return_type_is_DependencySignature" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
+  <testcase name="getSignature_method_is_public" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
+  <testcase name="getSignature_method_return_type_is_DependencySignature" classname="com.rc.wefunit.FixtureDependencyTest" time="0.006"/>
   <testcase name="implements_java_lang_comparable" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
-  <testcase name="method_getDependency" classname="com.rc.wefunit.FixtureDependencyTest" time="0.006"/>
-  <testcase name="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.FixtureDependencyTest" time="0.04"/>
+  <testcase name="method_getDependency" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
+  <testcase name="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.FixtureDependencyTest" time="0.033"/>
   <testcase name="method_getDependencyMethodName_return_type_is_Object" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="method_getDependency_method_is_public" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="producerMethod_field" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="producerMethod_field_is_private" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
   <testcase name="producerMethod_field_is_private_final" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
-  <testcase name="producerMethod_field_is_private_is_of_type_Method" classname="com.rc.wefunit.FixtureDependencyTest" time="0.001"/>
-  <testcase name="class_existence" classname="com.rc.wefunit.DependencySignatureTest" time="0.002"/>
-  <testcase name="compareTo_test_1" classname="com.rc.wefunit.DependencySignatureTest" time="0.005"/>
+  <testcase name="producerMethod_field_is_private_is_of_type_Method" classname="com.rc.wefunit.FixtureDependencyTest" time="0"/>
+  <testcase name="class_existence" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
+  <testcase name="compareTo_test_1" classname="com.rc.wefunit.DependencySignatureTest" time="0.009"/>
   <testcase name="constructor_must_have_Class_as_the_first_parameter_data_type" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="field__qualifiers_is_final" classname="com.rc.wefunit.DependencySignatureTest" time="0.004"/>
-  <testcase name="field__qualifiers_is_private" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type" classname="com.rc.wefunit.DependencySignatureTest" time="0.002"/>
+  <testcase name="field__qualifiers_is_final" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="field__qualifiers_is_private" classname="com.rc.wefunit.DependencySignatureTest" time="0.002"/>
   <testcase name="field_qualifiers" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
   <testcase name="field_qualifiers_is_an_Array_of_Type_Annotation" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
-  <testcase name="field_returnedObjectType" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="field_returnedObjectType_field_type_is_java_lang_Class" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="field_returnedObjectType_is_final" classname="com.rc.wefunit.DependencySignatureTest" time="0.007"/>
+  <testcase name="field_returnedObjectType" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="field_returnedObjectType_field_type_is_java_lang_Class" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="field_returnedObjectType_is_final" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
   <testcase name="field_returnedObjectType_is_private" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
   <testcase name="implements_java_lang_Comparator" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
-  <testcase name="method_getReturnedObjectType" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="presence_of_equals_and_hashcode_methods" classname="com.rc.wefunit.DependencySignatureTest" time="0.003"/>
+  <testcase name="method_getReturnedObjectType" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="presence_of_equals_and_hashcode_methods" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
   <testcase name="the_only_constructor_is_public" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
-  <testcase name="there_is_only_one_constructor" classname="com.rc.wefunit.DependencySignatureTest" time="0"/>
-  <testcase name="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier" classname="com.rc.wefunit.DependencySignatureTest" time="0.003"/>
-  <testcase name="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1" classname="com.rc.wefunit.FixtureDependencyInjectorUtilityTest" time="0.007"/>
-  <testcase name="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.FixtureDependencyInjectorUtilityTest" time="0.028"/>
+  <testcase name="there_is_only_one_constructor" classname="com.rc.wefunit.DependencySignatureTest" time="0.001"/>
+  <testcase name="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier" classname="com.rc.wefunit.DependencySignatureTest" time="0.006"/>
+  <testcase name="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1" classname="com.rc.wefunit.FixtureDependencyInjectorUtilityTest" time="0.006"/>
+  <testcase name="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model" classname="com.rc.wefunit.FixtureDependencyInjectorUtilityTest" time="0.017"/>
   <testcase name="must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method" classname="com.rc.wefunit.FixtureDependencyInjectorUtilityTest" time="0"/>
-  <testcase name="filterQualifierAnnotations" classname="com.rc.wefunit.CommonUtilsTest" time="0.001"/>
+  <testcase name="filterQualifierAnnotations" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
   <testcase name="filterQualifierAnnotations_functional_test" classname="com.rc.wefunit.CommonUtilsTest" time="0.002"/>
-  <testcase name="method_createPath" classname="com.rc.wefunit.CommonUtilsTest" time="0.059"/>
+  <testcase name="method_createPath" classname="com.rc.wefunit.CommonUtilsTest" time="0.061"/>
   <testcase name="method_getAsUnixPath" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
   <testcase name="method_getAsWindowsPath" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
-  <testcase name="method_getOSPlatform_returns_1_for_Linux" classname="com.rc.wefunit.CommonUtilsTest" time="0.037"/>
-  <testcase name="method_getOSPlatform_returns_2_for_Windows" classname="com.rc.wefunit.CommonUtilsTest" time="0.035"/>
+  <testcase name="method_getOSPlatform_returns_1_for_Linux" classname="com.rc.wefunit.CommonUtilsTest" time="0.023"/>
+  <testcase name="method_getOSPlatform_returns_2_for_Windows" classname="com.rc.wefunit.CommonUtilsTest" time="0.022"/>
   <testcase name="method_getSuperClassesHierarchy" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
   <testcase name="method_getTestMethodsArray" classname="com.rc.wefunit.CommonUtilsTest" time="0.001"/>
-  <testcase name="method_getTestMethodsArray_test_for_GeneServiceOperationTest" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
-  <testcase name="test_CommonUtils_is_singleton_when_get_from_factory" classname="com.rc.wefunit.CommonUtilsTest" time="0"/>
-  <testcase name="Runner_instance_must_be_singleton" classname="com.rc.wefunit.RunnerTest" time="0.005"/>
+  <testcase name="method_getTestMethodsArray_test_for_GeneServiceOperationTest" classname="com.rc.wefunit.CommonUtilsTest" time="0.001"/>
+  <testcase name="test_CommonUtils_is_singleton_when_get_from_factory" classname="com.rc.wefunit.CommonUtilsTest" time="0.001"/>
+  <testcase name="Runner_instance_must_be_singleton" classname="com.rc.wefunit.RunnerTest" time="0.003"/>
   <testcase name="method_getWebAppAccess_existence" classname="com.rc.wefunit.RunnerTest" time="0.001"/>
-  <testcase name="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method" classname="com.rc.wefunit.RunnerTest" time="0.004"/>
-  <testcase name="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory" classname="com.rc.wefunit.RunnerTest" time="0.025"/>
-  <testcase name="method_run" classname="com.rc.wefunit.RunnerTest" time="0"/>
-  <testcase name="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence" classname="com.rc.wefunit.RunnerTest" time="0"/>
-  <testcase name="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" classname="com.rc.wefunit.RunnerTest" time="0.035"/>
-  <testcase name="abstract_method_parameter_count_test" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="getter_for_dataServiceName" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="getter_for_serviceOperationName" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method" classname="com.rc.wefunit.RunnerTest" time="0.003"/>
+  <testcase name="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory" classname="com.rc.wefunit.RunnerTest" time="0.024"/>
+  <testcase name="method_run" classname="com.rc.wefunit.RunnerTest" time="0.001"/>
+  <testcase name="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence" classname="com.rc.wefunit.RunnerTest" time="0.001"/>
+  <testcase name="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" classname="com.rc.wefunit.RunnerTest" time="0.027"/>
+  <testcase name="abstract_method_parameter_count_test" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="getter_for_dataServiceName" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="getter_for_serviceOperationName" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
   <testcase name="getter_for_webAppAccess" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
   <testcase name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
   <testcase name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="is_dataServiceName_string_field_contains_Inject_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="is_dataServiceName_string_field_is_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
-  <testcase name="is_serviceOperationName_string_field_contains_Inject_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.005"/>
-  <testcase name="is_serviceOperationName_string_field_is_protected" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
+  <testcase name="is_dataServiceName_string_field_contains_Inject_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.002"/>
+  <testcase name="is_dataServiceName_string_field_is_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.004"/>
+  <testcase name="is_serviceOperationName_string_field_contains_Inject_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
+  <testcase name="is_serviceOperationName_string_field_is_protected" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
   <testcase name="is_serviceOperationName_string_field_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
-  <testcase name="is_service_operation_exists_Method_exists" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="is_service_operation_exists_method_should_have_Test_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.002"/>
-  <testcase name="is_service_operation_name_is_in_correct_format_Method_exists" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="is_webAppAccess_field_with_GenericSODependency_annotation_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.002"/>
-  <testcase name="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.006"/>
-  <testcase name="is_webAppAccess_field_with_Inject_annotation_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.003"/>
+  <testcase name="is_service_operation_exists_Method_exists" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="is_service_operation_exists_method_should_have_Test_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
+  <testcase name="is_service_operation_name_is_in_correct_format_Method_exists" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="is_webAppAccess_field_with_GenericSODependency_annotation_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.004"/>
+  <testcase name="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.008"/>
+  <testcase name="is_webAppAccess_field_with_Inject_annotation_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.003"/>
+  <testcase name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
   <testcase name="method_getCallableServiceOperationName_functional_test" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="method_is_service_operation_exists_functional_tests" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.141"/>
-  <testcase name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.004"/>
-  <testcase name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.051"/>
+  <testcase name="method_is_service_operation_exists_functional_tests" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.16"/>
+  <testcase name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0"/>
+  <testcase name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.028"/>
   <testcase name="serviceOperationName_field_is_GenericSODependency_annotation_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
-  <testcase name="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.006"/>
-  <testcase name="test" classname="com.rc.wefunit.annotations.Annotations" time="0.001"/>
-  <testcase name="test_enabled_method" classname="com.rc.wefunit.annotations.Annotations" time="0.002"/>
+  <testcase name="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present" classname="com.rc.wefunit.GenericServiceOperationTestTest" time="0.001"/>
+  <testcase name="test" classname="com.rc.wefunit.annotations.Annotations" time="0"/>
+  <testcase name="test_enabled_method" classname="com.rc.wefunit.annotations.Annotations" time="0.003"/>
   <testcase name="DATA_SERVICE_NAME" classname="com.rc.wefunit.enums.GenericSOInjectablesTest" time="0.001"/>
-  <testcase name="SERVICE_OPERATION_NAME" classname="com.rc.wefunit.enums.GenericSOInjectablesTest" time="0.002"/>
-  <testcase name="SERVICE_OPERATION_NAME_INDEX_0" classname="com.rc.wefunit.enums.GenericSOInjectablesTest" time="0.004"/>
-  <testcase name="method_getTotalExecutableTestsCount" classname="com.rc.wefunit.TestClassStatsTest" time="0.007"/>
-  <testcase name="method_getSCBuildersFixturesModel" classname="com.rc.wefunit.producers.FactoryProducersTest" time="0.002"/>
-  <testcase name="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found" classname="com.rc.wefunit.producers.FactoryProducersTest" time="0.001"/>
-  <testcase name="is_a_Qualifier" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0.001"/>
+  <testcase name="SERVICE_OPERATION_NAME" classname="com.rc.wefunit.enums.GenericSOInjectablesTest" time="0.001"/>
+  <testcase name="SERVICE_OPERATION_NAME_INDEX_0" classname="com.rc.wefunit.enums.GenericSOInjectablesTest" time="0.003"/>
+  <testcase name="method_getTotalExecutableTestsCount" classname="com.rc.wefunit.TestClassStatsTest" time="0.003"/>
+  <testcase name="method_getSCBuildersFixturesModel" classname="com.rc.wefunit.producers.FactoryProducersTest" time="0.001"/>
+  <testcase name="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found" classname="com.rc.wefunit.producers.FactoryProducersTest" time="0"/>
+  <testcase name="is_a_Qualifier" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0"/>
   <testcase name="is_annotation_GenericSODependency" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0.001"/>
   <testcase name="is_value_method_present" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0"/>
-  <testcase name="target" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0.001"/>
-  <testcase name="target_METHOD_AND_FIELD" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0"/>
+  <testcase name="target" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0"/>
+  <testcase name="target_METHOD_AND_FIELD" classname="com.rc.wefunit.annotations.GenericSODependencyTest" time="0.001"/>
   <testcase name="class_Assert_existence" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
-  <testcase name="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
-  <testcase name="method_assertNotNull_throw_AssertionError_when_object_is_null" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
+  <testcase name="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
+  <testcase name="method_assertNotNull_throw_AssertionError_when_object_is_null" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
   <testcase name="method_assertNotNull_with_one_argument_Object" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
-  <testcase name="method_assertTrue_is_public_static_with_only_one_argument_Object" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
+  <testcase name="method_assertTrue_is_public_static_with_only_one_argument_Object" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
   <testcase name="method_assertTrue_no_Throwable_when_argument_is_true" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
-  <testcase name="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
-  <testcase name="method_fail_with_no_params" classname="com.rc.wefunit.probes.AssertTest" time="0.001"/>
-  <testcase name="method_fail_with_string_argument" classname="com.rc.wefunit.probes.AssertTest" time="0.004"/>
+  <testcase name="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false" classname="com.rc.wefunit.probes.AssertTest" time="0.004"/>
+  <testcase name="method_fail_with_no_params" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
+  <testcase name="method_fail_with_string_argument" classname="com.rc.wefunit.probes.AssertTest" time="0"/>
 </testsuite>

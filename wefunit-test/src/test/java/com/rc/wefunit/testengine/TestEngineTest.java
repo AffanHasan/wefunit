@@ -11,9 +11,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Field;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import java.lang.reflect.Method;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,6 +25,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
 
     private final Runner _runner = Factories.RunnerFactory.getInstance();
     private TestClassStats _testClassStats;
+    private CommonUtils _commonUtils = Factories.CommonUtilsFactory.getInstance();
 
     @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE})
     public TestEngineTest(String webInfDirPath){
@@ -82,6 +82,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
             return null;
         }
     }
+
     @Test
     public void method_getTestScores_returned_map_must_contain_score_document(){
         /*
@@ -137,7 +138,6 @@ public class TestEngineTest extends TestRunnerBaseClass {
         }
     }
 
-    //TODO : Test Shift
     @Test
     public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(){
         this.expectations();
@@ -150,11 +150,6 @@ public class TestEngineTest extends TestRunnerBaseClass {
         org.testng.Assert.assertEquals(actualExecutedTestsCount, totalExecutableTests);
     }
 
-    private void m1 (int a, int... b){
-
-    }
-
-//TODO : Test Shift
     @Test
     public void method_executeTests_total_test_for_explicitly_failed_tests(){
         this.expectations();
@@ -167,7 +162,6 @@ public class TestEngineTest extends TestRunnerBaseClass {
         org.testng.Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
     }
 
-//TODO : Test Shift
     @Test
     public void method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests(){
         this.expectations();
@@ -177,10 +171,9 @@ public class TestEngineTest extends TestRunnerBaseClass {
         Map<String, Object> testScores = this._testEngine.getTestScores();
         int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
         List<Map<String, Object>> reportedFailedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("failed");
-        org.testng.Assert.assertEquals(reportedFailedTests.size(), totalFailedTests);
+        org.testng.Assert.assertEquals(reportedFailedTests.size(),  totalFailedTests);
     }
 
-//TODO : Test Shift
     @Test
     public void method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests(){
         this.expectations();
@@ -193,4 +186,55 @@ public class TestEngineTest extends TestRunnerBaseClass {
         List<Map<String, Object>> reportedPassedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("passed");
         org.testng.Assert.assertEquals(reportedPassedTests.size(), totalExecutedTests - totalFailedTests);//Total passed tests = total_executed_tests - total_failed_tests
     }
+
+    @Test
+    public void method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(){
+        this.expectations();
+        this.setTestClassStats();
+
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+
+        Map<String, List<String>> classesSet = new LinkedHashMap<String, List<String>>();//Test class name to test methods mapping
+        try {
+            Set<Class> testClasses =  this._runner.getTestClassesSet();
+            for( Class testClassItem : testClasses ){
+                List<String> methodNames = new ArrayList<String>();
+                for(Method m : this._commonUtils.getTestMethodsArrayFromTestClass(testClassItem)){
+                    methodNames.add(m.getName());
+                }
+                classesSet.put(testClassItem.getName(), methodNames);
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        List<Map<String, Object>> failedTestsList = (List<Map<String, Object>>) ( ( (Map<String, Object>) this._testEngine.getTestScores().get("report") ).get("failed") );
+        List<Map<String, Object>> passedTestsList = ( List<Map<String, Object>> ) ( (Map<String, Object>) this._testEngine.getTestScores().get("report")).get("passed");
+
+        for(String className :  classesSet.keySet() ){
+            int estTestCount = ((List<String>) classesSet.get(className)).size();
+            int testCount = 0;
+
+            for(Map<String, Object> item : failedTestsList){//Failed Tests
+                if(classesSet.get(className).contains(item.get("test_name")))//Matching method name
+                    testCount++;
+            }
+
+            for(Map<String, Object> item : passedTestsList){//Passed Tests
+                if(classesSet.get(className).contains(item.get("test_name")))//Matching method name
+                    testCount++;
+            }
+
+            if(className.equals("test.models.test.services.Service1Test.GetAccountsDetailSOTest")){
+                System.out.println("--- --- --- Special Class : " + classesSet.get(className).toString());
+            }
+
+            System.out.println("--- --- --- class Name : " + className);
+            System.out.println("estTestCount : " + estTestCount);
+            System.out.println("testCount : " + testCount);
+            org.testng.Assert.assertEquals(testCount, estTestCount);
+        }
+    }
+
 }

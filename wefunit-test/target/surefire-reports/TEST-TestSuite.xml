@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.633" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.566" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -57,11 +57,48 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.437"/>
-  <testcase name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.079"/>
-  <testcase name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.047"/>
-  <testcase name="method_executeTests_total_test_for_explicitly_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.063"/>
-  <testcase name="method_getTestScores_returned_map_must_contain_report_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.002"/>
-  <testcase name="method_getTestScores_returned_map_must_contain_score_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
-  <testcase name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.005"/>
+  <testcase name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.316"/>
+  <testcase name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.055"/>
+  <testcase name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.044"/>
+  <testcase name="method_executeTests_total_test_for_explicitly_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.048"/>
+  <testcase name="method_getTestScores_returned_map_must_contain_report_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
+  <testcase name="method_getTestScores_returned_map_must_contain_score_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.001"/>
+  <testcase name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
+  <testcase name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.102">
+    <failure message="expected [9] but found [22]" type="java.lang.AssertionError">java.lang.AssertionError: expected [9] but found [22]
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+</failure>
+    <system-out><![CDATA[--- --- --- class Name : test.package1.MyLogic6Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic3Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic5Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic2Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogicTest
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic4Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic7Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.package1.MyLogic1Test
+estTestCount : 0
+testCount : 0
+--- --- --- class Name : test.executabletests.ExecutablesTest
+estTestCount : 3
+testCount : 3
+--- --- --- Special Class : [failedTest1, failedTest2, failedTest3, failedTest4, failedTest5, failedTest6, parameter_count_test, is_service_operation_name_is_in_correct_format, is_service_operation_exists]
+--- --- --- class Name : test.models.test.services.Service1Test.GetAccountsDetailSOTest
+estTestCount : 9
+testCount : 22
+]]></system-out>
+  </testcase>
 </testsuite>

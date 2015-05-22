@@ -8,20 +8,13 @@
   <parameter name="wef-project-name" value="samplewefproject"/>
   <parameter name="logging-base-dir-name" value="wefunitlogs"/>
   <parameter name="config-file-name" value="wefunit.xml"/>
-  <test name="ExecuteAll(failed)">
+  <test name="T1(failed)">
     <classes>
       <class name="com.rc.wefunit.testengine.TestEngineTest">
         <methods>
-          <include name="t1"/>
+          <include name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map"/>
         </methods>
       </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
-      <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
-        <methods>
-          <include name="t1"/>
-          <include name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure"/>
-          <include name="t2"/>
-        </methods>
-      </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
     </classes>
-  </test> <!-- ExecuteAll(failed) -->
+  </test> <!-- T1(failed) -->
 </suite> <!-- Failed suite [MainSuite] -->
