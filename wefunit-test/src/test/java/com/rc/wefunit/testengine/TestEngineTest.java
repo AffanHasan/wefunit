@@ -1,14 +1,19 @@
 package com.rc.wefunit.testengine;
 
-import com.rc.wefunit.CommonTestFixtures;
-import com.rc.wefunit.Factories;
-import com.rc.wefunit.TestRunnerBaseClass;
+import com.bowstreet.util.SystemProperties;
+import com.bowstreet.webapp.WebAppAccess;
+import com.rc.wefunit.*;
 import com.rc.wefunit.probes.Assert;
+import mockit.Expectations;
+import mockit.Injectable;
+import mockit.Mocked;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,9 +22,66 @@ import java.util.regex.Pattern;
  */
 public class TestEngineTest extends TestRunnerBaseClass {
 
+    private final String _webInfDirPath;
+
+    private final Runner _runner = Factories.RunnerFactory.getInstance();
+    private TestClassStats _testClassStats;
+
+    @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE})
+    public TestEngineTest(String webInfDirPath){
+        this._webInfDirPath = webInfDirPath;
+
+        //        Setting the Class Loader for runner instance
+        try {
+            Field field = this._runner.getClass().getDeclaredField("_classLoader");
+            field.setAccessible(true);
+            field.set(this._runner, this.getClass().getClassLoader());
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Mocked Factories.RunnerFactory runnerFactory;
+
+    @Injectable
+    WebAppAccess webAppAccess;
+
+    @Injectable Runner runner;
+
     private final TestEngine _testEngine = Factories.TestEngineFactory.getInstance();
     private final Map<String, Object> _scoresMap = this._testEngine.getTestScores();
 
+    private final void expectations(){
+        new Expectations(){
+            {
+                SystemProperties.getWebInfDir(); result = _webInfDirPath;
+                runnerFactory.getInstance();result = runner;
+                runner.getWebAppAccess();result = webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+            }
+        };
+    }
+
+    private final void setTestClassStats(){
+        try {
+            this._testClassStats = Factories.TestClassStatsFactory.getInstance(this._runner.getTestClassesSet());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            org.testng.Assert.fail(e.getMessage());
+        }
+    }
+
+    private Class getClassObject(){
+        try {
+            return Class.forName("com.rc.wefunit.testengine.TestEngine");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            org.testng.Assert.fail(e.getMessage());
+            return null;
+        }
+    }
     @Test
     public void method_getTestScores_returned_map_must_contain_score_document(){
         /*
@@ -73,5 +135,62 @@ public class TestEngineTest extends TestRunnerBaseClass {
             matcher = stackTracePattern.matcher((String)obj.get("stack_trace"));
             Assert.assertTrue(matcher.matches());//Matching string representation for StackTrace
         }
+    }
+
+    //TODO : Test Shift
+    @Test
+    public void method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present(){
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+        int totalExecutableTests = this._testClassStats.getTotalExecutableTestsCount();
+        Map<String, Object> testScores = this._testEngine.getTestScores();
+        int actualExecutedTestsCount = (Integer) ((Map<String, Object>)testScores.get("score")).get("totalExecutedTests");
+        org.testng.Assert.assertEquals(actualExecutedTestsCount, totalExecutableTests);
+    }
+
+    private void m1 (int a, int... b){
+
+    }
+
+//TODO : Test Shift
+    @Test
+    public void method_executeTests_total_test_for_explicitly_failed_tests(){
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+        Map<String, Object> testScores = this._testEngine.getTestScores();
+        int totalFailedTestPresent = 14;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
+        int actualTestFailuresCount = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+        org.testng.Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
+    }
+
+//TODO : Test Shift
+    @Test
+    public void method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests(){
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+        Map<String, Object> testScores = this._testEngine.getTestScores();
+        int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+        List<Map<String, Object>> reportedFailedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("failed");
+        org.testng.Assert.assertEquals(reportedFailedTests.size(), totalFailedTests);
+    }
+
+//TODO : Test Shift
+    @Test
+    public void method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests(){
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
+        Map<String, Object> testScores = this._testEngine.getTestScores();
+        final int totalFailedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
+        final int totalExecutedTests = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalExecutedTests");
+        List<Map<String, Object>> reportedPassedTests = (List<Map<String, Object>>) ( (Map<String, Object>) testScores.get("report") ).get("passed");
+        org.testng.Assert.assertEquals(reportedPassedTests.size(), totalExecutedTests - totalFailedTests);//Total passed tests = total_executed_tests - total_failed_tests
     }
 }

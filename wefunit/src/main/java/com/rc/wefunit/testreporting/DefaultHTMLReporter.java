@@ -107,7 +107,7 @@ public class DefaultHTMLReporter implements HTMLReporter {
                     "<!DOCTYPE html>" +
                     "<html>"
                             +"<head>"
-                                +"<title>WefUnit Test Report</title>" +
+                                +"<title>WefUnit-"+ _configReader.getProjectName() +"</title>" +
                             "</head>"
                             +"<body>"
                                 +failedFieldSets.toString()//Failed Field Sets

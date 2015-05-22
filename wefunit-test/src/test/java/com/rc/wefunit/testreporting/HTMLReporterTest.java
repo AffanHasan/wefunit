@@ -188,7 +188,7 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         File file = new File(base + configReader.getBaseDirPathForLogging() + this._commonUtils.createPath(path));
         WebDriver webDriver = new FirefoxDriver();
         webDriver.get(file.toString());
-        Assert.assertEquals(webDriver.getTitle(), "WefUnit Test Report");//Verify title
+        Assert.assertEquals(webDriver.getTitle(), "WefUnit-" + this._WEF_PROJECT_NAME);//Verify title
         webDriver.quit();
     }
 
@@ -225,14 +225,14 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         WebDriver webDriver = new FirefoxDriver();
         webDriver.get(file.toString());
 
-        List<WebElement> failedTestsList = webDriver.findElements(By.className("failed_test_item"));
-        List<WebElement> passedTestsList = webDriver.findElements(By.className("passed_test_item"));
+        List<WebElement> failedTestsList = webDriver.findElements(By.cssSelector("li[name=\"failed_test_item\""));
+        List<WebElement> passedTestsList = webDriver.findElements(By.name("li[name=\"passed_test_item\""));
 
-        Assert.assertEquals(webDriver.findElements(By.tagName("fieldset")).size(), totalExecutedTests);//Field Set Count
+        Assert.assertEquals(passedTestsList.size() + failedTestsList.size(), totalExecutedTests);//Total tests count
         Assert.assertEquals(failedTestsList.size(), totalTestFailures);//Failed Tests Count
         Assert.assertEquals(passedTestsList.size(), totalExecutedTests - totalTestFailures);//Passed Tests Count
 
-        for ( WebElement elem : failedTestsList){
+        for( WebElement elem : failedTestsList){
         }
 
         List<Map<String, Object>> failedTestArr = ( (List<Map<String, Object>>) ((Map<String, Object>)this._testEngine.getTestScores().get("report")).get("failed") );

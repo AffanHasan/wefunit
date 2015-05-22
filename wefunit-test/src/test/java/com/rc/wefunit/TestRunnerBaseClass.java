@@ -19,9 +19,9 @@ public class TestRunnerBaseClass {
 
     public void runTests(final String webINFPath){
 
-        new Expectations(){{
-            SystemProperties.getWebInfDir(); result = webINFPath;
-        }};
+//        new Expectations(){{
+//            SystemProperties.getWebInfDir(); result = webINFPath;
+//        }};
 
 //        Running the tests
         final Runner runner = Factories.RunnerFactory.getInstance();

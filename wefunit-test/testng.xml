@@ -13,16 +13,16 @@
     <!--Configuration file name-->
     <parameter name="config-file-name" value="wefunit.xml"/>
 
-    <test name="ExecuteAll" >
-        <packages>
-            <package name=".*"></package>
-        </packages>
-    </test>
-
-    <!--<test name="T1">-->
-        <!--<classes>-->
-            <!--<class name="com.rc.wefunit.FixtureDependencyTest"/>-->
-            <!--&lt;!&ndash;<class name="com.rc.wefunit.DependencySignatureTest"/>&ndash;&gt;-->
-        <!--</classes>-->
+    <!--<test name="ExecuteAll" >-->
+        <!--<packages>-->
+            <!--<package name=".*"></package>-->
+        <!--</packages>-->
     <!--</test>-->
+
+    <test name="T1">
+        <classes>
+            <class name="com.rc.wefunit.testengine.TestEngineTest"/>
+            <!--<class name="com.rc.wefunit.DependencySignatureTest"/>-->
+        </classes>
+    </test>
 </suite>

@@ -1,61 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="MainSuite" duration-ms="8963" started-at="2015-05-21T08:08:42Z" finished-at="2015-05-21T08:08:51Z">
+  <suite name="MainSuite" duration-ms="711" started-at="2015-05-22T11:40:56Z" finished-at="2015-05-22T11:40:56Z">
     <groups>
     </groups>
-    <test name="ExecuteAll" duration-ms="8963" started-at="2015-05-21T08:08:42Z" finished-at="2015-05-21T08:08:51Z">
-      <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure" duration-ms="5118" started-at="2015-05-21T13:08:42Z" finished-at="2015-05-21T13:08:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_basic_structure -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content" duration-ms="3076" started-at="2015-05-21T13:08:47Z" finished-at="2015-05-21T13:08:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_test_report_content -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="13" started-at="2015-05-21T13:08:50Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="18" started-at="2015-05-21T13:08:51Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="12" started-at="2015-05-21T13:08:51Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@2286778]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="126" started-at="2015-05-21T13:08:51Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible -->
-      </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
-      <class name="com.rc.wefunit.ConfigReaderTest">
-        <test-method status="PASS" signature="method_getProjectName_test_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@4e9ba398]" name="method_getProjectName_test_for_linux" duration-ms="22" started-at="2015-05-21T13:08:51Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getProjectName_test_for_linux -->
-        <test-method status="PASS" signature="method_getProjectName_test_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@4e9ba398]" name="method_getProjectName_test_for_windows" duration-ms="3" started-at="2015-05-21T13:08:51Z" finished-at="2015-05-21T13:08:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getProjectName_test_for_windows -->
-      </class> <!-- com.rc.wefunit.ConfigReaderTest -->
+    <test name="T1" duration-ms="711" started-at="2015-05-22T11:40:56Z" finished-at="2015-05-22T11:40:56Z">
       <class name="com.rc.wefunit.testengine.TestEngineTest">
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@5abca1e0]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="160" started-at="2015-05-21T13:08:42Z" finished-at="2015-05-21T13:08:42Z">
+        <test-method status="PASS" signature="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" duration-ms="437" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests -->
+        <test-method status="PASS" signature="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" duration-ms="80" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present -->
+        <test-method status="PASS" signature="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" duration-ms="46" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests -->
+        <test-method status="PASS" signature="method_executeTests_total_test_for_explicitly_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_test_for_explicitly_failed_tests" duration-ms="62" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_test_for_explicitly_failed_tests -->
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="2" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@5abca1e0]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="1" started-at="2015-05-21T13:08:42Z" finished-at="2015-05-21T13:08:42Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="1" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@5abca1e0]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="303" started-at="2015-05-21T13:08:42Z" finished-at="2015-05-21T13:08:42Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="4" started-at="2015-05-22T16:40:56Z" finished-at="2015-05-22T16:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
       </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
-    </test> <!-- ExecuteAll -->
+    </test> <!-- T1 -->
   </suite> <!-- MainSuite -->
 </testng-results>
