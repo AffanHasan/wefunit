@@ -54,7 +54,7 @@ public abstract class GenericServiceOperationTest {
         Pattern soNamePattern = Pattern.compile("[a-z]\\w*SO");
         DataService ds = this.getWebAppAccessSCBuildersFixtureModel().getWebApp().getDataService(this.getDataServiceName());
         ServiceOperation so = ds.getOperation(this.getServiceOperationName());
-        String soName = so.getName();
+        String soName= so.getName();
         Matcher matcher = soNamePattern.matcher(soName);
         Assert.assertTrue(matcher.matches());//Assert name matches the pattern
     }

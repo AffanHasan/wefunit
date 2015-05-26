@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ExecuteAll</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 21 13:08:42 PKT 2015</td>
+<td>Started on:</td><td>Tue May 26 19:16:22 PKT 2015</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8963 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7094 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,120 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()'><b>method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name=&quot;failed_test_item&quot;}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932332324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1932332324'><pre>org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name=&quot;failed_test_item&quot;}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+</pre></div></td>
+<td>2</td>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array()'><b>method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td><div><pre>mockit.internal.MissingInvocation: Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()
+Caused by: Missing invocations
+	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
+	at com.rc.wefunit.TestRunnerBaseClass$1.&lt;init&gt;(TestRunnerBaseClass.java:23)
+	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
+	... 6 more
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1858609436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1858609436'><pre>mockit.internal.MissingInvocation: Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: Missing invocations
+	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
+	at com.rc.wefunit.TestRunnerBaseClass$1.&lt;init&gt;(TestRunnerBaseClass.java:23)
+	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	... 6 more
+</pre></div></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,60 +189,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()'><b>method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()'><b>method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()'><b>method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
+<tr>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_executeTests_total_test_for_explicitly_failed_tests()'><b>method_executeTests_total_test_for_explicitly_failed_tests</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td></td>
+<td>0</td>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
+<tr>
 <td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_basic_structure()'><b>method_generateHTMLTestReporting_TestReporting_html_file_basic_structure</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
 <td></td>
-<td>5</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
-<tr>
-<td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()'><b>method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
-<td></td>
 <td>3</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
 <tr>
 <td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()'><b>method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
 <tr>
 <td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()'><b>method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
 <tr>
 <td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()'><b>method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
 <tr>
 <td title='com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible()'><b>method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible</b><br>Test class: com.rc.wefunit.testreporting.HTMLReporterTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testreporting.HTMLReporterTest@2286778</td></tr>
+<td>com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1</td></tr>
 <tr>
 <td title='com.rc.wefunit.ConfigReaderTest.method_getProjectName_test_for_linux()'><b>method_getProjectName_test_for_linux</b><br>Test class: com.rc.wefunit.ConfigReaderTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.ConfigReaderTest@4e9ba398</td></tr>
+<td>com.rc.wefunit.ConfigReaderTest@2038ae61</td></tr>
 <tr>
 <td title='com.rc.wefunit.ConfigReaderTest.method_getProjectName_test_for_windows()'><b>method_getProjectName_test_for_windows</b><br>Test class: com.rc.wefunit.ConfigReaderTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.ConfigReaderTest@4e9ba398</td></tr>
+<td>com.rc.wefunit.ConfigReaderTest@2038ae61</td></tr>
 <tr>
 <td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_must_contain_report_document()'><b>method_getTestScores_returned_map_must_contain_report_document</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testengine.TestEngineTest@5abca1e0</td></tr>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
 <tr>
 <td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_must_contain_score_document()'><b>method_getTestScores_returned_map_must_contain_score_document</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testengine.TestEngineTest@5abca1e0</td></tr>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
 <tr>
-<td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array()'><b>method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
+<td title='com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()'><b>method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</b><br>Test class: com.rc.wefunit.testengine.TestEngineTest</td>
 <td></td>
 <td>0</td>
-<td>com.rc.wefunit.testengine.TestEngineTest@5abca1e0</td></tr>
+<td>com.rc.wefunit.testengine.TestEngineTest@55d56113</td></tr>
 </table><p>
 </body>
 </html>

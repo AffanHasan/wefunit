@@ -1,8 +1,46 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.962 sec <<< FAILURE! - in TestSuite
-method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(com.rc.wefunit.testengine.TestEngineTest)  Time elapsed: 0.102 sec  <<< FAILURE!
-java.lang.AssertionError: expected [9] but found [22]
-	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.799 sec <<< FAILURE! - in TestSuite
+method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(com.rc.wefunit.testengine.TestEngineTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+mockit.internal.MissingInvocation: Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()
+	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
+	at com.rc.wefunit.TestRunnerBaseClass$1.<init>(TestRunnerBaseClass.java:23)
+	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
+
+method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(com.rc.wefunit.testreporting.HTMLReporterTest)  Time elapsed: 2.419 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name="failed_test_item"}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
 

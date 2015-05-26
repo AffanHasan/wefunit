@@ -48,7 +48,7 @@ public class DefaultTestEngine implements TestEngine {
                     this._incrementPassedTests(m, className);
                 } catch (Throwable e) {//If here it means that the test failed
 //                    e.printStackTrace();
-                    this._incrementTotalTestFailures(e, className);
+                    this._incrementTotalTestFailures(m, e, className);
                 }
             }
         }
@@ -76,7 +76,7 @@ public class DefaultTestEngine implements TestEngine {
         score.put("totalExecutedTests", ++totalExecutedTests);
     }
 
-    private void _incrementTotalTestFailures(Throwable e, String className){
+    private void _incrementTotalTestFailures(Method m, Throwable e, String className){
 
 //        Setting score
         Map<String, Object>  score = (Map<String, Object> ) this._testScores.get("score");
@@ -85,9 +85,8 @@ public class DefaultTestEngine implements TestEngine {
 //        Reporting : Incrementing Total Test Failures
         List<Map<String, Object>> failedArr = (List<Map<String, Object>>) ( ( (Map<String, Object>) this._testScores.get("report") ).get("failed") );
         Map<String, Object> testItem = new LinkedHashMap<String, Object>();
-//        testItem.put("class_name", e.getCause().getStackTrace()[1].getClassName());//Test Class Name
         testItem.put("class_name", className);//Test Class Name
-        testItem.put("test_name", e.getCause().getStackTrace()[1].getMethodName());//Test Method Name
+        testItem.put("test_name", m.getName());//Test Method Name
         testItem.put("stack_trace", new String(e.getCause().toString() + "\n\t at " + e.getCause().getStackTrace()[1].toString()));
         failedArr.add(testItem);
     }
@@ -95,7 +94,6 @@ public class DefaultTestEngine implements TestEngine {
     private void _incrementPassedTests(Method m, String className){
         List<Map<String, Object>> passedTestsList = ( List<Map<String, Object>> ) ( (Map<String, Object>) this._testScores.get("report")).get("passed");
         Map<String, Object> passedTest = new LinkedHashMap<String, Object>();
-//        passedTest.put("class_name", m.getDeclaringClass().getName());
         passedTest.put("class_name", className);
         passedTest.put("test_name", m.getName());
         passedTestsList.add(passedTest);

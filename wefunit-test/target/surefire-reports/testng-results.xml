@@ -1,48 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="8" passed="7">
+<testng-results skipped="0" failed="2" total="16" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="MainSuite" duration-ms="626" started-at="2015-05-22T13:59:14Z" finished-at="2015-05-22T13:59:15Z">
+  <suite name="MainSuite" duration-ms="7094" started-at="2015-05-26T14:16:22Z" finished-at="2015-05-26T14:16:29Z">
     <groups>
     </groups>
-    <test name="T1" duration-ms="626" started-at="2015-05-22T13:59:14Z" finished-at="2015-05-22T13:59:15Z">
-      <class name="com.rc.wefunit.testengine.TestEngineTest">
-        <test-method status="PASS" signature="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" duration-ms="317" started-at="2015-05-22T18:59:14Z" finished-at="2015-05-22T18:59:14Z">
+    <test name="ExecuteAll" duration-ms="7094" started-at="2015-05-26T14:16:22Z" finished-at="2015-05-26T14:16:29Z">
+      <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure" duration-ms="3983" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests -->
-        <test-method status="PASS" signature="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" duration-ms="56" started-at="2015-05-22T18:59:14Z" finished-at="2015-05-22T18:59:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present -->
-        <test-method status="PASS" signature="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" duration-ms="44" started-at="2015-05-22T18:59:14Z" finished-at="2015-05-22T18:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests -->
-        <test-method status="PASS" signature="method_executeTests_total_test_for_explicitly_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_executeTests_total_test_for_explicitly_failed_tests" duration-ms="48" started-at="2015-05-22T18:59:15Z" finished-at="2015-05-22T18:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_executeTests_total_test_for_explicitly_failed_tests -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="0" started-at="2015-05-22T18:59:15Z" finished-at="2015-05-22T18:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="0" started-at="2015-05-22T18:59:15Z" finished-at="2015-05-22T18:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="1" started-at="2015-05-22T18:59:15Z" finished-at="2015-05-22T18:59:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
-        <test-method status="FAIL" signature="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@523884b2]" name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" duration-ms="83" started-at="2015-05-22T18:59:15Z" finished-at="2015-05-22T18:59:15Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_basic_structure -->
+        <test-method status="FAIL" signature="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content" duration-ms="2409" started-at="2015-05-26T19:16:26Z" finished-at="2015-05-26T19:16:29Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[expected [9] but found [22]]]>
+              <![CDATA[The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name="failed_test_item"}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [9] but found [22]
-	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name="failed_test_item"}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.lang.reflect.Method.invoke(Method.java:483)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
@@ -51,13 +54,110 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_test_report_content -->
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="9" started-at="2015-05-26T19:16:29Z" finished-at="2015-05-26T19:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there -->
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="10" started-at="2015-05-26T19:16:29Z" finished-at="2015-05-26T19:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file -->
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="3" started-at="2015-05-26T19:16:29Z" finished-at="2015-05-26T19:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them -->
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="165" started-at="2015-05-26T19:16:29Z" finished-at="2015-05-26T19:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible -->
+      </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
+      <class name="com.rc.wefunit.ConfigReaderTest">
+        <test-method status="PASS" signature="method_getProjectName_test_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@2038ae61]" name="method_getProjectName_test_for_linux" duration-ms="25" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getProjectName_test_for_linux -->
+        <test-method status="PASS" signature="method_getProjectName_test_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@2038ae61]" name="method_getProjectName_test_for_windows" duration-ms="10" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getProjectName_test_for_windows -->
+      </class> <!-- com.rc.wefunit.ConfigReaderTest -->
+      <class name="com.rc.wefunit.testengine.TestEngineTest">
+        <test-method status="PASS" signature="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" duration-ms="269" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests -->
+        <test-method status="PASS" signature="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" duration-ms="18" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present -->
+        <test-method status="PASS" signature="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" duration-ms="19" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests -->
+        <test-method status="PASS" signature="method_executeTests_total_test_for_explicitly_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_test_for_explicitly_failed_tests" duration-ms="30" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_executeTests_total_test_for_explicitly_failed_tests -->
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="1" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="0" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
+        <test-method status="FAIL" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(java.lang.String)[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="5" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
+          <exception class="mockit.internal.MissingInvocation">
+            <message>
+              <![CDATA[Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[mockit.internal.MissingInvocation: Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: Missing invocations
+	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
+	at com.rc.wefunit.TestRunnerBaseClass$1.<init>(TestRunnerBaseClass.java:23)
+	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	... 6 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- mockit.internal.MissingInvocation -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
+        <test-method status="PASS" signature="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" duration-ms="21" started-at="2015-05-26T19:16:22Z" finished-at="2015-05-26T19:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map -->
       </class> <!-- com.rc.wefunit.testengine.TestEngineTest -->
-    </test> <!-- T1 -->
+    </test> <!-- ExecuteAll -->
   </suite> <!-- MainSuite -->
 </testng-results>

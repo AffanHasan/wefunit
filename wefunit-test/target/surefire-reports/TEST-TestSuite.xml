@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.566" tests="8" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="7.025" tests="16" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -57,48 +57,68 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.316"/>
-  <testcase name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.055"/>
-  <testcase name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.044"/>
-  <testcase name="method_executeTests_total_test_for_explicitly_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.048"/>
-  <testcase name="method_getTestScores_returned_map_must_contain_report_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
-  <testcase name="method_getTestScores_returned_map_must_contain_score_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.001"/>
-  <testcase name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" classname="com.rc.wefunit.testengine.TestEngineTest" time="0"/>
-  <testcase name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.102">
-    <failure message="expected [9] but found [22]" type="java.lang.AssertionError">java.lang.AssertionError: expected [9] but found [22]
-	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map(TestEngineTest.java:236)
-</failure>
-    <system-out><![CDATA[--- --- --- class Name : test.package1.MyLogic6Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic3Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic5Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic2Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogicTest
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic4Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic7Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.package1.MyLogic1Test
-estTestCount : 0
-testCount : 0
---- --- --- class Name : test.executabletests.ExecutablesTest
-estTestCount : 3
-testCount : 3
---- --- --- Special Class : [failedTest1, failedTest2, failedTest3, failedTest4, failedTest5, failedTest6, parameter_count_test, is_service_operation_name_is_in_correct_format, is_service_operation_exists]
---- --- --- class Name : test.models.test.services.Service1Test.GetAccountsDetailSOTest
-estTestCount : 9
-testCount : 22
+  <testcase name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.268"/>
+  <testcase name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.017"/>
+  <testcase name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.02"/>
+  <testcase name="method_executeTests_total_test_for_explicitly_failed_tests" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.029"/>
+  <testcase name="method_getTestScores_returned_map_must_contain_report_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.001"/>
+  <testcase name="method_getTestScores_returned_map_must_contain_score_document" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.002"/>
+  <testcase name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.019">
+    <failure message="Missing 1 invocation to:&#10;com.bowstreet.util.SystemProperties#getWebInfDir()" type="mockit.internal.MissingInvocation"><![CDATA[mockit.internal.MissingInvocation: Missing 1 invocation to:
+com.bowstreet.util.SystemProperties#getWebInfDir()
+	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
+	at com.rc.wefunit.TestRunnerBaseClass$1.<init>(TestRunnerBaseClass.java:23)
+	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
+	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
+]]></failure>
+  </testcase>
+  <testcase name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" classname="com.rc.wefunit.testengine.TestEngineTest" time="0.021"/>
+  <testcase name="method_getProjectName_test_for_linux" classname="com.rc.wefunit.ConfigReaderTest" time="0.026"/>
+  <testcase name="method_getProjectName_test_for_windows" classname="com.rc.wefunit.ConfigReaderTest" time="0.01"/>
+  <testcase name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="3.982"/>
+  <testcase name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="2.419">
+    <failure message="The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:&#10;InvalidSelectorError: An invalid or illegal selector was specified&#10;Command duration or timeout: 55 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e&#10;*** Element info: {Using=css selector, value=li[name=&quot;failed_test_item&quot;}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
+*** Element info: {Using=css selector, value=li[name="failed_test_item"}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
+	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name="failed_test_item" is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+]]></failure>
+    <system-out><![CDATA[--- ---- --- Map : {score={totalExecutedTests=8, totalTestFailures=4}, report={failed=[{class_name=test.models.test.services.Service1Test.GetAccountsDetailSOTest, test_name=failedTest1, stack_trace=java.lang.AssertionError
+	 at test.models.test.services.Service1Test.GetAccountsDetailSOTest.failedTest1(GetAccountsDetailSOTest.java:21)}, {class_name=test.models.test.services.Service1Test.GetAccountsDetailSOTest, test_name=failedTest2, stack_trace=java.lang.AssertionError: Explicit failure
+	 at test.models.test.services.Service1Test.GetAccountsDetailSOTest.failedTest2(GetAccountsDetailSOTest.java:26)}, {class_name=test.models.test.services.Service1Test.GetAccountsDetailSOTest, test_name=is_service_operation_name_is_in_correct_format, stack_trace=java.lang.NullPointerException
+	 at java.util.regex.Matcher.reset(Matcher.java:309)}, {class_name=test.models.test.services.Service1Test.GetUserInfoSOTest, test_name=is_service_operation_name_is_in_correct_format, stack_trace=java.lang.NullPointerException
+	 at java.util.regex.Matcher.reset(Matcher.java:309)}], passed=[{class_name=test.models.test.services.Service1Test.GetAccountsDetailSOTest, test_name=parameter_count_test}, {class_name=test.models.test.services.Service1Test.GetAccountsDetailSOTest, test_name=is_service_operation_exists}, {class_name=test.models.test.services.Service1Test.GetUserInfoSOTest, test_name=parameter_count_test}, {class_name=test.models.test.services.Service1Test.GetUserInfoSOTest, test_name=is_service_operation_exists}]}}
 ]]></system-out>
   </testcase>
+  <testcase name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="0.009"/>
+  <testcase name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="0.011"/>
+  <testcase name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="0.004"/>
+  <testcase name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" classname="com.rc.wefunit.testreporting.HTMLReporterTest" time="0.187"/>
 </testsuite>

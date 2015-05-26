@@ -2,6 +2,7 @@ com/rc/wefunit/ConfigReaderTest$4.class
 com/rc/wefunit/testengine/TestEngineTest$1.class
 com/rc/wefunit/TestRunnerBaseClass.class
 com/rc/wefunit/CommonTestFixtures.class
+com/rc/wefunit/TestRunnerBaseClass$1.class
 com/rc/wefunit/CommonTestFixtures$1.class
 com/rc/wefunit/testengine/TestEngineTest.class
 com/rc/wefunit/CommonUtilsTest.class

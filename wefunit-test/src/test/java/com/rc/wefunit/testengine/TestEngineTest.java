@@ -124,6 +124,8 @@ public class TestEngineTest extends TestRunnerBaseClass {
         final Map<String, Object> reportMap = (Map<String, Object>) _scoresMap.get("report");
         final List<Map<String, Object>> failedArr = (List<Map<String, Object>>) reportMap.get("failed");
 
+
+
         Assert.assertTrue(failedArr.size() > 0);//There must be some failed tests
 
         final Pattern stackTracePattern = Pattern.compile(".+\n\t at .+");
@@ -157,7 +159,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
         Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
         this._testEngine.executeTests(queue);//Execute the tests
         Map<String, Object> testScores = this._testEngine.getTestScores();
-        int totalFailedTestPresent = 14;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
+        int totalFailedTestPresent = 4;//All are defined in GetAccountsDetailSOTest.java in "samplewefproject"
         int actualTestFailuresCount = (Integer) ((Map<String, Object>) testScores.get("score")).get("totalTestFailures");
         org.testng.Assert.assertEquals(actualTestFailuresCount, totalFailedTestPresent);
     }
@@ -213,26 +215,22 @@ public class TestEngineTest extends TestRunnerBaseClass {
         List<Map<String, Object>> passedTestsList = ( List<Map<String, Object>> ) ( (Map<String, Object>) this._testEngine.getTestScores().get("report")).get("passed");
 
         for(String className :  classesSet.keySet() ){
-            int estTestCount = ((List<String>) classesSet.get(className)).size();
+            int estTestCount = classesSet.get(className).size();
             int testCount = 0;
 
             for(Map<String, Object> item : failedTestsList){//Failed Tests
-                if(classesSet.get(className).contains(item.get("test_name")))//Matching method name
+                if(((List<String>) classesSet.get(className)) .contains((String )item.get("test_name"))
+                        && ((String )item.get("class_name")).equals(className)) {//Matching method name
                     testCount++;
+                }
             }
 
-            for(Map<String, Object> item : passedTestsList){//Passed Tests
-                if(classesSet.get(className).contains(item.get("test_name")))//Matching method name
+            for(Map<String, Object> item : passedTestsList) {//Passed Tests
+                if(((List<String>) classesSet.get(className)) .contains((String) item.get("test_name"))
+                        && ((String )item.get("class_name")).equals(className)) {//Matching method name
                     testCount++;
+                }
             }
-
-            if(className.equals("test.models.test.services.Service1Test.GetAccountsDetailSOTest")){
-                System.out.println("--- --- --- Special Class : " + classesSet.get(className).toString());
-            }
-
-            System.out.println("--- --- --- class Name : " + className);
-            System.out.println("estTestCount : " + estTestCount);
-            System.out.println("testCount : " + testCount);
             org.testng.Assert.assertEquals(testCount, estTestCount);
         }
     }

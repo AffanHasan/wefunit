@@ -26,24 +26,4 @@ public class GetAccountsDetailSOTest extends GenericServiceOperationTest {
         Assert.fail("Explicit failure");
     }
 
-    @Test
-    public void failedTest3(){
-        Assert.fail("Explicit failure");
-    }
-
-    @Test
-    public void failedTest4(){
-        Assert.fail();
-    }
-
-    @Test
-    public void failedTest5(){
-        Assert.fail("Explicit failure");
-    }
-
-    @Test
-    public void failedTest6(){
-        Assert.fail("Explicit failure");
-    }
-
 }
