@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MainSuite">
-              <span class="suite-name border-failed">MainSuite</span>
+              <span class="suite-name border-passed">MainSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,26 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 2 failed,   14 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MainSuite" class="hide-methods failed suite-MainSuite"> (hide)</a> <!-- hide-methods failed suite-MainSuite -->
-                      <a href="#" panel-name="suite-MainSuite" class="show-methods failed suite-MainSuite"> (show)</a> <!-- show-methods failed suite-MainSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-MainSuite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testreporting.HTMLReporterTest" hash-for-method="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content">method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testengine.TestEngineTest" hash-for-method="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MainSuite -->
+                    <span class="method-stats">16 methods,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,6 +122,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testreporting.HTMLReporterTest" hash-for-method="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure">method_generateHTMLTestReporting_TestReporting_html_file_basic_structure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testreporting.HTMLReporterTest" hash-for-method="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content">method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -185,6 +171,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testengine.TestEngineTest" hash-for-method="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-MainSuite" title="com.rc.wefunit.testengine.TestEngineTest" hash-for-method="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -200,78 +191,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MainSuite" class="panel MainSuite">
-          <div class="suite-MainSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.rc.wefunit.testengine.TestEngineTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array">
-                  </a> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
-                  <span class="method-name">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</span>
-                  <div class="stack-trace">mockit.internal.MissingInvocation: Missing 1 invocation to:
-com.bowstreet.util.SystemProperties#getWebInfDir()
-Caused by: Missing invocations
-	at com.bowstreet.util.SystemProperties.getWebInfDir(SystemProperties.java)
-	at com.rc.wefunit.TestRunnerBaseClass$1.&lt;init&gt;(TestRunnerBaseClass.java:23)
-	at com.rc.wefunit.TestRunnerBaseClass.runTests(TestRunnerBaseClass.java:22)
-	at com.rc.wefunit.testengine.TestEngineTest.method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(TestEngineTest.java:122)
-	... 6 more
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MainSuite-class-failed -->
-          <div class="suite-MainSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.rc.wefunit.testreporting.HTMLReporterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content">
-                  </a> <!-- method_generateHTMLTestReporting_TestReporting_html_file_test_report_content -->
-                  <span class="method-name">method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: An invalid or illegal selector was specified
-Command duration or timeout: 55 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5fe15281-d3e9-45ab-9e6d-6b3ae29a6f3e
-*** Element info: {Using=css selector, value=li[name=&quot;failed_test_item&quot;}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:436)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
-	at com.rc.wefunit.testreporting.HTMLReporterTest.method_generateHTMLTestReporting_TestReporting_html_file_test_report_content(HTMLReporterTest.java:228)
-Caused by: org.openqa.selenium.InvalidSelectorException: The given selector li[name=&quot;failed_test_item&quot; is either invalid or does not result in a WebElement. The following error occurred:
-InvalidSelectorError: An invalid or illegal selector was specified
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;ubuntu&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_11&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10245)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10303)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10307)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous7243316087941572011webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MainSuite-class-failed -->
           <div class="suite-MainSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -322,6 +241,13 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array">
+                  </a> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
+                  <span class="method-name">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map">
                   </a> <!-- method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map -->
                   <span class="method-name">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</span>
@@ -362,6 +288,13 @@ Driver info: driver.version: unknown
                   <a name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure">
                   </a> <!-- method_generateHTMLTestReporting_TestReporting_html_file_basic_structure -->
                   <span class="method-name">method_generateHTMLTestReporting_TestReporting_html_file_basic_structure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content">
+                  </a> <!-- method_generateHTMLTestReporting_TestReporting_html_file_test_report_content -->
+                  <span class="method-name">method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -528,72 +461,72 @@ data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'method_generateHTMLTestReporting_TestReporting_html_file_basic_structure')
 data.setCell(0, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(0, 3, 3983);
+data.setCell(0, 3, 3867);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'method_generateHTMLTestReporting_TestReporting_html_file_test_report_content')
 data.setCell(1, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(1, 3, 2409);
+data.setCell(1, 3, 2809);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests')
 data.setCell(2, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(2, 3, 269);
+data.setCell(2, 3, 278);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible')
 data.setCell(3, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(3, 3, 165);
+data.setCell(3, 3, 120);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'method_executeTests_total_test_for_explicitly_failed_tests')
-data.setCell(4, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(4, 3, 30);
+data.setCell(4, 1, 'method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them')
+data.setCell(4, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
+data.setCell(4, 3, 22);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'method_getProjectName_test_for_linux')
-data.setCell(5, 2, 'com.rc.wefunit.ConfigReaderTest')
-data.setCell(5, 3, 25);
+data.setCell(5, 1, 'method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map')
+data.setCell(5, 2, 'com.rc.wefunit.testengine.TestEngineTest')
+data.setCell(5, 3, 21);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map')
+data.setCell(6, 1, 'method_executeTests_total_test_for_explicitly_failed_tests')
 data.setCell(6, 2, 'com.rc.wefunit.testengine.TestEngineTest')
 data.setCell(6, 3, 21);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests')
-data.setCell(7, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(7, 3, 19);
+data.setCell(7, 1, 'method_getProjectName_test_for_linux')
+data.setCell(7, 2, 'com.rc.wefunit.ConfigReaderTest')
+data.setCell(7, 3, 20);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present')
 data.setCell(8, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(8, 3, 18);
+data.setCell(8, 3, 17);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'method_getProjectName_test_for_windows')
-data.setCell(9, 2, 'com.rc.wefunit.ConfigReaderTest')
-data.setCell(9, 3, 10);
+data.setCell(9, 1, 'method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests')
+data.setCell(9, 2, 'com.rc.wefunit.testengine.TestEngineTest')
+data.setCell(9, 3, 14);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file')
-data.setCell(10, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(10, 3, 10);
+data.setCell(10, 1, 'method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array')
+data.setCell(10, 2, 'com.rc.wefunit.testengine.TestEngineTest')
+data.setCell(10, 3, 14);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there')
+data.setCell(11, 1, 'method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file')
 data.setCell(11, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(11, 3, 9);
+data.setCell(11, 3, 8);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array')
-data.setCell(12, 2, 'com.rc.wefunit.testengine.TestEngineTest')
-data.setCell(12, 3, 5);
+data.setCell(12, 1, 'method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there')
+data.setCell(12, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
+data.setCell(12, 3, 7);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them')
-data.setCell(13, 2, 'com.rc.wefunit.testreporting.HTMLReporterTest')
-data.setCell(13, 3, 3);
+data.setCell(13, 1, 'method_getProjectName_test_for_windows')
+data.setCell(13, 2, 'com.rc.wefunit.ConfigReaderTest')
+data.setCell(13, 3, 2);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'method_getTestScores_returned_map_must_contain_report_document')
+data.setCell(14, 1, 'method_getTestScores_returned_map_must_contain_score_document')
 data.setCell(14, 2, 'com.rc.wefunit.testengine.TestEngineTest')
 data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'method_getTestScores_returned_map_must_contain_score_document')
+data.setCell(15, 1, 'method_getTestScores_returned_map_must_contain_report_document')
 data.setCell(15, 2, 'com.rc.wefunit.testengine.TestEngineTest')
 data.setCell(15, 3, 0);
 window.suiteTableData['MainSuite']= { tableData: data, tableDiv: 'times-div-MainSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-MainSuite">
               </div> <!-- times-div-MainSuite -->
             </div> <!-- times-div -->
@@ -635,73 +568,69 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present</span>
-                <span class="method-start">271 ms</span>
+                <span class="method-start">280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests</span>
-                <span class="method-start">290 ms</span>
+                <span class="method-start">298 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_executeTests_total_test_for_explicitly_failed_tests</span>
-                <span class="method-start">314 ms</span>
+                <span class="method-start">316 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_returned_map_must_contain_report_document</span>
-                <span class="method-start">347 ms</span>
+                <span class="method-start">340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_returned_map_must_contain_score_document</span>
-                <span class="method-start">352 ms</span>
+                <span class="method-start">343 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array</span>
-                <span class="method-start">354 ms</span>
+                <span class="method-start">344 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map</span>
-                <span class="method-start">377 ms</span>
+                <span class="method-start">359 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.ConfigReaderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">method_getProjectName_test_for_linux</span>
-                <span class="method-start">399 ms</span>
+                <span class="method-start">381 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_getProjectName_test_for_windows</span>
-                <span class="method-start">429 ms</span>
+                <span class="method-start">405 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.rc.wefunit.testreporting.HTMLReporterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">method_generateHTMLTestReporting_TestReporting_html_file_basic_structure</span>
-                <span class="method-start">443 ms</span>
+                <span class="method-start">409 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">method_generateHTMLTestReporting_TestReporting_html_file_test_report_content</span>
-                <span class="method-start">4428 ms</span>
+                <span class="method-start">4285 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there</span>
-                <span class="method-start">6849 ms</span>
+                <span class="method-start">7096 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file</span>
-                <span class="method-start">6859 ms</span>
+                <span class="method-start">7104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them</span>
-                <span class="method-start">6872 ms</span>
+                <span class="method-start">7115 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible</span>
-                <span class="method-start">6883 ms</span>
+                <span class="method-start">7139 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

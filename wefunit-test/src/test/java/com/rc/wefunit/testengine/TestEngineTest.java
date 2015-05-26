@@ -46,7 +46,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
     @Mocked Factories.RunnerFactory runnerFactory;
 
     @Injectable
-    WebAppAccess webAppAccess;
+    private WebAppAccess _webAppAccess;
 
     @Injectable Runner runner;
 
@@ -58,8 +58,8 @@ public class TestEngineTest extends TestRunnerBaseClass {
             {
                 SystemProperties.getWebInfDir(); result = _webInfDirPath;
                 runnerFactory.getInstance();result = runner;
-                runner.getWebAppAccess();result = webAppAccess;
-                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = webAppAccess;
+                runner.getWebAppAccess();result = _webAppAccess;
+                runner.getWebAppAccess().getModelInstance("test/SCBuildersFixture", null, true); result = _webAppAccess;
             }
         };
     }
@@ -116,15 +116,17 @@ public class TestEngineTest extends TestRunnerBaseClass {
     }
 
     @Test
-    @Parameters({CommonTestFixtures.WEB_INF_PATH_NAME_FIXTURE})
-    public void method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(String _WEBINFPath){
+    public void method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array(){
 
-        super.runTests(_WEBINFPath);//Running tests
+//        this._runner.run(this._webAppAccess, this.getClass().getClassLoader());
+
+        this.expectations();
+        this.setTestClassStats();
+        Queue<Object> queue = this._runner.getExecutableTestObjectsQueue();
+        this._testEngine.executeTests(queue);//Execute the tests
 
         final Map<String, Object> reportMap = (Map<String, Object>) _scoresMap.get("report");
         final List<Map<String, Object>> failedArr = (List<Map<String, Object>>) reportMap.get("failed");
-
-
 
         Assert.assertTrue(failedArr.size() > 0);//There must be some failed tests
 

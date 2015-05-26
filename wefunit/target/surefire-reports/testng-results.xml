@@ -2,500 +2,500 @@
 <testng-results skipped="0" failed="0" total="116" passed="116">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="838" started-at="2015-05-26T14:16:17Z" finished-at="2015-05-26T14:16:18Z">
+  <suite name="Suite1" duration-ms="1173" started-at="2015-05-26T17:32:58Z" finished-at="2015-05-26T17:33:00Z">
     <groups>
     </groups>
-    <test name="Nopackage" duration-ms="838" started-at="2015-05-26T14:16:17Z" finished-at="2015-05-26T14:16:18Z">
+    <test name="Nopackage" duration-ms="1173" started-at="2015-05-26T17:32:58Z" finished-at="2015-05-26T17:33:00Z">
       <class name="com.rc.wefunit.probes.AssertTest">
-        <test-method status="PASS" signature="class_Assert_existence()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="class_Assert_existence" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="class_Assert_existence()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="class_Assert_existence" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- class_Assert_existence -->
-        <test-method status="PASS" signature="method_assertNotNull_throw_AssertionError_when_object_is_null()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_throw_AssertionError_when_object_is_null" duration-ms="13" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_assertNotNull_throw_AssertionError_when_object_is_null -->
-        <test-method status="PASS" signature="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_assertNotNull_throw_AssertionError_no_Throwable_when_object_is_not_null -->
-        <test-method status="PASS" signature="method_assertNotNull_with_one_argument_Object()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_with_one_argument_Object" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_assertNotNull_throw_AssertionError_when_object_is_null()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_throw_AssertionError_when_object_is_null" duration-ms="16" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_assertNotNull_throw_AssertionError_when_object_is_null -->
+        <test-method status="PASS" signature="method_assertNotNull_with_one_argument_Object()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertNotNull_with_one_argument_Object" duration-ms="1" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_assertNotNull_with_one_argument_Object -->
-        <test-method status="PASS" signature="method_assertTrue_is_public_static_with_only_one_argument_Object()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_is_public_static_with_only_one_argument_Object" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_assertTrue_is_public_static_with_only_one_argument_Object()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_is_public_static_with_only_one_argument_Object" duration-ms="1" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_assertTrue_is_public_static_with_only_one_argument_Object -->
-        <test-method status="PASS" signature="method_assertTrue_no_Throwable_when_argument_is_true()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_no_Throwable_when_argument_is_true" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_assertTrue_no_Throwable_when_argument_is_true()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_no_Throwable_when_argument_is_true" duration-ms="1" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_assertTrue_no_Throwable_when_argument_is_true -->
-        <test-method status="PASS" signature="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false" duration-ms="0" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_assertTrue_throw_java_lang_AssertionError_when_argument_is_false -->
-        <test-method status="PASS" signature="method_fail_with_no_params()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_fail_with_no_params" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_fail_with_no_params()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_fail_with_no_params" duration-ms="1" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_fail_with_no_params -->
-        <test-method status="PASS" signature="method_fail_with_string_argument()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_fail_with_string_argument" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_fail_with_string_argument()[pri:0, instance:com.rc.wefunit.probes.AssertTest@3632be31]" name="method_fail_with_string_argument" duration-ms="0" started-at="2015-05-26T22:33:00Z" finished-at="2015-05-26T22:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_fail_with_string_argument -->
       </class> <!-- com.rc.wefunit.probes.AssertTest -->
       <class name="com.rc.wefunit.CommonUtilsTest">
-        <test-method status="PASS" signature="filterQualifierAnnotations_functional_test()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="filterQualifierAnnotations_functional_test" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterQualifierAnnotations_functional_test -->
-        <test-method status="PASS" signature="filterQualifierAnnotations()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="filterQualifierAnnotations" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="filterQualifierAnnotations()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="filterQualifierAnnotations" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterQualifierAnnotations -->
-        <test-method status="PASS" signature="method_createPath(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_createPath" duration-ms="-1432649778344" started-at="2015-05-26T19:16:18Z" finished-at="1970-01-01T05:00:00Z">
+        <test-method status="PASS" signature="filterQualifierAnnotations_functional_test()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="filterQualifierAnnotations_functional_test" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterQualifierAnnotations_functional_test -->
+        <test-method status="PASS" signature="method_createPath(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_createPath" duration-ms="-1432661579495" started-at="2015-05-26T22:32:59Z" finished-at="1970-01-01T05:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_createPath -->
-        <test-method status="PASS" signature="method_getAsUnixPath()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getAsUnixPath" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getAsUnixPath()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getAsUnixPath" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getAsUnixPath -->
-        <test-method status="PASS" signature="method_getAsWindowsPath()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getAsWindowsPath" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getAsWindowsPath()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getAsWindowsPath" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getAsWindowsPath -->
-        <test-method status="PASS" signature="method_getOSPlatform_returns_1_for_Linux(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getOSPlatform_returns_1_for_Linux" duration-ms="-1432649778390" started-at="2015-05-26T19:16:18Z" finished-at="1970-01-01T05:00:00Z">
+        <test-method status="PASS" signature="method_getOSPlatform_returns_1_for_Linux(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getOSPlatform_returns_1_for_Linux" duration-ms="-1432661579548" started-at="2015-05-26T22:32:59Z" finished-at="1970-01-01T05:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getOSPlatform_returns_1_for_Linux -->
-        <test-method status="PASS" signature="method_getOSPlatform_returns_2_for_Windows(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getOSPlatform_returns_2_for_Windows" duration-ms="-1432649778414" started-at="2015-05-26T19:16:18Z" finished-at="1970-01-01T05:00:00Z">
+        <test-method status="PASS" signature="method_getOSPlatform_returns_2_for_Windows(java.lang.System)[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getOSPlatform_returns_2_for_Windows" duration-ms="-1432661579576" started-at="2015-05-26T22:32:59Z" finished-at="1970-01-01T05:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getOSPlatform_returns_2_for_Windows -->
-        <test-method status="PASS" signature="method_getSuperClassesHierarchy()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getSuperClassesHierarchy" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getSuperClassesHierarchy()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getSuperClassesHierarchy" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getSuperClassesHierarchy -->
-        <test-method status="PASS" signature="method_getTestMethodsArray()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getTestMethodsArray" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getTestMethodsArray()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getTestMethodsArray" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestMethodsArray -->
-        <test-method status="PASS" signature="method_getTestMethodsArray_test_for_GeneServiceOperationTest()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getTestMethodsArray_test_for_GeneServiceOperationTest" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getTestMethodsArray_test_for_GeneServiceOperationTest()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="method_getTestMethodsArray_test_for_GeneServiceOperationTest" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestMethodsArray_test_for_GeneServiceOperationTest -->
-        <test-method status="PASS" signature="test_CommonUtils_is_singleton_when_get_from_factory()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="test_CommonUtils_is_singleton_when_get_from_factory" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="test_CommonUtils_is_singleton_when_get_from_factory()[pri:0, instance:com.rc.wefunit.CommonUtilsTest@6fc6f14e]" name="test_CommonUtils_is_singleton_when_get_from_factory" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CommonUtils_is_singleton_when_get_from_factory -->
       </class> <!-- com.rc.wefunit.CommonUtilsTest -->
       <class name="com.rc.wefunit.annotations.GenericSODependencyTest">
-        <test-method status="PASS" signature="is_a_Qualifier()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_a_Qualifier" duration-ms="4" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_a_Qualifier()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_a_Qualifier" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_a_Qualifier -->
-        <test-method status="PASS" signature="is_annotation_GenericSODependency()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_annotation_GenericSODependency" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_annotation_GenericSODependency()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_annotation_GenericSODependency" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_annotation_GenericSODependency -->
-        <test-method status="PASS" signature="is_value_method_present()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_value_method_present" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_value_method_present()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="is_value_method_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_value_method_present -->
-        <test-method status="PASS" signature="target()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="target" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="target()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="target" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- target -->
-        <test-method status="PASS" signature="target_METHOD_AND_FIELD()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="target_METHOD_AND_FIELD" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="target_METHOD_AND_FIELD()[pri:0, instance:com.rc.wefunit.annotations.GenericSODependencyTest@4e9ba398]" name="target_METHOD_AND_FIELD" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- target_METHOD_AND_FIELD -->
       </class> <!-- com.rc.wefunit.annotations.GenericSODependencyTest -->
       <class name="com.rc.wefunit.FixtureDependencyInjectorUtilityTest">
-        <test-method status="PASS" signature="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1()[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1()[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inject_method_with_2_parameters_Field_and_Object1_GenericServiceOperationTest_serviceOperationName_field_1 -->
-        <test-method status="PASS" signature="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.Factories$RunnerFactory, com.bowstreet.webapp.WebAppAccess, com.rc.wefunit.Runner)[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model" duration-ms="13" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.Factories$RunnerFactory, com.bowstreet.webapp.WebAppAccess, com.rc.wefunit.Runner)[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model" duration-ms="9" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_inject_should_inject_WebAppAccess_For_SCBuildersFixture_model -->
-        <test-method status="PASS" signature="must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method()[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method()[pri:0, instance:com.rc.wefunit.FixtureDependencyInjectorUtilityTest@527740a2]" name="must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- must_throw_IllegalStateException_when_a_non_injectable_field_is_provided_to_inject_method -->
       </class> <!-- com.rc.wefunit.FixtureDependencyInjectorUtilityTest -->
       <class name="com.rc.wefunit.enums.GenericSOInjectablesTest">
-        <test-method status="PASS" signature="DATA_SERVICE_NAME()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="DATA_SERVICE_NAME" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="DATA_SERVICE_NAME()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="DATA_SERVICE_NAME" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DATA_SERVICE_NAME -->
-        <test-method status="PASS" signature="SERVICE_OPERATION_NAME()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="SERVICE_OPERATION_NAME" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="SERVICE_OPERATION_NAME()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="SERVICE_OPERATION_NAME" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SERVICE_OPERATION_NAME -->
-        <test-method status="PASS" signature="SERVICE_OPERATION_NAME_INDEX_0()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="SERVICE_OPERATION_NAME_INDEX_0" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="SERVICE_OPERATION_NAME_INDEX_0()[pri:0, instance:com.rc.wefunit.enums.GenericSOInjectablesTest@5abca1e0]" name="SERVICE_OPERATION_NAME_INDEX_0" duration-ms="4" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SERVICE_OPERATION_NAME_INDEX_0 -->
       </class> <!-- com.rc.wefunit.enums.GenericSOInjectablesTest -->
       <class name="com.rc.wefunit.RunnerTest">
-        <test-method status="PASS" signature="Runner_instance_must_be_singleton()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="Runner_instance_must_be_singleton" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="Runner_instance_must_be_singleton()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="Runner_instance_must_be_singleton" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Runner_instance_must_be_singleton -->
-        <test-method status="PASS" signature="method_getWebAppAccess_existence()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebAppAccess_existence" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getWebAppAccess_existence()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebAppAccess_existence" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getWebAppAccess_existence -->
-        <test-method status="PASS" signature="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getWebAppAccess_throw_IllegalStateException_when_called_before_calling_run_method -->
-        <test-method status="PASS" signature="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory" duration-ms="8" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory" duration-ms="12" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getWebInfDirPath_web_INF_directory_path_web_inf_as_last_directory -->
-        <test-method status="PASS" signature="method_run()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_run" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_run()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_run" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_run -->
-        <test-method status="PASS" signature="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence()[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_run_with_parameters_WebAppAccess_And_ClassLoader_existence" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_run_with_parameters_WebAppAccess_And_ClassLoader_existence -->
-        <test-method status="PASS" signature="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="15" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project(com.bowstreet.util.SystemProperties)[pri:0, instance:com.rc.wefunit.RunnerTest@370736d9]" name="method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project" duration-ms="6" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_scanTestClasses_scan_for_test_classes_must_throw_IllegalStateException_when_WEB_INF_dir_is_not_a_wef_project -->
       </class> <!-- com.rc.wefunit.RunnerTest -->
       <class name="com.rc.wefunit.GenericServiceOperationTestTest">
-        <test-method status="PASS" signature="abstract_method_parameter_count_test()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="abstract_method_parameter_count_test" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="abstract_method_parameter_count_test()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="abstract_method_parameter_count_test" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abstract_method_parameter_count_test -->
-        <test-method status="PASS" signature="getter_for_dataServiceName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_dataServiceName" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getter_for_dataServiceName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_dataServiceName" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_dataServiceName -->
-        <test-method status="PASS" signature="getter_for_serviceOperationName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_serviceOperationName" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getter_for_serviceOperationName()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_serviceOperationName" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_serviceOperationName -->
-        <test-method status="PASS" signature="getter_for_webAppAccess()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_webAppAccess" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getter_for_webAppAccess()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="getter_for_webAppAccess" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getter_for_webAppAccess -->
-        <test-method status="PASS" signature="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation -->
-        <test-method status="PASS" signature="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_field_with_DATA_SERVICE_NAME_annotation_with_value_DATA_SERVICE_NAME_present -->
-        <test-method status="PASS" signature="is_dataServiceName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_string_field_contains_Inject_annotation" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_dataServiceName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_string_field_contains_Inject_annotation" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_string_field_contains_Inject_annotation -->
-        <test-method status="PASS" signature="is_dataServiceName_string_field_is_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_string_field_is_present" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_dataServiceName_string_field_is_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_dataServiceName_string_field_is_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_dataServiceName_string_field_is_present -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_contains_Inject_annotation" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_contains_Inject_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_contains_Inject_annotation" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_serviceOperationName_string_field_contains_Inject_annotation -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_is_protected" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_is_protected" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_serviceOperationName_string_field_is_protected -->
-        <test-method status="PASS" signature="is_serviceOperationName_string_field_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_present" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_serviceOperationName_string_field_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_serviceOperationName_string_field_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_serviceOperationName_string_field_present -->
-        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- is_service_operation_exists_method_should_have_Test_annotation -->
-        <test-method status="PASS" signature="is_service_operation_exists_Method_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_exists_Method_exists" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_service_operation_exists_Method_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_exists_Method_exists" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_exists_Method_exists -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_GenericSODependency_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_GenericSODependency_annotation_present" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_service_operation_exists_method_should_have_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_exists_method_should_have_Test_annotation" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- is_webAppAccess_field_with_GenericSODependency_annotation_present -->
-        <test-method status="PASS" signature="is_service_operation_name_is_in_correct_format_Method_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_name_is_in_correct_format_Method_exists" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        </test-method> <!-- is_service_operation_exists_method_should_have_Test_annotation -->
+        <test-method status="PASS" signature="is_service_operation_name_is_in_correct_format_Method_exists()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_service_operation_name_is_in_correct_format_Method_exists" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_service_operation_name_is_in_correct_format_Method_exists -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present" duration-ms="3" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_webAppAccess_field_with_GenericSODependency_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_GenericSODependency_annotation_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- is_webAppAccess_field_with_GenericSODependency_annotation_present -->
+        <test-method status="PASS" signature="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present" duration-ms="11" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_webAppAccess_field_with_GenericSODependency_annotation_with_value_SERVICE_CONSUMER_BUILDER_FIXTURE_MODEL_present -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_Inject_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_Inject_annotation_present" duration-ms="6" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_webAppAccess_field_with_Inject_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_Inject_annotation_present" duration-ms="3" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_webAppAccess_field_with_Inject_annotation_present -->
-        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_webAppAccess_field_with_service_consumer_fixtures_annotation_is_protected -->
-        <test-method status="PASS" signature="method_getCallableServiceOperationName_functional_test()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_getCallableServiceOperationName_functional_test" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getCallableServiceOperationName_functional_test()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_getCallableServiceOperationName_functional_test" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getCallableServiceOperationName_functional_test -->
-        <test-method status="PASS" signature="method_is_service_operation_exists_functional_tests(com.bowstreet.webapp.DataService, com.bowstreet.webapp.ServiceOperation, com.bowstreet.webapp.WebAppAccess, com.bowstreet.webapp.WebApp)[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_exists_functional_tests" duration-ms="105" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_is_service_operation_exists_functional_tests(com.bowstreet.webapp.DataService, com.bowstreet.webapp.ServiceOperation, com.bowstreet.webapp.WebAppAccess, com.bowstreet.webapp.WebApp)[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_exists_functional_tests" duration-ms="147" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_is_service_operation_exists_functional_tests -->
-        <test-method status="PASS" signature="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_is_service_operation_name_is_in_correct_format_contains_Test_annotation -->
-        <test-method status="PASS" signature="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests(com.bowstreet.webapp.DataService, com.bowstreet.webapp.ServiceOperation, com.bowstreet.webapp.WebAppAccess, com.bowstreet.webapp.WebApp)[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests" duration-ms="33" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests(com.bowstreet.webapp.DataService, com.bowstreet.webapp.ServiceOperation, com.bowstreet.webapp.WebAppAccess, com.bowstreet.webapp.WebApp)[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests" duration-ms="52" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_is_service_operation_name_is_in_correct_format_contains_Test_annotation_functional_tests -->
-        <test-method status="PASS" signature="serviceOperationName_field_is_GenericSODependency_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="serviceOperationName_field_is_GenericSODependency_annotation_present" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="serviceOperationName_field_is_GenericSODependency_annotation_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="serviceOperationName_field_is_GenericSODependency_annotation_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceOperationName_field_is_GenericSODependency_annotation_present -->
-        <test-method status="PASS" signature="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present()[pri:0, instance:com.rc.wefunit.GenericServiceOperationTestTest@6536e911]" name="serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceOperationName_field_is_GenericSODependency_annotation_with_value_SERVICE_OPERATION_NAME_present -->
       </class> <!-- com.rc.wefunit.GenericServiceOperationTestTest -->
       <class name="com.rc.wefunit.DependencySignatureTest">
-        <test-method status="PASS" signature="class_existence()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="class_existence" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="class_existence()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="class_existence" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- class_existence -->
-        <test-method status="PASS" signature="compareTo_test_1()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="compareTo_test_1" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="compareTo_test_1()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="compareTo_test_1" duration-ms="8" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareTo_test_1 -->
-        <test-method status="PASS" signature="constructor_must_have_Class_as_the_first_parameter_data_type()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="constructor_must_have_Class_as_the_first_parameter_data_type" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="constructor_must_have_Class_as_the_first_parameter_data_type()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="constructor_must_have_Class_as_the_first_parameter_data_type" duration-ms="6" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- constructor_must_have_Class_as_the_first_parameter_data_type -->
-        <test-method status="PASS" signature="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- constructor_must_have_an_Annotation_array_as_the_second_parameter_data_type -->
-        <test-method status="PASS" signature="field__qualifiers_is_final()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field__qualifiers_is_final" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field__qualifiers_is_final()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field__qualifiers_is_final" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field__qualifiers_is_final -->
-        <test-method status="PASS" signature="field__qualifiers_is_private()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field__qualifiers_is_private" duration-ms="12" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field__qualifiers_is_private()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field__qualifiers_is_private" duration-ms="14" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field__qualifiers_is_private -->
-        <test-method status="PASS" signature="field_qualifiers()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_qualifiers" duration-ms="3" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field_qualifiers()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_qualifiers" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field_qualifiers -->
-        <test-method status="PASS" signature="field_qualifiers_is_an_Array_of_Type_Annotation()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_qualifiers_is_an_Array_of_Type_Annotation" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- field_qualifiers_is_an_Array_of_Type_Annotation -->
-        <test-method status="PASS" signature="field_returnedObjectType()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field_returnedObjectType()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field_returnedObjectType -->
-        <test-method status="PASS" signature="field_returnedObjectType_field_type_is_java_lang_Class()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_field_type_is_java_lang_Class" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field_qualifiers_is_an_Array_of_Type_Annotation()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_qualifiers_is_an_Array_of_Type_Annotation" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- field_qualifiers_is_an_Array_of_Type_Annotation -->
+        <test-method status="PASS" signature="field_returnedObjectType_field_type_is_java_lang_Class()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_field_type_is_java_lang_Class" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field_returnedObjectType_field_type_is_java_lang_Class -->
-        <test-method status="PASS" signature="field_returnedObjectType_is_final()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_is_final" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field_returnedObjectType_is_final()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_is_final" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field_returnedObjectType_is_final -->
-        <test-method status="PASS" signature="field_returnedObjectType_is_private()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_is_private" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="field_returnedObjectType_is_private()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="field_returnedObjectType_is_private" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- field_returnedObjectType_is_private -->
-        <test-method status="PASS" signature="method_getReturnedObjectType()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="method_getReturnedObjectType" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getReturnedObjectType -->
-        <test-method status="PASS" signature="implements_java_lang_Comparator()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="implements_java_lang_Comparator" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="implements_java_lang_Comparator()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="implements_java_lang_Comparator" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- implements_java_lang_Comparator -->
-        <test-method status="PASS" signature="presence_of_equals_and_hashcode_methods()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="presence_of_equals_and_hashcode_methods" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getReturnedObjectType()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="method_getReturnedObjectType" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- presence_of_equals_and_hashcode_methods -->
-        <test-method status="PASS" signature="the_only_constructor_is_public()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="the_only_constructor_is_public" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- the_only_constructor_is_public -->
-        <test-method status="PASS" signature="there_is_only_one_constructor()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="there_is_only_one_constructor" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        </test-method> <!-- method_getReturnedObjectType -->
+        <test-method status="PASS" signature="there_is_only_one_constructor()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="there_is_only_one_constructor" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- there_is_only_one_constructor -->
-        <test-method status="PASS" signature="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="presence_of_equals_and_hashcode_methods()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="presence_of_equals_and_hashcode_methods" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presence_of_equals_and_hashcode_methods -->
+        <test-method status="PASS" signature="the_only_constructor_is_public()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="the_only_constructor_is_public" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- the_only_constructor_is_public -->
+        <test-method status="PASS" signature="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier()[pri:0, instance:com.rc.wefunit.DependencySignatureTest@6d7b4f4c]" name="throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier" duration-ms="5" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- throw_IllegalStateException_when_provided_annotation_is_not_a_Qualifier -->
       </class> <!-- com.rc.wefunit.DependencySignatureTest -->
       <class name="com.rc.wefunit.FixtureDependencyTest">
-        <test-method status="PASS" signature="constructorTest()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="constructorTest" duration-ms="17" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="constructorTest()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="constructorTest" duration-ms="28" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- constructorTest -->
-        <test-method status="PASS" signature="dependencySignature_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="dependencySignature_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dependencySignature_field -->
-        <test-method status="PASS" signature="dependencySignature_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dependencySignature_field_is_private -->
-        <test-method status="PASS" signature="dependencySignature_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private_final" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="dependencySignature_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private_final" duration-ms="3" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dependencySignature_field_is_private_final -->
-        <test-method status="PASS" signature="dependencySignature_field_is_private_is_of_type_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private_is_of_type_DependencySignature" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="dependencySignature_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dependencySignature_field_is_private -->
+        <test-method status="PASS" signature="dependencySignature_field_is_private_is_of_type_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="dependencySignature_field_is_private_is_of_type_DependencySignature" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dependencySignature_field_is_private_is_of_type_DependencySignature -->
-        <test-method status="PASS" signature="existence_of_class()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="existence_of_class" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="existence_of_class()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="existence_of_class" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- existence_of_class -->
-        <test-method status="PASS" signature="getSignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getSignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature" duration-ms="8" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSignature -->
-        <test-method status="PASS" signature="getSignature_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature_method_is_public" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getSignature_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature_method_is_public" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSignature_method_is_public -->
-        <test-method status="PASS" signature="getSignature_method_return_type_is_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature_method_return_type_is_DependencySignature" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="getSignature_method_return_type_is_DependencySignature()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="getSignature_method_return_type_is_DependencySignature" duration-ms="7" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSignature_method_return_type_is_DependencySignature -->
-        <test-method status="PASS" signature="implements_java_lang_comparable()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="implements_java_lang_comparable" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="implements_java_lang_comparable()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="implements_java_lang_comparable" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- implements_java_lang_comparable -->
-        <test-method status="PASS" signature="method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency" duration-ms="3" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency" duration-ms="3" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_compare_to_throw_IllegalArgumentException_when_argument_is_not_of_type_FixtureDependency -->
-        <test-method status="PASS" signature="method_getDependency()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependency" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependency()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependency" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependency -->
-        <test-method status="PASS" signature="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.producers.FactoryProducers, com.bowstreet.webapp.WebAppAccess)[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model" duration-ms="24" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.producers.FactoryProducers, com.bowstreet.webapp.WebAppAccess)[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model" duration-ms="42" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependencyMethodName_return_WebAppAccess_For_SCBuildersFixture_model -->
-        <test-method status="PASS" signature="method_getDependencyMethodName_return_type_is_Object()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependencyMethodName_return_type_is_Object" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependencyMethodName_return_type_is_Object()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependencyMethodName_return_type_is_Object" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependencyMethodName_return_type_is_Object -->
-        <test-method status="PASS" signature="producerMethod_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="producerMethod_field()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- producerMethod_field -->
-        <test-method status="PASS" signature="method_getDependency_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependency_method_is_public" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getDependency_method_is_public -->
-        <test-method status="PASS" signature="producerMethod_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="producerMethod_field_is_private()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- producerMethod_field_is_private -->
-        <test-method status="PASS" signature="producerMethod_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private_final" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependency_method_is_public()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="method_getDependency_method_is_public" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getDependency_method_is_public -->
+        <test-method status="PASS" signature="producerMethod_field_is_private_final()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private_final" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- producerMethod_field_is_private_final -->
-        <test-method status="PASS" signature="producerMethod_field_is_private_is_of_type_Method()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private_is_of_type_Method" duration-ms="5" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="producerMethod_field_is_private_is_of_type_Method()[pri:0, instance:com.rc.wefunit.FixtureDependencyTest@6b09bb57]" name="producerMethod_field_is_private_is_of_type_Method" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- producerMethod_field_is_private_is_of_type_Method -->
       </class> <!-- com.rc.wefunit.FixtureDependencyTest -->
       <class name="com.rc.wefunit.producers.FactoryProducersTest">
-        <test-method status="PASS" signature="method_getSCBuildersFixturesModel()[pri:0, instance:com.rc.wefunit.producers.FactoryProducersTest@3108bc]" name="method_getSCBuildersFixturesModel" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getSCBuildersFixturesModel()[pri:0, instance:com.rc.wefunit.producers.FactoryProducersTest@3108bc]" name="method_getSCBuildersFixturesModel" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getSCBuildersFixturesModel -->
-        <test-method status="PASS" signature="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found()[pri:0, instance:com.rc.wefunit.producers.FactoryProducersTest@3108bc]" name="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found()[pri:0, instance:com.rc.wefunit.producers.FactoryProducersTest@3108bc]" name="method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getSCBuildersFixturesModel_throw_IllegalStateException_when_a_model_named_SCBuildersFixture_is_not_found -->
       </class> <!-- com.rc.wefunit.producers.FactoryProducersTest -->
       <class name="com.rc.wefunit.DependencyScannerTest">
-        <test-method status="PASS" signature="interface_DependencyScanner_existence()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="interface_DependencyScanner_existence" duration-ms="44" started-at="2015-05-26T19:16:17Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="interface_DependencyScanner_existence()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="interface_DependencyScanner_existence" duration-ms="76" started-at="2015-05-26T22:32:58Z" finished-at="2015-05-26T22:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- interface_DependencyScanner_existence -->
-        <test-method status="PASS" signature="method_getDependency_DependencySignature_Object_as_return_type()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_DependencySignature_Object_as_return_type" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependency_DependencySignature_Object_as_return_type()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_DependencySignature_Object_as_return_type" duration-ms="0" started-at="2015-05-26T22:32:58Z" finished-at="2015-05-26T22:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependency_DependencySignature_Object_as_return_type -->
-        <test-method status="PASS" signature="method_getDependency_exists()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_exists" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_getDependency_exists -->
-        <test-method status="PASS" signature="method_getDependency_DependencySignature_as_first_parameter()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_DependencySignature_as_first_parameter" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependency_DependencySignature_as_first_parameter()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_DependencySignature_as_first_parameter" duration-ms="1" started-at="2015-05-26T22:32:58Z" finished-at="2015-05-26T22:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependency_DependencySignature_as_first_parameter -->
-        <test-method status="PASS" signature="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.Factories$RunnerFactory, com.bowstreet.webapp.WebAppAccess, com.rc.wefunit.Runner)[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model" duration-ms="97" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getDependency_exists()[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_exists" duration-ms="2" started-at="2015-05-26T22:32:58Z" finished-at="2015-05-26T22:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method_getDependency_exists -->
+        <test-method status="PASS" signature="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model(com.rc.wefunit.Factories$RunnerFactory, com.bowstreet.webapp.WebAppAccess, com.rc.wefunit.Runner)[pri:0, instance:com.rc.wefunit.DependencyScannerTest@13a5fe33]" name="method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model" duration-ms="155" started-at="2015-05-26T22:32:58Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getDependency_return_WebAppAccess_For_SCBuildersFixture_model -->
       </class> <!-- com.rc.wefunit.DependencyScannerTest -->
       <class name="com.rc.wefunit.annotations.Annotations">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.rc.wefunit.annotations.Annotations@56235b8e]" name="test" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.rc.wefunit.annotations.Annotations@56235b8e]" name="test" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="test_enabled_method()[pri:0, instance:com.rc.wefunit.annotations.Annotations@56235b8e]" name="test_enabled_method" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="test_enabled_method()[pri:0, instance:com.rc.wefunit.annotations.Annotations@56235b8e]" name="test_enabled_method" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_enabled_method -->
       </class> <!-- com.rc.wefunit.annotations.Annotations -->
       <class name="com.rc.wefunit.annotations.BeforeClassTest">
-        <test-method status="PASS" signature="BeforeClass_annotation()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation" duration-ms="3" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="BeforeClass_annotation()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation" duration-ms="2" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass_annotation -->
-        <test-method status="PASS" signature="BeforeClass_annotation_RetentionPolicy_RUNTIME()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_RetentionPolicy_RUNTIME" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="BeforeClass_annotation_RetentionPolicy_RUNTIME()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_RetentionPolicy_RUNTIME" duration-ms="3" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass_annotation_RetentionPolicy_RUNTIME -->
-        <test-method status="PASS" signature="BeforeClass_annotation_Target_METHOD()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_Target_METHOD" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="BeforeClass_annotation_Target_METHOD()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_Target_METHOD" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass_annotation_Target_METHOD -->
-        <test-method status="PASS" signature="BeforeClass_annotation_enabled_method_default_value_true()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_enabled_method_default_value_true" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="BeforeClass_annotation_enabled_method_default_value_true()[pri:0, instance:com.rc.wefunit.annotations.BeforeClassTest@63753b6d]" name="BeforeClass_annotation_enabled_method_default_value_true" duration-ms="0" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass_annotation_enabled_method_default_value_true -->
       </class> <!-- com.rc.wefunit.annotations.BeforeClassTest -->
       <class name="com.rc.wefunit.TestClassStatsTest">
-        <test-method status="PASS" signature="method_getTotalExecutableTestsCount()[pri:0, instance:com.rc.wefunit.TestClassStatsTest@5f9d02cb]" name="method_getTotalExecutableTestsCount" duration-ms="1" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_getTotalExecutableTestsCount()[pri:0, instance:com.rc.wefunit.TestClassStatsTest@5f9d02cb]" name="method_getTotalExecutableTestsCount" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTotalExecutableTestsCount -->
       </class> <!-- com.rc.wefunit.TestClassStatsTest -->
       <class name="com.rc.wefunit.testengine.TestEngineTest">
-        <test-method status="PASS" signature="is_exist_Interface_TestEngine()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="is_exist_Interface_TestEngine" duration-ms="35" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="is_exist_Interface_TestEngine()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="is_exist_Interface_TestEngine" duration-ms="61" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_exist_Interface_TestEngine -->
-        <test-method status="PASS" signature="method_executeTests_parameters_Queue()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="method_executeTests_parameters_Queue" duration-ms="2" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="method_executeTests_parameters_Queue()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="method_executeTests_parameters_Queue" duration-ms="7" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_executeTests_parameters_Queue -->
-        <test-method status="PASS" signature="singleton_test()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="singleton_test" duration-ms="0" started-at="2015-05-26T19:16:18Z" finished-at="2015-05-26T19:16:18Z">
+        <test-method status="PASS" signature="singleton_test()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@52a86356]" name="singleton_test" duration-ms="1" started-at="2015-05-26T22:32:59Z" finished-at="2015-05-26T22:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleton_test -->

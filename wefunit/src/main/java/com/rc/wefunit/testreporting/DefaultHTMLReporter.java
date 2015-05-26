@@ -1,5 +1,6 @@
 package com.rc.wefunit.testreporting;
 
+import com.bowstreet.methods.CollectionUtil;
 import com.rc.wefunit.CommonUtils;
 import com.rc.wefunit.ConfigReader;
 import com.rc.wefunit.Factories;
@@ -9,9 +10,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Affan Hasan on 5/14/15.
@@ -81,27 +80,66 @@ public class DefaultHTMLReporter implements HTMLReporter {
                                 "<circle cx=\"13\" cy=\"13\" r=\"7\" stroke=\"black\" stroke-width=\"1\" fill=\"red\" />" +
                             "</svg>";
 
-        private String getFieldSet(boolean passed, Map<String, Object> testItem){
-            String fieldSet = new String("<fieldset class=\"" + ( passed ? "passed_test_item" : "failed_test_item" ) +"\">" +
-                                            "<legend>"
-                                                + ( passed ? _svgImgPassed : _svgImgFailed )//SVG Image
-                                                +  (String)testItem.get("class_name") //Test class name
-                                            +"</legend>"
-                                            +""+
-                                         "</fieldset>");
-            return fieldSet;
+        private String getFieldSet(boolean passed, String className, List<Map<String, Object>> testsList){
+
+            StringBuilder fieldSet = new StringBuilder();
+
+            fieldSet.append(new String("<fieldset id=\""+ className + "_" + ( passed ? "passed" : "failed" ) +"\" class=\"" + ( passed ? "passed_test_item" : "failed_test_item" ) +"\">"));
+    //            Appending Legend
+                fieldSet.append(new String("<legend>"));
+    //            Adding Image
+                    fieldSet.append (new String(passed ? _svgImgPassed : _svgImgFailed ));//SVG Image
+//                Class Name
+                    fieldSet.append((String) className); //Test class name
+                fieldSet.append(new String("</legend>"));
+//                Adding UL
+                fieldSet.append(new String("<ul>"));
+//                    Adding LI
+                for(Map<String, Object> item : testsList){
+                    fieldSet.append(new String("<li name=\""+ ( passed ? "passed_test_item" : "failed_test_item" ) +"\">"));
+                        fieldSet.append(new String((String) item.get("test_name")));
+                    fieldSet.append(new String("</li>"));
+                }
+                fieldSet.append(new String("</ul>"));
+    //            Legend End
+            fieldSet.append(new String("</fieldset>"));
+
+            return fieldSet.toString();
         }
 
         public String testReportingFileContent(){
-            StringBuilder failedFieldSets = new StringBuilder();
+//            Getting failed test Array
             List<Map<String, Object>> failedTestArr = ( (List<Map<String, Object>>) ((Map<String, Object>)_testEngine.getTestScores().get("report")).get("failed") );
-            for( Map<String, Object> failedItem : failedTestArr){
-                failedFieldSets.append(this.getFieldSet(false, failedItem));//Append the field set
-            }
-            StringBuilder passedFieldSets = new StringBuilder();
+//            Getting passed test Array
             List<Map<String, Object>> passedTestArr = ( (List<Map<String, Object>>) ((Map<String, Object>)_testEngine.getTestScores().get("report")).get("passed") );
-            for( Map<String, Object> passedItem : passedTestArr){
-                passedFieldSets.append(this.getFieldSet(true, passedItem));//Append the field set
+
+            Map<String, List<Map<String, Object>>> passedClassesMap = new LinkedHashMap<String, List<Map<String, Object>>>();
+            Map<String, List<Map<String, Object>>> failedClassesMap = new LinkedHashMap<String, List<Map<String, Object>>>();
+
+//        Categorizing test classes as passed
+            for(Map<String , Object> item : passedTestArr ){
+                if(!passedClassesMap.containsKey((String)item.get("class_name")))
+                    passedClassesMap.put((String)item.get("class_name"), new ArrayList<Map<String, Object>>());
+                ( (List<Map<String, Object>>) passedClassesMap.get((String)item.get("class_name")) )//List
+                        .add(item);
+            }
+//        Categorizing test classes as failed
+            for(Map<String , Object> item : failedTestArr ){
+                if(!failedClassesMap.containsKey((String)item.get("class_name")))
+                    failedClassesMap.put((String)item.get("class_name"), new ArrayList<Map<String, Object>>());
+                ( (List<Map<String, Object>>) failedClassesMap.get((String)item.get("class_name")) )//List
+                        .add(item);
+            }
+
+//            Creating field sets for failed tests
+            StringBuilder failedFieldSets = new StringBuilder();
+            for( String failedItem : failedClassesMap.keySet()){
+                failedFieldSets.append(this.getFieldSet(false, failedItem, failedClassesMap.get(failedItem) ));//Append the field set
+            }
+//            Creating field sets for passed tests
+            StringBuilder passedFieldSets = new StringBuilder();
+            for( String passedItem : passedClassesMap.keySet()){
+                passedFieldSets.append(this.getFieldSet(true, passedItem, passedClassesMap.get(passedItem)));//Append the field set
             }
             String report = new String(
                     "<!DOCTYPE html>" +

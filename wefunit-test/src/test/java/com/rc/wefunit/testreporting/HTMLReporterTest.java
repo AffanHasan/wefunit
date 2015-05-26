@@ -19,10 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Affan Hasan on 5/14/15.
@@ -198,8 +195,6 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
 
         super.runTests(this._WEBINFPath);//Running the tests
 
-        System.out.println("--- ---- --- Map : " + this._scoresMap);
-
         final int totalExecutedTests = (Integer) ((Map<String, Object>)this._scoresMap.get("score")).get("totalExecutedTests");
         final int totalTestFailures = (Integer) ((Map<String, Object>)this._scoresMap.get("score")).get("totalTestFailures");
 
@@ -225,20 +220,40 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         WebDriver webDriver = new FirefoxDriver();
         webDriver.get(file.toString());
 
-        List<WebElement> failedTestsList = webDriver.findElements(By.cssSelector("li[name=\"failed_test_item\""));
-        List<WebElement> passedTestsList = webDriver.findElements(By.name("li[name=\"passed_test_item\""));
+//        Categorizing test classes as passed & failed classes. From scoring.
+        Map<String, Object> report = (Map<String, Object>) this._scoresMap.get("report");
+        List<Map<String, Object>> failedTests = (List<Map<String, Object>>) report.get("failed");//Failed tests list
+        List<Map<String, Object>> passedTests = (List<Map<String, Object>>) report.get("passed");//Passed tests list
+        Set<String> passedClassesNames = new LinkedHashSet<String>();
+        Set<String> failedClassesNames = new LinkedHashSet<String>();
+
+//        Categorizing test classes as passed
+        for(Map<String , Object> item : passedTests ){
+            passedClassesNames.add((String)item.get("class_name"));
+        }
+//        Categorizing test classes as failed
+        for(Map<String , Object> item : failedTests ){
+            failedClassesNames.add((String) item.get("class_name"));
+        }
+
+//        Verifying the fieldsets containing passed classes names
+        for(String item : passedClassesNames){
+            Assert.assertEquals(webDriver.findElements(By.cssSelector("fieldset[id=\"" + item + "_" + "passed" + "\"]")).size(), 1);
+        }
+
+//         Verifying the fieldsets containing failed classes names
+        for(String item : passedClassesNames){
+            Assert.assertEquals(webDriver.findElements(By.cssSelector("fieldset[id=\"" + item + "_" + "failed" + "\"]")).size(), 1);
+        }
+
+//        TODO : To un-comment it --- Starts
+        List<WebElement> failedTestsList = webDriver.findElements(By.cssSelector("li[name=\"failed_test_item\"]"));
+        List<WebElement> passedTestsList = webDriver.findElements(By.cssSelector("li[name=\"passed_test_item\"]"));
 
         Assert.assertEquals(passedTestsList.size() + failedTestsList.size(), totalExecutedTests);//Total tests count
         Assert.assertEquals(failedTestsList.size(), totalTestFailures);//Failed Tests Count
         Assert.assertEquals(passedTestsList.size(), totalExecutedTests - totalTestFailures);//Passed Tests Count
-
-        for( WebElement elem : failedTestsList){
-        }
-
-        List<Map<String, Object>> failedTestArr = ( (List<Map<String, Object>>) ((Map<String, Object>)this._testEngine.getTestScores().get("report")).get("failed") );
-        for( Map<String, Object> failedItem : failedTestArr){
-
-        }
+//        TODO : To un-comment it --- Ends
 
         webDriver.quit();
     }
