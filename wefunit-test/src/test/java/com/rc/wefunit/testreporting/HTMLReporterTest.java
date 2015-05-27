@@ -186,6 +186,9 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         WebDriver webDriver = new FirefoxDriver();
         webDriver.get(file.toString());
         Assert.assertEquals(webDriver.getTitle(), "WefUnit-" + this._WEF_PROJECT_NAME);//Verify title
+        WebElement header = webDriver.findElement(By.cssSelector("header[id=\"report_header\"]"));
+        Assert.assertEquals(header.findElement(By.tagName("h1")).getText(), this._WEF_PROJECT_NAME);//Verifying the heading
+
         webDriver.quit();
     }
 
@@ -246,14 +249,12 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
             Assert.assertEquals(webDriver.findElements(By.cssSelector("fieldset[id=\"" + item + "_" + "failed" + "\"]")).size(), 1);
         }
 
-//        TODO : To un-comment it --- Starts
         List<WebElement> failedTestsList = webDriver.findElements(By.cssSelector("li[name=\"failed_test_item\"]"));
         List<WebElement> passedTestsList = webDriver.findElements(By.cssSelector("li[name=\"passed_test_item\"]"));
 
         Assert.assertEquals(passedTestsList.size() + failedTestsList.size(), totalExecutedTests);//Total tests count
         Assert.assertEquals(failedTestsList.size(), totalTestFailures);//Failed Tests Count
         Assert.assertEquals(passedTestsList.size(), totalExecutedTests - totalTestFailures);//Passed Tests Count
-//        TODO : To un-comment it --- Ends
 
         webDriver.quit();
     }

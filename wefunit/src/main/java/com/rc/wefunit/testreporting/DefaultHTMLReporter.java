@@ -148,6 +148,7 @@ public class DefaultHTMLReporter implements HTMLReporter {
                                 +"<title>WefUnit-"+ _configReader.getProjectName() +"</title>" +
                             "</head>"
                             +"<body>"
+                                +"<header id=\"report_header\"><h1>" + _configReader.getProjectName() + "</h1></header>"
                                 +failedFieldSets.toString()//Failed Field Sets
                                 +passedFieldSets.toString()//Passed Field Sets
                             +"</body>"
