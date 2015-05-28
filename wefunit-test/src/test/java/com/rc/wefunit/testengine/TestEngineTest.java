@@ -130,7 +130,7 @@ public class TestEngineTest extends TestRunnerBaseClass {
 
         Assert.assertTrue(failedArr.size() > 0);//There must be some failed tests
 
-        final Pattern stackTracePattern = Pattern.compile(".+\n\t at .+");
+        final Pattern stackTracePattern = Pattern.compile(".+ at .+");
         Matcher matcher;
 
 //        Checking Failed Tests Structure

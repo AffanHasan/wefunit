@@ -227,26 +227,100 @@ public class HTMLReporterTest extends TestRunnerBaseClass {
         Map<String, Object> report = (Map<String, Object>) this._scoresMap.get("report");
         List<Map<String, Object>> failedTests = (List<Map<String, Object>>) report.get("failed");//Failed tests list
         List<Map<String, Object>> passedTests = (List<Map<String, Object>>) report.get("passed");//Passed tests list
-        Set<String> passedClassesNames = new LinkedHashSet<String>();
-        Set<String> failedClassesNames = new LinkedHashSet<String>();
+        Map<String, List<Map<String, Object>>> passedClassItems = new LinkedHashMap<String, List<Map<String, Object>>>();
+        Map<String, List<Map<String, Object>>> failedClassItems = new LinkedHashMap<String, List<Map<String, Object>>>();
+
+        String _tmp;
 
 //        Categorizing test classes as passed
         for(Map<String , Object> item : passedTests ){
-            passedClassesNames.add((String)item.get("class_name"));
+            _tmp = (String) item.get("class_name");
+            if(passedClassItems.get(_tmp) == null)
+                passedClassItems.put(_tmp, new ArrayList<Map<String, Object>>());
+
+            passedClassItems.get(_tmp).add(item);
         }
 //        Categorizing test classes as failed
         for(Map<String , Object> item : failedTests ){
-            failedClassesNames.add((String) item.get("class_name"));
+            _tmp = (String) item.get("class_name");
+            if(failedClassItems.get(_tmp) == null)
+                failedClassItems.put(_tmp, new ArrayList<Map<String, Object>>());
+
+            failedClassItems.get(_tmp).add(item);
         }
 
+        List<WebElement> _testsLst;
+        WebElement _test;
+        boolean flag = false;
+
 //        Verifying the fieldsets containing passed classes names
-        for(String item : passedClassesNames){
-            Assert.assertEquals(webDriver.findElements(By.cssSelector("fieldset[id=\"" + item + "_" + "passed" + "\"]")).size(), 1);
+        for(String item : passedClassItems.keySet()){
+
+//            Exactly one field set per passed test class
+            Assert.assertEquals(webDriver.findElements(
+                    By.cssSelector("fieldset[id=\"" + item + "_" + "passed" + "\"]")).size(), 1);
+
+//            Getting the "li" list
+            _testsLst = webDriver.findElements(
+                    By.cssSelector("fieldset[id=\"" + item + "_" + "passed" + "\"]"))
+                        .get(0)
+                            .findElement(By.tagName("ul")).findElements(By.tagName("li"));
+
+//            Verifying the tests count
+            Assert.assertEquals(passedClassItems.get(item).size(), _testsLst.size());
+
+            for(Map<String, Object> test : passedClassItems.get(item)){
+                flag = false;
+                for(WebElement li : _testsLst){
+//                    Getting span
+                    _test = li.findElement(By.cssSelector("span[class=\"test_name\"]"));
+
+//                    If test found
+                    if( ((String)test.get("test_name")).equals(_test.getText()) ) {
+                        flag = true;
+                        break;
+                    }
+                }
+//                Assert that test is found
+                Assert.assertTrue(flag);
+            }
         }
 
 //         Verifying the fieldsets containing failed classes names
-        for(String item : passedClassesNames){
-            Assert.assertEquals(webDriver.findElements(By.cssSelector("fieldset[id=\"" + item + "_" + "failed" + "\"]")).size(), 1);
+        for(String item : failedClassItems.keySet()){
+//            Exactly one field set per passed test class
+            Assert.assertEquals(webDriver.findElements(
+                    By.cssSelector("fieldset[id=\"" + item + "_" + "failed" + "\"]")).size(), 1);
+
+//            Getting the "li" list
+            _testsLst = webDriver.findElements(
+                    By.cssSelector("fieldset[id=\"" + item + "_" + "failed" + "\"]"))
+                        .get(0)
+                            .findElement(By.tagName("ul")).findElements(By.tagName("li"));
+
+//            Verifying the tests count
+            Assert.assertEquals(failedClassItems.get(item).size(), _testsLst.size());
+
+            for(Map<String, Object> test : failedClassItems.get(item)){
+                flag = false;
+                for(WebElement li : _testsLst){
+//                    Getting span
+                    _test = li.findElement(By.cssSelector("span[class=\"test_name\"]"));
+
+//                    If test found
+                    if( ((String)test.get("test_name")).equals(_test.getText()) ){
+                        flag = true;
+//                        Then match the stack trace
+                        Assert.assertEquals(
+                                li.findElement(By.cssSelector("span[class=\"stack_trace\"]")).getText(),
+                                (String) test.get("stack_trace")
+                        );
+                        break;
+                    }
+                }
+//                Assert that test is found
+                Assert.assertTrue(flag);
+            }
         }
 
         List<WebElement> failedTestsList = webDriver.findElements(By.cssSelector("li[name=\"failed_test_item\"]"));

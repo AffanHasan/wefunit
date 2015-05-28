@@ -2,76 +2,76 @@
 <testng-results skipped="0" failed="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="MainSuite" duration-ms="12589" started-at="2015-05-27T17:31:20Z" finished-at="2015-05-27T17:31:33Z">
+  <suite name="MainSuite" duration-ms="14760" started-at="2015-05-28T16:29:18Z" finished-at="2015-05-28T16:29:33Z">
     <groups>
     </groups>
-    <test name="ExecuteAll" duration-ms="12589" started-at="2015-05-27T17:31:20Z" finished-at="2015-05-27T17:31:33Z">
+    <test name="ExecuteAll" duration-ms="14760" started-at="2015-05-28T16:29:18Z" finished-at="2015-05-28T16:29:33Z">
       <class name="com.rc.wefunit.testreporting.HTMLReporterTest">
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure" duration-ms="7955" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:29Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_TestReporting_html_file_basic_structure" duration-ms="5365" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_basic_structure -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content" duration-ms="3850" started-at="2015-05-27T22:31:29Z" finished-at="2015-05-27T22:31:33Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_TestReporting_html_file_test_report_content" duration-ms="8091" started-at="2015-05-28T21:29:25Z" finished-at="2015-05-28T21:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_TestReporting_html_file_test_report_content -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="7" started-at="2015-05-27T22:31:33Z" finished-at="2015-05-27T22:31:33Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there" duration-ms="11" started-at="2015-05-28T21:29:33Z" finished-at="2015-05-28T21:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_create_a_new_html_report_if_a_report_file_is_not_there -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="7" started-at="2015-05-27T22:31:33Z" finished-at="2015-05-27T22:31:33Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file" duration-ms="26" started-at="2015-05-28T21:29:33Z" finished-at="2015-05-28T21:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_delete_existing_html_report_file_then_regenerate_a_new_file -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="11" started-at="2015-05-27T22:31:33Z" finished-at="2015-05-27T22:31:33Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them()[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them" duration-ms="11" started-at="2015-05-28T21:29:33Z" finished-at="2015-05-28T21:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_if_reporting_directories_are_not_present_then_create_them -->
-        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@3c0f93f1]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="184" started-at="2015-05-27T22:31:33Z" finished-at="2015-05-27T22:31:33Z">
+        <test-method status="PASS" signature="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible(java.io.File)[pri:0, instance:com.rc.wefunit.testreporting.HTMLReporterTest@5ce81285]" name="method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible" duration-ms="144" started-at="2015-05-28T21:29:33Z" finished-at="2015-05-28T21:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_generateHTMLTestReporting_must_throw_IllegalStateException_when_reporting_dir_is_not_accessible -->
       </class> <!-- com.rc.wefunit.testreporting.HTMLReporterTest -->
       <class name="com.rc.wefunit.ConfigReaderTest">
-        <test-method status="PASS" signature="method_getProjectName_test_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@2038ae61]" name="method_getProjectName_test_for_linux" duration-ms="33" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getProjectName_test_for_linux()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@52a86356]" name="method_getProjectName_test_for_linux" duration-ms="40" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getProjectName_test_for_linux -->
-        <test-method status="PASS" signature="method_getProjectName_test_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@2038ae61]" name="method_getProjectName_test_for_windows" duration-ms="2" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getProjectName_test_for_windows()[pri:0, instance:com.rc.wefunit.ConfigReaderTest@52a86356]" name="method_getProjectName_test_for_windows" duration-ms="2" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getProjectName_test_for_windows -->
       </class> <!-- com.rc.wefunit.ConfigReaderTest -->
       <class name="com.rc.wefunit.testengine.TestEngineTest">
-        <test-method status="PASS" signature="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" duration-ms="320" started-at="2015-05-27T22:31:20Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests" duration-ms="735" started-at="2015-05-28T21:29:18Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_executeTests_tests_reports_failed_tests_arrays_size_should_be_equal_to_total_failed_tests -->
-        <test-method status="PASS" signature="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" duration-ms="18" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present" duration-ms="57" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_executeTests_total_executed_tests_should_equal_to_total_no_of_tests_present -->
-        <test-method status="PASS" signature="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" duration-ms="18" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests" duration-ms="54" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_executeTests_total_passed_tests_should_be_equal_to_total_tests_minus_total_failed_tests -->
-        <test-method status="PASS" signature="method_executeTests_total_test_for_explicitly_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_executeTests_total_test_for_explicitly_failed_tests" duration-ms="23" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_executeTests_total_test_for_explicitly_failed_tests()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_executeTests_total_test_for_explicitly_failed_tests" duration-ms="42" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_executeTests_total_test_for_explicitly_failed_tests -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="1" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_report_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_getTestScores_returned_map_must_contain_report_document" duration-ms="1" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_report_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="0" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_must_contain_score_document()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_getTestScores_returned_map_must_contain_score_document" duration-ms="2" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_must_contain_score_document -->
-        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="23" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array" duration-ms="24" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_returned_map_validating_failed_test_objects_structures_inside_report_failed_array -->
-        <test-method status="PASS" signature="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@55d56113]" name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" duration-ms="37" started-at="2015-05-27T22:31:21Z" finished-at="2015-05-27T22:31:21Z">
+        <test-method status="PASS" signature="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map()[pri:0, instance:com.rc.wefunit.testengine.TestEngineTest@31dc339b]" name="method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map" duration-ms="34" started-at="2015-05-28T21:29:19Z" finished-at="2015-05-28T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method_getTestScores_validating_the_test_classes_names_inside_report_section_of_test_scoring_map -->

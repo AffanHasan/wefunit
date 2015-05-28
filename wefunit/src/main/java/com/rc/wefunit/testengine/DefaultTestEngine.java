@@ -87,7 +87,7 @@ public class DefaultTestEngine implements TestEngine {
         Map<String, Object> testItem = new LinkedHashMap<String, Object>();
         testItem.put("class_name", className);//Test Class Name
         testItem.put("test_name", m.getName());//Test Method Name
-        testItem.put("stack_trace", new String(e.getCause().toString() + "\n\t at " + e.getCause().getStackTrace()[1].toString()));
+        testItem.put("stack_trace", new String(e.getCause().toString() + " at " + e.getCause().getStackTrace()[1].toString()));
         failedArr.add(testItem);
     }
 

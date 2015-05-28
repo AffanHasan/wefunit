@@ -85,9 +85,9 @@ public class DefaultHTMLReporter implements HTMLReporter {
             StringBuilder fieldSet = new StringBuilder();
 
             fieldSet.append(new String("<fieldset id=\""+ className + "_" + ( passed ? "passed" : "failed" ) +"\" class=\"" + ( passed ? "passed_test_item" : "failed_test_item" ) +"\">"));
-    //            Appending Legend
+//                Appending Legend
                 fieldSet.append(new String("<legend>"));
-    //            Adding Image
+//                Adding Image
                     fieldSet.append (new String(passed ? _svgImgPassed : _svgImgFailed ));//SVG Image
 //                Class Name
                     fieldSet.append((String) className); //Test class name
@@ -97,7 +97,10 @@ public class DefaultHTMLReporter implements HTMLReporter {
 //                    Adding LI
                 for(Map<String, Object> item : testsList){
                     fieldSet.append(new String("<li name=\""+ ( passed ? "passed_test_item" : "failed_test_item" ) +"\">"));
-                        fieldSet.append(new String((String) item.get("test_name")));
+                        fieldSet.append(new String("<span class=\"test_name\">" + (String) item.get("test_name") + "</span>"));
+//                      For failed test append the stack trace
+                        if(!passed)
+                            fieldSet.append(new String("<span class=\"stack_trace\">" + (String) item.get("stack_trace") + "</span>"));
                     fieldSet.append(new String("</li>"));
                 }
                 fieldSet.append(new String("</ul>"));
@@ -146,7 +149,16 @@ public class DefaultHTMLReporter implements HTMLReporter {
                     "<html>"
                             +"<head>"
                                 +"<title>WefUnit-"+ _configReader.getProjectName() +"</title>" +
-                            "</head>"
+//                            Style Sheet
+                                "<style>" +
+                                    ".stack_trace{"
+                                        +"display : block;"
+                                        +"padding-left : 30px;"
+                                        +"font-style : italic;"
+                                        +"color : red;"
+                                    +"}" +
+                                "</style>"
+                           +"</head>"
                             +"<body>"
                                 +"<header id=\"report_header\"><h1>" + _configReader.getProjectName() + "</h1></header>"
                                 +failedFieldSets.toString()//Failed Field Sets
